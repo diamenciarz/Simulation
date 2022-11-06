@@ -2,7 +2,7 @@ package simulation;
 
 import java.util.ArrayList;
 /**
- *	Product that is send trough the system
+ *	Product that is sent through the system
  *	@author Joel Karel
  *	@version %I%, %G%
  */

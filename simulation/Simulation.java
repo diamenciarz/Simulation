@@ -6,6 +6,7 @@
 
 package simulation;
 
+import processes.EventList;
 import processes.Machine;
 import processes.Source;
 

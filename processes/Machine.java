@@ -1,6 +1,5 @@
 package processes;
 
-import simulation.EventList;
 import simulation.IProductAcceptor;
 import simulation.Product;
 import simulation.Queue;
@@ -103,7 +102,7 @@ public class Machine implements IProcess, IProductAcceptor {
 		System.out.println("Product finished at time = " + tme);
 		// Remove product from system
 		product.stamp(tme, "Production complete", name);
-		sink.giveProduct(product);
+		sink.acceptProduct(product);
 		product = null;
 		// set machine status to idle
 		status = 'i';
@@ -118,7 +117,7 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @return true if the product is accepted and started, false in all other cases
 	 */
 	@Override
-	public boolean giveProduct(Product p) {
+	public boolean acceptProduct(Product p) {
 		// Only accept something if the machine is idle
 		if (status == 'i') {
 			// accept the product
@@ -167,6 +166,7 @@ public class Machine implements IProcess, IProductAcceptor {
 		double u = Math.random();
 		// Convert it into a exponentially distributed random variate with mean 33
 		double res = -mean * Math.log(u);
-		return res;
+		double rounded = (double)(Math.round(res * 10)) / 10;
+		return rounded;
 	}
 }

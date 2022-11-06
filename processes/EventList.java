@@ -1,8 +1,8 @@
-package simulation;
+package processes;
 
 import java.util.ArrayList;
 
-import processes.IProcess;
+import simulation.Event;
 
 /**
  * Event processing mechanism

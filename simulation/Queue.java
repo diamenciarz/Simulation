@@ -36,7 +36,7 @@ public class Queue implements IProductAcceptor
 		if(row.size()>0)
 		{
 			// If the machine accepts the product
-			if(machine.giveProduct(row.get(0)))
+			if(machine.acceptProduct(row.get(0)))
 			{
 				row.remove(0);// Remove it from the queue
 				return true;
@@ -55,7 +55,7 @@ public class Queue implements IProductAcceptor
 	*	Offer a product to the queue
 	*	It is investigated whether a machine wants the product, otherwise it is stored
 	*/
-	public boolean giveProduct(Product p)
+	public boolean acceptProduct(Product p)
 	{
 		// Check if the machine accepts it
 		if(requests.size()<1)
@@ -65,7 +65,7 @@ public class Queue implements IProductAcceptor
 			boolean delivered = false;
 			while(!delivered & (requests.size()>0))
 			{
-				delivered=requests.get(0).giveProduct(p);
+				delivered=requests.get(0).acceptProduct(p);
 				// remove the request regardless of whether or not the product has been accepted
 				requests.remove(0);
 			}

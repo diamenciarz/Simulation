@@ -35,7 +35,7 @@ public class Sink implements IProductAcceptor {
 	}
 
 	@Override
-	public boolean giveProduct(Product p) {
+	public boolean acceptProduct(Product p) {
 		number++;
 		products.add(p);
 		// store stamps
