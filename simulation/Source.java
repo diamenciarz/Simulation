@@ -1,4 +1,4 @@
-package Simulation;
+package simulation;
 
 /**
  *	A source of products
