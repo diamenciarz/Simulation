@@ -6,7 +6,7 @@ package simulation;
  * @author Joel Karel
  * @version %I%, %G%
  */
-public class Machine implements iProcess, iProductAcceptor {
+public class Machine implements IProcess, IProductAcceptor {
 	/** Product that is being handled */
 	private Product product;
 	/** Eventlist that will manage events */
@@ -14,7 +14,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	/** Queue from which the machine has to take products */
 	private Queue queue;
 	/** Sink to dump products */
-	private iProductAcceptor sink;
+	private IProductAcceptor sink;
 	/** Status of the machine (b=busy, i=idle) */
 	private char status;
 	/** Machine name */
@@ -35,7 +35,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param e Eventlist that will manage events
 	 * @param n The name of the machine
 	 */
-	public Machine(Queue q, iProductAcceptor s, EventList e, String n) {
+	public Machine(Queue q, IProductAcceptor s, EventList e, String n) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -55,7 +55,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param n The name of the machine
 	 * @param m Mean processing time
 	 */
-	public Machine(Queue q, iProductAcceptor s, EventList e, String n, double m) {
+	public Machine(Queue q, IProductAcceptor s, EventList e, String n, double m) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -75,7 +75,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param n  The name of the machine
 	 * @param st service times
 	 */
-	public Machine(Queue q, iProductAcceptor s, EventList e, String n, double[] st) {
+	public Machine(Queue q, IProductAcceptor s, EventList e, String n, double[] st) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -142,12 +142,12 @@ public class Machine implements iProcess, iProductAcceptor {
 			double duration = drawRandomExponential(meanProcTime);
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
-			eventlist.add(this, 0, tme + duration); // target,type,time
+			eventlist.addEvent(this, 0, tme + duration); // target,type,time
 			// set status to busy
 			status = 'b';
 		} else {
 			if (processingTimes.length > procCnt) {
-				eventlist.add(this, 0, eventlist.getTime() + processingTimes[procCnt]); // target,type,time
+				eventlist.addEvent(this, 0, eventlist.getTime() + processingTimes[procCnt]); // target,type,time
 				// set status to busy
 				status = 'b';
 				procCnt++;

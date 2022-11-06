@@ -7,7 +7,7 @@ import java.util.ArrayList;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class Queue implements iProductAcceptor
+public class Queue implements IProductAcceptor
 {
 	/** List in which the products are kept */
 	private ArrayList<Product> row;

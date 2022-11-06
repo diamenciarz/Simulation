@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author Joel Karel
  * @version %I%, %G%
  */
-public class Sink implements iProductAcceptor {
+public class Sink implements IProductAcceptor {
 	/** All products are kept */
 	private ArrayList<Product> products;
 	/** All properties of products are kept */

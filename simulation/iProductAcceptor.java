@@ -6,7 +6,7 @@ package simulation;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public interface iProductAcceptor
+public interface IProductAcceptor
 {
 	/**
 	*	Method to have this object process an event
