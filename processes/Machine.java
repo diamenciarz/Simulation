@@ -1,10 +1,10 @@
 package processes;
 
-import simulation.DebugLogger;
+import helpers.DebugLogger;
+import helpers.RandGenerator;
 import simulation.IProductAcceptor;
 import simulation.Product;
 import simulation.Queue;
-import simulation.RandGenerator;
 
 /**
  * Machine in a factory
@@ -28,9 +28,10 @@ public class Machine implements IProcess, IProductAcceptor {
 	/** Mean processing time */
 	private double meanProcTime;
 	/** Processing times (in case pre-specified) */
-	private double[] processingTimes;
+	private double[] processingTimestamps;
 	/** Processing time iterator */
-	private int procCnt;
+	private int procTimestampCounter;
+	private boolean isTimeRandom;
 
 	/**
 	 * Constructor
@@ -61,7 +62,8 @@ public class Machine implements IProcess, IProductAcceptor {
 		sink = s;
 		eventlist = e;
 		name = n;
-		meanProcTime = m;
+		meanProcTime = Math.max(m, 1);
+		isTimeRandom = false;
 		queue.askProduct(this);
 	}
 
@@ -81,9 +83,9 @@ public class Machine implements IProcess, IProductAcceptor {
 		sink = s;
 		eventlist = e;
 		name = n;
-		meanProcTime = -1;
-		processingTimes = st;
-		procCnt = 0;
+		processingTimestamps = st;
+		procTimestampCounter = 0;
+		isTimeRandom = true;
 		queue.askProduct(this);
 	}
 
@@ -91,37 +93,38 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * Method to have this object execute an event
 	 * 
 	 * @param type The type of the event that has to be executed
-	 * @param time  The current time
+	 * @param time The current time
 	 */
 	public void execute(int type, double time) {
 		DebugLogger.printFinished(time);
 		product.stamp(time, "Production complete", name);
-		sink.acceptProduct(product);
+		sink.receiveProduct(product);
 		product = null;
 		status = 'i';
 		queue.askProduct(this);
 	}
 
 	/**
-	 * Let the machine accept a product and let it start handling it
+	 * The machine receives a product and handles it
 	 * 
 	 * @param p The product that is offered
-	 * @return true if the product is accepted and started, false in all other cases
+	 * @return true if the product is accepted and started, false otherwise
 	 */
 	@Override
-	public boolean acceptProduct(Product p) {
+	public boolean receiveProduct(Product p) {
 		// Only accept something if the machine is idle
 		if (status == 'i') {
-			product = p;
-			// mark starting time
-			product.stamp(eventlist.getTime(), "Production started", name);
-			// start production
-			startProduction();
+			acceptProduct(p);
 			return true;
-		}
-		// Flag that the product has been rejected
-		else
+		} else
 			return false;
+	}
+
+	private void acceptProduct(Product p) {
+		product = p;
+		// mark starting time
+		product.stamp(eventlist.getTime(), "Production started", name);
+		startProduction();
 	}
 
 	/**
@@ -131,22 +134,22 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * This time is placed in the eventlist
 	 */
 	private void startProduction() {
-		// generate duration
-		if (meanProcTime > 0) {
+		if (isTimeRandom) {
 			double duration = RandGenerator.drawRandomExponential(meanProcTime);
-			// Create a new event in the eventlist
-			double tme = eventlist.getTime();
-			eventlist.addEvent(this, 0, tme + duration);
+			double time = eventlist.getTime();
+			eventlist.addEvent(this, 0, time + duration);
 			status = 'b';
-		} else {
-			if (processingTimes.length > procCnt) {
-				eventlist.addEvent(this, 0, eventlist.getTime() + processingTimes[procCnt]);
-				status = 'b';
-				procCnt++;
-			} else {
-				eventlist.stop();
-			}
+			return;
 		}
+
+		boolean processQueueEmpty = processingTimestamps.length <= procTimestampCounter;
+		if (processQueueEmpty) {
+			eventlist.stop();
+		}
+
+		procTimestampCounter++;
+		status = 'b';
+		eventlist.addEvent(this, 0, eventlist.getTime() + processingTimestamps[procTimestampCounter]);
 	}
 
 }
