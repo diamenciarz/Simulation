@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class CEventList implements CProcess
+public class CEventList implements iProcess
 {
 	/** The time in the simulation */
 	private double currentTime;
@@ -35,7 +35,7 @@ public class CEventList implements CProcess
 	*	@param type A type indicator of the event for objects that can process multiple types of events.
 	*	@param tme The time at which the event will be executed
 	*/
-	public void add(CProcess target, int type, double tme)
+	public void add(iProcess target, int type, double tme)
 	{
 		boolean success=false;
 		// First create a new event using the parameters
