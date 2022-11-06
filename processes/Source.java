@@ -1,4 +1,8 @@
-package simulation;
+package processes;
+
+import simulation.EventList;
+import simulation.IProductAcceptor;
+import simulation.Product;
 
 /**
  *	A source of products

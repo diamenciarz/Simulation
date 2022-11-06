@@ -2,6 +2,8 @@ package simulation;
 
 import java.util.ArrayList;
 
+import processes.Machine;
+
 /**
  *	Queue that stores products until they can be handled on a machine machine
  *	@author Joel Karel

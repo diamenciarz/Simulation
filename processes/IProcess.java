@@ -1,4 +1,4 @@
-package simulation;
+package processes;
 
 /**
  *	Blueprint for processes

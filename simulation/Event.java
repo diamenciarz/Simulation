@@ -6,6 +6,8 @@
  */
 package simulation;
 
+import processes.IProcess;
+
 public class Event
 {
 	/** The object involved with the event */
