@@ -9,12 +9,12 @@ import java.util.ArrayList;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class CEventList implements iProcess
+public class EventList implements iProcess
 {
 	/** The time in the simulation */
 	private double currentTime;
 	/** List of events that have to be executed */
-	private final ArrayList<CEvent> events;
+	private final ArrayList<Event> events;
 	/** Stop flag */
 	private boolean stopFlag;
 
@@ -22,7 +22,7 @@ public class CEventList implements iProcess
 	*	Standard constructor
 	*	Create an CEventList object
 	*/
-	public CEventList()
+	public EventList()
 	{
 		currentTime = 0;
 		stopFlag = false;
@@ -39,8 +39,8 @@ public class CEventList implements iProcess
 	{
 		boolean success=false;
 		// First create a new event using the parameters
-		CEvent evnt;
-                evnt = new CEvent(target,type,tme);
+		Event evnt;
+                evnt = new Event(target,type,tme);
 		// Now it is examened where the event has to be inserted in the list
 		for(int i=0;i<events.size();i++)
 		{

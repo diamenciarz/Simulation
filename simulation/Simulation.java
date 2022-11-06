@@ -8,7 +8,7 @@ package simulation;
 
 public class Simulation {
 
-    public CEventList list;
+    public EventList list;
     public Queue queue;
     public Source source;
     public Sink sink;
@@ -20,7 +20,7 @@ public class Simulation {
      */
     public static void main(String[] args) {
     	// Create an eventlist
-	CEventList l = new CEventList();
+	EventList l = new EventList();
 	// A queue for the machine
 	Queue q = new Queue();
 	// A source

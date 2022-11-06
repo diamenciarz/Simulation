@@ -10,7 +10,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	/** Product that is being handled */
 	private Product product;
 	/** Eventlist that will manage events */
-	private final CEventList eventlist;
+	private final EventList eventlist;
 	/** Queue from which the machine has to take products */
 	private Queue queue;
 	/** Sink to dump products */
@@ -35,7 +35,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param e Eventlist that will manage events
 	 * @param n The name of the machine
 	 */
-	public Machine(Queue q, iProductAcceptor s, CEventList e, String n) {
+	public Machine(Queue q, iProductAcceptor s, EventList e, String n) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -55,7 +55,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param n The name of the machine
 	 * @param m Mean processing time
 	 */
-	public Machine(Queue q, iProductAcceptor s, CEventList e, String n, double m) {
+	public Machine(Queue q, iProductAcceptor s, EventList e, String n, double m) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -75,7 +75,7 @@ public class Machine implements iProcess, iProductAcceptor {
 	 * @param n  The name of the machine
 	 * @param st service times
 	 */
-	public Machine(Queue q, iProductAcceptor s, CEventList e, String n, double[] st) {
+	public Machine(Queue q, iProductAcceptor s, EventList e, String n, double[] st) {
 		status = 'i';
 		queue = q;
 		sink = s;

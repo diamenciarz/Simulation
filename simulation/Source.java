@@ -10,7 +10,7 @@ package simulation;
 public class Source implements iProcess
 {
 	/** Eventlist that will be requested to construct events */
-	private CEventList list;
+	private EventList list;
 	/** Queue that buffers products for the machine */
 	private iProductAcceptor queue;
 	/** Name of the source */
@@ -29,7 +29,7 @@ public class Source implements iProcess
 	*	@param l	The eventlist that is requested to construct events
 	*	@param n	Name of object
 	*/
-	public Source(iProductAcceptor q,CEventList l,String n)
+	public Source(iProductAcceptor q,EventList l,String n)
 	{
 		list = l;
 		queue = q;
@@ -47,7 +47,7 @@ public class Source implements iProcess
 	*	@param n	Name of object
 	*	@param m	Mean arrival time
 	*/
-	public Source(iProductAcceptor q,CEventList l,String n,double m)
+	public Source(iProductAcceptor q,EventList l,String n,double m)
 	{
 		list = l;
 		queue = q;
@@ -65,7 +65,7 @@ public class Source implements iProcess
 	*	@param n	Name of object
 	*	@param ia	interarrival times
 	*/
-	public Source(iProductAcceptor q,CEventList l,String n,double[] ia)
+	public Source(iProductAcceptor q,EventList l,String n,double[] ia)
 	{
 		list = l;
 		queue = q;
