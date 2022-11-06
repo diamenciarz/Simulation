@@ -4,6 +4,7 @@ import simulation.DebugLogger;
 import simulation.IProductAcceptor;
 import simulation.Product;
 import simulation.Queue;
+import simulation.RandGenerator;
 
 /**
  * Machine in a factory
@@ -93,15 +94,11 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param time  The current time
 	 */
 	public void execute(int type, double time) {
-		// show arrival
 		DebugLogger.printFinished(time);
-		// Remove product from system
 		product.stamp(time, "Production complete", name);
 		sink.acceptProduct(product);
 		product = null;
-		// set machine status to idle
 		status = 'i';
-		// Ask the queue for products
 		queue.askProduct(this);
 	}
 
@@ -115,13 +112,11 @@ public class Machine implements IProcess, IProductAcceptor {
 	public boolean acceptProduct(Product p) {
 		// Only accept something if the machine is idle
 		if (status == 'i') {
-			// accept the product
 			product = p;
 			// mark starting time
 			product.stamp(eventlist.getTime(), "Production started", name);
 			// start production
 			startProduction();
-			// Flag that the product has arrived
 			return true;
 		}
 		// Flag that the product has been rejected
@@ -138,16 +133,14 @@ public class Machine implements IProcess, IProductAcceptor {
 	private void startProduction() {
 		// generate duration
 		if (meanProcTime > 0) {
-			double duration = drawRandomExponential(meanProcTime);
+			double duration = RandGenerator.drawRandomExponential(meanProcTime);
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
-			eventlist.addEvent(this, 0, tme + duration); // target,type,time
-			// set status to busy
+			eventlist.addEvent(this, 0, tme + duration);
 			status = 'b';
 		} else {
 			if (processingTimes.length > procCnt) {
-				eventlist.addEvent(this, 0, eventlist.getTime() + processingTimes[procCnt]); // target,type,time
-				// set status to busy
+				eventlist.addEvent(this, 0, eventlist.getTime() + processingTimes[procCnt]);
 				status = 'b';
 				procCnt++;
 			} else {
@@ -156,12 +149,4 @@ public class Machine implements IProcess, IProductAcceptor {
 		}
 	}
 
-	public static double drawRandomExponential(double mean) {
-		// draw a [0,1] uniform distributed number
-		double u = Math.random();
-		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -mean * Math.log(u);
-		double rounded = (double) (Math.round(res * 10)) / 10;
-		return rounded;
-	}
 }

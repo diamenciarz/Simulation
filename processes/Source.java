@@ -3,6 +3,7 @@ package processes;
 import simulation.DebugLogger;
 import simulation.IProductAcceptor;
 import simulation.Product;
+import simulation.RandGenerator;
 
 /**
  * A source of products
@@ -55,7 +56,7 @@ public class Source implements IProcess {
 		meanArrTime = Math.max(m, 1);
 		isTimeRandom = true;
 		// put first event in list for initialization
-		list.addEvent(this, 0, drawRandomExponential(meanArrTime)); // target,type,time
+		list.addEvent(this, 0, RandGenerator.drawRandomExponential(meanArrTime)); // target,type,time
 	}
 
 	/**
@@ -89,7 +90,7 @@ public class Source implements IProcess {
 
 		// generate duration
 		if (isTimeRandom) {
-			double duration = drawRandomExponential(meanArrTime);
+			double duration = RandGenerator.drawRandomExponential(meanArrTime);
 			list.addEvent(this, 0, time + duration);
 			return;
 		}
@@ -102,14 +103,5 @@ public class Source implements IProcess {
 
 		timestampCounter++;
 		list.addEvent(this, 0, time + arrivalTimestamps[timestampCounter]);
-	}
-
-	public static double drawRandomExponential(double mean) {
-		// draw a [0,1] uniform distributed number
-		double u = Math.random();
-		// Convert it into a exponentially distributed random variate with given mean
-		double res = -mean * Math.log(u);
-		double rounded = (double) (Math.round(res * 10)) / 10;
-		return rounded;
 	}
 }
