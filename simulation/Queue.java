@@ -34,7 +34,7 @@ public class Queue implements IProductAcceptor {
 		// This is only possible with a non-empty queue
 		if (row.size() > 0) {
 			// If the machine accepts the product
-			if (machine.acceptProduct(row.get(0))) {
+			if (machine.receiveProduct(row.get(0))) {
 				row.remove(0);// Remove it from the queue
 				return true;
 			} else
@@ -50,14 +50,14 @@ public class Queue implements IProductAcceptor {
 	 * It is investigated whether a machine wants the product, otherwise it is
 	 * stored
 	 */
-	public boolean acceptProduct(Product p) {
+	public boolean receiveProduct(Product p) {
 		// Check if the machine accepts it
 		if (requests.size() < 1)
 			row.add(p); // Otherwise store it
 		else {
 			boolean delivered = false;
 			while (!delivered & (requests.size() > 0)) {
-				delivered = requests.get(0).acceptProduct(p);
+				delivered = requests.get(0).receiveProduct(p);
 				// remove the request regardless of whether or not the product has been accepted
 				requests.remove(0);
 			}

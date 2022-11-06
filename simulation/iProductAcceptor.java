@@ -13,5 +13,5 @@ public interface IProductAcceptor
 	*	@param p	The product that is accepted
         *       @return true if accepted
 	*/
-	public boolean acceptProduct(Product p);
+	public boolean receiveProduct(Product p);
 }

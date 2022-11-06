@@ -1,4 +1,4 @@
-package simulation;
+package helpers;
 
 public class DebugLogger {
     static boolean doDebugMessages = true;

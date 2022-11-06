@@ -1,4 +1,4 @@
-package simulation;
+package helpers;
 
 public class RandGenerator {
     public static double drawRandomExponential(double mean) {

@@ -1,9 +1,11 @@
 package processes;
 
-import simulation.DebugLogger;
+import java.lang.Thread.State;
+
+import helpers.DebugLogger;
+import helpers.RandGenerator;
 import simulation.IProductAcceptor;
 import simulation.Product;
-import simulation.RandGenerator;
 
 /**
  * A source of products
@@ -28,6 +30,8 @@ public class Source implements IProcess {
 	private int timestampCounter;
 	private boolean isTimeRandom;
 
+	private static final double DEFAULT_MEAN = 33;
+
 	/**
 	 * Constructor, creates objects
 	 * Interarrival times are exponentially distributed with mean 33
@@ -37,7 +41,7 @@ public class Source implements IProcess {
 	 * @param n Name of object
 	 */
 	public Source(IProductAcceptor q, EventList l, String n) {
-		this(q, l, n, 33);
+		this(q, l, n, DEFAULT_MEAN);
 	}
 
 	/**
@@ -86,7 +90,7 @@ public class Source implements IProcess {
 		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(time, "Creation", name);
-		queue.acceptProduct(p);
+		queue.receiveProduct(p);
 
 		// generate duration
 		if (isTimeRandom) {
