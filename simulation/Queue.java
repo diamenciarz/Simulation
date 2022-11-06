@@ -12,7 +12,7 @@ import processes.Machine;
  */
 public class Queue implements IProductAcceptor {
 	/** List in which the products are kept */
-	private ArrayList<Product> row;
+	private ArrayList<Product> queue;
 	/** Requests from machine that will be handling the products */
 	private ArrayList<Machine> requests;
 
@@ -21,7 +21,7 @@ public class Queue implements IProductAcceptor {
 	 * the machine has to be specified later
 	 */
 	public Queue() {
-		row = new ArrayList<>();
+		queue = new ArrayList<>();
 		requests = new ArrayList<>();
 	}
 
@@ -30,19 +30,19 @@ public class Queue implements IProductAcceptor {
 	 * True is returned if a product could be delivered; false if the request is
 	 * queued
 	 */
-	public boolean askProduct(Machine machine) {
-		// This is only possible with a non-empty queue
-		if (row.size() > 0) {
-			// If the machine accepts the product
-			if (machine.receiveProduct(row.get(0))) {
-				row.remove(0);// Remove it from the queue
-				return true;
-			} else
-				return false; // Machine rejected; don't queue request
-		} else {
+	public boolean assignProduct(Machine machine) {
+		if (queue.size() == 0) {
 			requests.add(machine);
-			return false; // queue request
+			return false;
 		}
+
+		boolean machineAcceptedProduct = machine.receiveProduct(queue.get(0));
+		if (machineAcceptedProduct) {
+			queue.remove(0);
+			return true;
+		}
+		
+		return false;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class Queue implements IProductAcceptor {
 	public boolean receiveProduct(Product p) {
 		// Check if the machine accepts it
 		if (requests.size() < 1)
-			row.add(p); // Otherwise store it
+			queue.add(p); // Otherwise store it
 		else {
 			boolean delivered = false;
 			while (!delivered & (requests.size() > 0)) {
@@ -62,7 +62,7 @@ public class Queue implements IProductAcceptor {
 				requests.remove(0);
 			}
 			if (!delivered)
-				row.add(p); // Otherwise store it
+				queue.add(p); // Otherwise store it
 		}
 		return true;
 	}

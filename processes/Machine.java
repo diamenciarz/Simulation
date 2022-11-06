@@ -29,8 +29,12 @@ public class Machine implements IProcess, IProductAcceptor {
 	/** Processing times (in case pre-specified) */
 	private double[] processingTimestamps;
 	/** Processing time iterator */
-	private int procTimestampCounter;
+	private int timestampCounter;
 	private boolean isTimeRandom;
+
+	{
+		status = 'i';
+	}
 
 	/**
 	 * Constructor
@@ -56,34 +60,32 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param m Mean processing time
 	 */
 	public Machine(Queue q, IProductAcceptor s, String n, double m) {
-		status = 'i';
 		queue = q;
 		sink = s;
 		name = n;
 		meanProcTime = Math.max(m, 1);
-		isTimeRandom = false;
-		queue.askProduct(this);
+		isTimeRandom = true;
+		queue.assignProduct(this);
 	}
 
 	/**
 	 * Constructor
 	 * Service times are pre-specified
 	 * 
-	 * @param q  Queue from which the machine has to take products
-	 * @param s  Where to send the completed products
-	 * @param e  Eventlist that will manage events
-	 * @param n  The name of the machine
-	 * @param st service times
+	 * @param q          Queue from which the machine has to take products
+	 * @param s          Where to send the completed products
+	 * @param e          Eventlist that will manage events
+	 * @param n          The name of the machine
+	 * @param timeStamps service times
 	 */
-	public Machine(Queue q, IProductAcceptor s, String n, double[] st) {
-		status = 'i';
+	public Machine(Queue q, IProductAcceptor s, String n, double[] timeStamps) {
 		queue = q;
 		sink = s;
 		name = n;
-		processingTimestamps = st;
-		procTimestampCounter = 0;
-		isTimeRandom = true;
-		queue.askProduct(this);
+		processingTimestamps = timeStamps;
+		timestampCounter = 0;
+		isTimeRandom = false;
+		queue.assignProduct(this);
 	}
 
 	/**
@@ -93,12 +95,12 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param time The current time
 	 */
 	public void execute(int type, double time) {
-		DebugLogger.printFinished(time);
+		DebugLogger.printFinished(time, name);
 		product.stamp(time, "Production complete", name);
 		sink.receiveProduct(product);
 		product = null;
 		status = 'i';
-		queue.askProduct(this);
+		queue.assignProduct(this);
 	}
 
 	/**
@@ -134,19 +136,21 @@ public class Machine implements IProcess, IProductAcceptor {
 		if (isTimeRandom) {
 			double duration = RandGenerator.drawRandomExponential(meanProcTime);
 			double time = EventList.getTime();
-			EventList.addEvent(this, 0, time + duration);
 			status = 'b';
+			DebugLogger.printStartedProduction(EventList.getTime(), name);
+			EventList.addEvent(this, 0, time + duration);
 			return;
 		}
 
-		boolean processQueueEmpty = processingTimestamps.length <= procTimestampCounter;
+		boolean processQueueEmpty = processingTimestamps.length <= timestampCounter;
 		if (processQueueEmpty) {
 			EventList.stop();
 		}
 
-		procTimestampCounter++;
 		status = 'b';
-		EventList.addEvent(this, 0, EventList.getTime() + processingTimestamps[procTimestampCounter]);
+		EventList.addEvent(this, 0, EventList.getTime() + processingTimestamps[timestampCounter]);
+		DebugLogger.printStartedProduction(EventList.getTime(), name);
+		timestampCounter++;
 	}
 
 }

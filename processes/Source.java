@@ -75,16 +75,14 @@ public class Source implements IProcess {
 		name = n;
 		isTimeRandom = false;
 		this.arrivalTimestamps = interarrivalTimes;
-		timestampCounter = 0;
 		// put first event in list for initialization
 		EventList.addEvent(this, 0, this.arrivalTimestamps[0]);
+		timestampCounter = 1;
 	}
 
 	@Override
 	public void execute(int type, double time) {
-		// show arrival
 		DebugLogger.printArrived(time);
-		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(time, "Creation", name);
 		queue.receiveProduct(p);
@@ -96,13 +94,13 @@ public class Source implements IProcess {
 			return;
 		}
 
-		boolean eventQueueEmpty = arrivalTimestamps.length < timestampCounter;
+		boolean eventQueueEmpty = arrivalTimestamps.length <= timestampCounter;
 		if (eventQueueEmpty) {
 			EventList.stop();
 			return;
 		}
 
-		timestampCounter++;
 		EventList.addEvent(this, 0, time + arrivalTimestamps[timestampCounter]);
+		timestampCounter++;
 	}
 }
