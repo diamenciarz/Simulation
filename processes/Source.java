@@ -1,6 +1,6 @@
 package processes;
 
-import simulation.DebugMessages;
+import simulation.DebugLogger;
 import simulation.IProductAcceptor;
 import simulation.Product;
 
@@ -81,7 +81,7 @@ public class Source implements IProcess {
 	@Override
 	public void execute(int type, double time) {
 		// show arrival
-		DebugMessages.printCreation(time);
+		DebugLogger.printArrived(time);
 		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(time, "Creation", name);
