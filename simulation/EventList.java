@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class EventList implements iProcess
+public class EventList implements IProcess
 {
 	/** The time in the simulation */
 	private double currentTime;
@@ -35,7 +35,7 @@ public class EventList implements iProcess
 	*	@param type A type indicator of the event for objects that can process multiple types of events.
 	*	@param tme The time at which the event will be executed
 	*/
-	public void add(iProcess target, int type, double tme)
+	public void addEvent(IProcess target, int type, double tme)
 	{
 		boolean success=false;
 		// First create a new event using the parameters
@@ -86,17 +86,9 @@ public class EventList implements iProcess
 	*/
 	public void start(double mx)
 	{
-		add(this,-1,mx);
+		addEvent(this,-1,mx);
 		// stop criterion
-		while((events.size()>0)&&(!stopFlag))
-		{
-			// Make the similation time equal to the execution time of the first event in the list that has to be processed
-			currentTime=events.get(0).getExecutionTime();
-			// Let the element be processed
-			events.get(0).execute();
-			// Remove the event from the list
-			events.remove(0);
-		}
+		start();
 	}
 
 	public void stop()

@@ -9,7 +9,7 @@ package simulation;
 public class Event
 {
 	/** The object involved with the event */
-	private iProcess target;
+	private IProcess target;
 	/** The type of the event */
 	private int type;
 	/** The time on which the event will be executed */
@@ -21,7 +21,7 @@ public class Event
 	*	@param tp	The type of the event
 	*	@param tme	The time on which the event will be executed
 	*/
-	public Event(iProcess dl,int tp, double tme)
+	public Event(IProcess dl,int tp, double tme)
 	{
 		target=dl;
 		type=tp;

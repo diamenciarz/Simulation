@@ -7,12 +7,12 @@ package simulation;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class Source implements iProcess
+public class Source implements IProcess
 {
 	/** Eventlist that will be requested to construct events */
 	private EventList list;
 	/** Queue that buffers products for the machine */
-	private iProductAcceptor queue;
+	private IProductAcceptor queue;
 	/** Name of the source */
 	private String name;
 	/** Mean interarrival time */
@@ -29,14 +29,14 @@ public class Source implements iProcess
 	*	@param l	The eventlist that is requested to construct events
 	*	@param n	Name of object
 	*/
-	public Source(iProductAcceptor q,EventList l,String n)
+	public Source(IProductAcceptor q,EventList l,String n)
 	{
 		list = l;
 		queue = q;
 		name = n;
 		meanArrTime=33;
 		// put first event in list for initialization
-		list.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
+		list.addEvent(this,0,drawRandomExponential(meanArrTime)); //target,type,time
 	}
 
 	/**
@@ -47,14 +47,14 @@ public class Source implements iProcess
 	*	@param n	Name of object
 	*	@param m	Mean arrival time
 	*/
-	public Source(iProductAcceptor q,EventList l,String n,double m)
+	public Source(IProductAcceptor q,EventList l,String n,double m)
 	{
 		list = l;
 		queue = q;
 		name = n;
 		meanArrTime=m;
 		// put first event in list for initialization
-		list.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
+		list.addEvent(this,0,drawRandomExponential(meanArrTime)); //target,type,time
 	}
 
 	/**
@@ -65,7 +65,7 @@ public class Source implements iProcess
 	*	@param n	Name of object
 	*	@param ia	interarrival times
 	*/
-	public Source(iProductAcceptor q,EventList l,String n,double[] ia)
+	public Source(IProductAcceptor q,EventList l,String n,double[] ia)
 	{
 		list = l;
 		queue = q;
@@ -74,7 +74,7 @@ public class Source implements iProcess
 		interarrivalTimes=ia;
 		interArrCnt=0;
 		// put first event in list for initialization
-		list.add(this,0,interarrivalTimes[0]); //target,type,time
+		list.addEvent(this,0,interarrivalTimes[0]); //target,type,time
 	}
 	
         @Override
@@ -91,14 +91,14 @@ public class Source implements iProcess
 		{
 			double duration = drawRandomExponential(meanArrTime);
 			// Create a new event in the eventlist
-			list.add(this,0,tme+duration); //target,type,time
+			list.addEvent(this,0,tme+duration); //target,type,time
 		}
 		else
 		{
 			interArrCnt++;
 			if(interarrivalTimes.length>interArrCnt)
 			{
-				list.add(this,0,tme+interarrivalTimes[interArrCnt]); //target,type,time
+				list.addEvent(this,0,tme+interarrivalTimes[interArrCnt]); //target,type,time
 			}
 			else
 			{
