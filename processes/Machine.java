@@ -16,7 +16,6 @@ public class Machine implements IProcess, IProductAcceptor {
 	/** Product that is being handled */
 	private Product product;
 	/** Eventlist that will manage events */
-	private final EventList eventlist;
 	/** Queue from which the machine has to take products */
 	private Queue queue;
 	/** Sink to dump products */
@@ -42,8 +41,8 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param e Eventlist that will manage events
 	 * @param n The name of the machine
 	 */
-	public Machine(Queue q, IProductAcceptor s, EventList e, String n) {
-		this(q, s, e, n, 30);
+	public Machine(Queue q, IProductAcceptor s, String n) {
+		this(q, s, n, 30);
 	}
 
 	/**
@@ -56,11 +55,10 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param n The name of the machine
 	 * @param m Mean processing time
 	 */
-	public Machine(Queue q, IProductAcceptor s, EventList e, String n, double m) {
+	public Machine(Queue q, IProductAcceptor s, String n, double m) {
 		status = 'i';
 		queue = q;
 		sink = s;
-		eventlist = e;
 		name = n;
 		meanProcTime = Math.max(m, 1);
 		isTimeRandom = false;
@@ -77,11 +75,10 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param n  The name of the machine
 	 * @param st service times
 	 */
-	public Machine(Queue q, IProductAcceptor s, EventList e, String n, double[] st) {
+	public Machine(Queue q, IProductAcceptor s, String n, double[] st) {
 		status = 'i';
 		queue = q;
 		sink = s;
-		eventlist = e;
 		name = n;
 		processingTimestamps = st;
 		procTimestampCounter = 0;
@@ -123,7 +120,7 @@ public class Machine implements IProcess, IProductAcceptor {
 	private void acceptProduct(Product p) {
 		product = p;
 		// mark starting time
-		product.stamp(eventlist.getTime(), "Production started", name);
+		product.stamp(EventList.getTime(), "Production started", name);
 		startProduction();
 	}
 
@@ -136,20 +133,20 @@ public class Machine implements IProcess, IProductAcceptor {
 	private void startProduction() {
 		if (isTimeRandom) {
 			double duration = RandGenerator.drawRandomExponential(meanProcTime);
-			double time = eventlist.getTime();
-			eventlist.addEvent(this, 0, time + duration);
+			double time = EventList.getTime();
+			EventList.addEvent(this, 0, time + duration);
 			status = 'b';
 			return;
 		}
 
 		boolean processQueueEmpty = processingTimestamps.length <= procTimestampCounter;
 		if (processQueueEmpty) {
-			eventlist.stop();
+			EventList.stop();
 		}
 
 		procTimestampCounter++;
 		status = 'b';
-		eventlist.addEvent(this, 0, eventlist.getTime() + processingTimestamps[procTimestampCounter]);
+		EventList.addEvent(this, 0, EventList.getTime() + processingTimestamps[procTimestampCounter]);
 	}
 
 }

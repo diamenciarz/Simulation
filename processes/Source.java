@@ -17,7 +17,6 @@ import simulation.Product;
  */
 public class Source implements IProcess {
 	/** Eventlist that will be requested to construct events */
-	private EventList list;
 	/** Queue that buffers products for the machine */
 	private IProductAcceptor queue;
 	/** Name of the source */
@@ -40,8 +39,8 @@ public class Source implements IProcess {
 	 * @param l The eventlist that is requested to construct events
 	 * @param n Name of object
 	 */
-	public Source(IProductAcceptor q, EventList l, String n) {
-		this(q, l, n, DEFAULT_MEAN);
+	public Source(IProductAcceptor q, String n) {
+		this(q, n, DEFAULT_MEAN);
 	}
 
 	/**
@@ -53,14 +52,13 @@ public class Source implements IProcess {
 	 * @param n Name of object
 	 * @param m Mean arrival time
 	 */
-	public Source(IProductAcceptor q, EventList l, String n, double m) {
-		list = l;
+	public Source(IProductAcceptor q, String n, double m) {
 		queue = q;
 		name = n;
 		meanArrTime = Math.max(m, 1);
 		isTimeRandom = true;
 		// put first event in list for initialization
-		list.addEvent(this, 0, RandGenerator.drawRandomExponential(meanArrTime)); // target,type,time
+		EventList.addEvent(this, 0, RandGenerator.drawRandomExponential(meanArrTime)); // target,type,time
 	}
 
 	/**
@@ -72,15 +70,14 @@ public class Source implements IProcess {
 	 * @param n                 Name of object
 	 * @param interarrivalTimes interarrival times
 	 */
-	public Source(IProductAcceptor q, EventList l, String n, double[] interarrivalTimes) {
-		list = l;
+	public Source(IProductAcceptor q, String n, double[] interarrivalTimes) {
 		queue = q;
 		name = n;
 		isTimeRandom = false;
 		this.arrivalTimestamps = interarrivalTimes;
 		timestampCounter = 0;
 		// put first event in list for initialization
-		list.addEvent(this, 0, this.arrivalTimestamps[0]);
+		EventList.addEvent(this, 0, this.arrivalTimestamps[0]);
 	}
 
 	@Override
@@ -95,17 +92,17 @@ public class Source implements IProcess {
 		// generate duration
 		if (isTimeRandom) {
 			double duration = RandGenerator.drawRandomExponential(meanArrTime);
-			list.addEvent(this, 0, time + duration);
+			EventList.addEvent(this, 0, time + duration);
 			return;
 		}
 
-		boolean eventQueueEmpty = arrivalTimestamps.length <= timestampCounter;
+		boolean eventQueueEmpty = arrivalTimestamps.length < timestampCounter;
 		if (eventQueueEmpty) {
-			list.stop();
+			EventList.stop();
 			return;
 		}
 
 		timestampCounter++;
-		list.addEvent(this, 0, time + arrivalTimestamps[timestampCounter]);
+		EventList.addEvent(this, 0, time + arrivalTimestamps[timestampCounter]);
 	}
 }

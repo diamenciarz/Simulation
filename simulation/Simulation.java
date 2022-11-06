@@ -22,19 +22,15 @@ public class Simulation {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
-		// Create an eventlist
-		EventList l = new EventList();
-		// A queue for the machine
-		Queue q = new Queue();
-		// A source
+		Queue queue = new Queue();
 		double[] arrivalTimestamps = { 0.4, 1.2, 0.5, 1.7, 0.2, 1.6, 0.2, 1.4, 1.9 };
-		Source s = new Source(q, l, "Source 1", arrivalTimestamps);
-		// A sink
-		Sink si = new Sink("Sink 1");
-		// A machine
-		Machine m = new Machine(q, si, l, "Machine 1");
-		// start the eventlist
-		l.start(2000); // 2000 is maximum time
+		Source source = new Source(queue, "Source 1", arrivalTimestamps);
+		
+		Sink sink = new Sink("Sink 1");
+		double[] serviceTimestamps = { 2.0, 0.7, 0.2, 1.1, 3.7, 0.6, 4.0, 4.0, 4.0 };
+		Machine machine = new Machine(queue, sink, "Machine 1", serviceTimestamps);
+
+		EventList.start(2000); // 2000 is maximum time
 	}
 
 }

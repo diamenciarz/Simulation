@@ -13,23 +13,13 @@ import simulation.Event;
  * @author Joel Karel
  * @version %I%, %G%
  */
-public class EventList implements IProcess {
+public class EventList {
 	/** The time in the simulation */
-	private double currentTime;
+	private static double currentTime = 0;
 	/** List of events that have to be executed */
-	private final ArrayList<Event> events;
+	private static final ArrayList<Event> events = new ArrayList<>();
 	/** Stop flag */
-	private boolean stopFlag;
-
-	/**
-	 * Standard constructor
-	 * Create an CEventList object
-	 */
-	public EventList() {
-		currentTime = 0;
-		stopFlag = false;
-		events = new ArrayList<>();
-	}
+	private static boolean stopFlag = false;
 
 	/**
 	 * Method for the construction of a new event.
@@ -37,35 +27,54 @@ public class EventList implements IProcess {
 	 * @param target The object that will process the event
 	 * @param type   A type indicator of the event for objects that can process
 	 *               multiple types of events.
-	 * @param time    The time at which the event will be executed
+	 * @param time   The time at which the event will be executed
 	 */
-	public void addEvent(IProcess target, int type, double time) {
-		boolean success = false;
-		// First create a new event using the parameters
-		Event evnt = new Event(target, type, time);
-		// Now it is examened where the event has to be inserted in the list
+	public static void addEvent(IProcess target, int type, double time) {
+		Event event = new Event(target, type, time);
+		// Keep the list chronological
 		for (int i = 0; i < events.size(); i++) {
-			// The events are sorted chronologically
-			if (events.get(i).getExecutionTime() > evnt.getExecutionTime()) {
-				// If an event is found in the list that has to be executed after the current
-				// event
-				success = true;
-				// Then the new event is inserted before that element
-				events.add(i, evnt);
-				break;
+			if (events.get(i).getExecutionTime() > event.getExecutionTime()) {
+				events.add(i, event);
+				return;
 			}
 		}
-		if (!success) {
-			// Else the new event is appended to the list
-			events.add(evnt);
+		events.add(event);
+	}
+
+	/**
+	 * Method for starting the eventlist.
+	 * It will run until there are no longer events in the list or that a maximum
+	 * time has elapsed
+	 * 
+	 * @param simulationTime The maximum time of the simulation
+	 */
+	public static void start(double simulationTime) {
+		addEndingEvent(-1, simulationTime);
+		// stop criterion
+		start();
+	}
+
+	public static void addEndingEvent(int type, double time) {
+		Event event = new Event(new EndingEvent(), type, time);
+		// Keep the list chronological
+		for (int i = 0; i < events.size(); i++) {
+			if (events.get(i).getExecutionTime() > event.getExecutionTime()) {
+				events.add(i, event);
+				return;
+			}
 		}
+		events.add(event);
+	}
+
+	public static void stop() {
+		stopFlag = true;
 	}
 
 	/**
 	 * Method for starting the eventlist.
 	 * It will run until there are no longer events in the list
 	 */
-	public void start() {
+	public static void start() {
 		// stop criterion
 		while ((events.size() > 0) && (!stopFlag)) {
 			// Make the similation time equal to the execution time of the first event in
@@ -79,23 +88,6 @@ public class EventList implements IProcess {
 	}
 
 	/**
-	 * Method for starting the eventlist.
-	 * It will run until there are no longer events in the list or that a maximum
-	 * time has elapsed
-	 * 
-	 * @param mx De maximum time of the simulation
-	 */
-	public void start(double mx) {
-		addEvent(this, -1, mx);
-		// stop criterion
-		start();
-	}
-
-	public void stop() {
-		stopFlag = true;
-	}
-
-	/**
 	 * Method for accessing the simulation time.
 	 * The variable with the time is private to ensure that no other object can
 	 * alter it.
@@ -103,19 +95,11 @@ public class EventList implements IProcess {
 	 * 
 	 * @return The current time in the simulation
 	 */
-	public double getTime() {
+	public static double getTime() {
 		return currentTime;
 	}
 
-	/**
-	 * Method to have this object process an event
-	 * 
-	 * @param type The type of the event that has to be executed
-	 * @param tme  The current time
-	 */
-	@Override
-	public void execute(int type, double tme) {
-		if (type == -1)
+	public static void stopSimulation() {
 			stop();
 	}
 }

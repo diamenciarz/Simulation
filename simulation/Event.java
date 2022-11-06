@@ -8,8 +8,7 @@ package simulation;
 
 import processes.IProcess;
 
-public class Event
-{
+public class Event {
 	/** The object involved with the event */
 	private IProcess target;
 	/** The type of the event */
@@ -18,32 +17,31 @@ public class Event
 	private double executionTime;
 
 	/**
-	*	Constructor for objects
-	*	@param dl	The object that will process the event
-	*	@param tp	The type of the event
-	*	@param tme	The time on which the event will be executed
-	*/
-	public Event(IProcess dl,int tp, double tme)
-	{
-		target=dl;
-		type=tp;
-		executionTime=tme;
+	 * Constructor for objects
+	 * 
+	 * @param eventProcessor The object that will process the event
+	 * @param eventType      The type of the event
+	 * @param executionTime  The time on which the event will be executed
+	 */
+	public Event(IProcess eventProcessor, int eventType, double executionTime) {
+		target = eventProcessor;
+		type = eventType;
+		this.executionTime = executionTime;
 	}
-	
+
 	/**
-	*	Method to signal the target to execute an event
-	*/
-	public void execute()
-	{
-		target.execute(type,executionTime);
+	 * Method to signal the target to execute an event
+	 */
+	public void execute() {
+		target.execute(type, executionTime);
 	}
-	
+
 	/**
-	*	Method to ask the event at which time it will be executed
-	*	@return	The time at which the event will be executed
-	*/
-	public double getExecutionTime()
-	{
+	 * Method to ask the event at which time it will be executed
+	 * 
+	 * @return The time at which the event will be executed
+	 */
+	public double getExecutionTime() {
 		return executionTime;
 	}
 }
