@@ -1,5 +1,6 @@
 package processes;
 
+import simulation.DebugMessages;
 import simulation.IProductAcceptor;
 import simulation.Product;
 
@@ -21,9 +22,10 @@ public class Source implements IProcess {
 	/** Mean interarrival time */
 	private double meanArrTime;
 	/** Interarrival times (in case pre-specified) */
-	private double[] interarrivalTimes;
+	private double[] arrivalTimestamps;
 	/** Interarrival time iterator */
-	private int interarrivalTimeCounter;
+	private int timestampCounter;
+	private boolean isTimeRandom;
 
 	/**
 	 * Constructor, creates objects
@@ -50,7 +52,8 @@ public class Source implements IProcess {
 		list = l;
 		queue = q;
 		name = n;
-		meanArrTime = m;
+		meanArrTime = Math.max(m, 1);
+		isTimeRandom = true;
 		// put first event in list for initialization
 		list.addEvent(this, 0, drawRandomExponential(meanArrTime)); // target,type,time
 	}
@@ -59,51 +62,54 @@ public class Source implements IProcess {
 	 * Constructor, creates objects
 	 * Interarrival times are prespecified
 	 * 
-	 * @param q  The receiver of the products
-	 * @param l  The eventlist that is requested to construct events
-	 * @param n  Name of object
-	 * @param ia interarrival times
+	 * @param q                 The receiver of the products
+	 * @param l                 The eventlist that is requested to construct events
+	 * @param n                 Name of object
+	 * @param interarrivalTimes interarrival times
 	 */
-	public Source(IProductAcceptor q, EventList l, String n, double[] ia) {
+	public Source(IProductAcceptor q, EventList l, String n, double[] interarrivalTimes) {
 		list = l;
 		queue = q;
 		name = n;
-		meanArrTime = -1;
-		interarrivalTimes = ia;
-		interarrivalTimeCounter = 0;
+		isTimeRandom = false;
+		this.arrivalTimestamps = interarrivalTimes;
+		timestampCounter = 0;
 		// put first event in list for initialization
-		list.addEvent(this, 0, interarrivalTimes[0]); // target,type,time
+		list.addEvent(this, 0, this.arrivalTimestamps[0]);
 	}
 
 	@Override
-	public void execute(int type, double tme) {
+	public void execute(int type, double time) {
 		// show arrival
-		System.out.println("Arrival at time = " + tme);
+		DebugMessages.printCreation(time);
 		// give arrived product to queue
 		Product p = new Product();
-		p.stamp(tme, "Creation", name);
+		p.stamp(time, "Creation", name);
 		queue.acceptProduct(p);
+
 		// generate duration
-		if (meanArrTime > 0) {
+		if (isTimeRandom) {
 			double duration = drawRandomExponential(meanArrTime);
-			// Create a new event in the eventlist
-			list.addEvent(this, 0, tme + duration); // target,type,time
-		} else {
-			interarrivalTimeCounter++;
-			if (interarrivalTimes.length > interarrivalTimeCounter) {
-				list.addEvent(this, 0, tme + interarrivalTimes[interarrivalTimeCounter]); // target,type,time
-			} else {
-				list.stop();
-			}
+			list.addEvent(this, 0, time + duration);
+			return;
 		}
+
+		boolean eventQueueEmpty = arrivalTimestamps.length <= timestampCounter;
+		if (eventQueueEmpty) {
+			list.stop();
+			return;
+		}
+
+		timestampCounter++;
+		list.addEvent(this, 0, time + arrivalTimestamps[timestampCounter]);
 	}
 
 	public static double drawRandomExponential(double mean) {
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
-		// Convert it into a exponentially distributed random variate with mean 33
+		// Convert it into a exponentially distributed random variate with given mean
 		double res = -mean * Math.log(u);
-		double rounded = (double)(Math.round(res * 10)) / 10;
+		double rounded = (double) (Math.round(res * 10)) / 10;
 		return rounded;
 	}
 }

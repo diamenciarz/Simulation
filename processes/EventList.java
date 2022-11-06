@@ -37,12 +37,12 @@ public class EventList implements IProcess {
 	 * @param target The object that will process the event
 	 * @param type   A type indicator of the event for objects that can process
 	 *               multiple types of events.
-	 * @param tme    The time at which the event will be executed
+	 * @param time    The time at which the event will be executed
 	 */
-	public void addEvent(IProcess target, int type, double tme) {
+	public void addEvent(IProcess target, int type, double time) {
 		boolean success = false;
 		// First create a new event using the parameters
-		Event evnt = new Event(target, type, tme);
+		Event evnt = new Event(target, type, time);
 		// Now it is examened where the event has to be inserted in the list
 		for (int i = 0; i < events.size(); i++) {
 			// The events are sorted chronologically
