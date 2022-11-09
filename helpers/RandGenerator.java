@@ -2,6 +2,12 @@ package helpers;
 
 public class RandGenerator {
 
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(drawRandomExponential(33));
+        }
+    }
+
     public static double drawRandomExponential(double mean) {
         // draw a [0,1] uniform distributed number
         double u = Math.random();

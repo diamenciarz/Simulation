@@ -1,7 +1,5 @@
 package processes;
 
-import java.lang.Thread.State;
-
 import helpers.DebugLogger;
 import helpers.RandGenerator;
 import simulation.IProductAcceptor;
