@@ -32,4 +32,5 @@ public class RandGenerator {
         double rand = Math.random() * (max - min) + min;
         return (double) (Math.round(rand * 10)) / 10;
     }
+
 }

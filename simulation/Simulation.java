@@ -54,7 +54,7 @@ public class Simulation {
 	}
 
 	private static double[] generateArrivalTimestamps(int machineCount, int timestampCount) {
-		double[] arrivalTimestamps = RandGenerator.generateDelays(timestampCount * machineCount, 1, 2);
+		double[] arrivalTimestamps = RandGenerator.generateDelays(timestampCount * machineCount, 1, 3);
 		printArray("Arrival timestamps: ", arrivalTimestamps);
 		return arrivalTimestamps;
 	}
