@@ -1,11 +1,7 @@
 package simulation.Patients;
 
 public class A1Patient implements Patient {
-    private int priority;
-
-    public A1Patient (int priority){
-        this.priority = priority;
-    }
+    public static int priority = 1;
 
     @Override
     public int getPriority() {
