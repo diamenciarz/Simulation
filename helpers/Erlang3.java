@@ -21,12 +21,6 @@ public class Erlang3 {
         }
     }
 
-    public static double random(){
-
-
-        return 0;
-    }
-
     public static double Erlang3CFD(double x){
 
         double n = 3;
@@ -80,8 +74,6 @@ public class Erlang3 {
 
         return c;
     }
-
-
     public static void main(String[] args) {
 
         double x = Erlang3CFD(10);
@@ -89,4 +81,5 @@ public class Erlang3 {
         System.out.println(bisection(x));
 
     }
+
 }
