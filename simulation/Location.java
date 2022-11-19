@@ -3,7 +3,8 @@ package simulation;
 public class Location {
     private double x;
     private double y;
-    
+    private int region;
+
     public static double hexagonSize;
 
     public Location(){
@@ -24,6 +25,10 @@ public class Location {
     public boolean inside(double x, double y){
         return true;
     }
+    public int getRegion() {
+        return region;
+    }
+    
     public double getX() {
         return x;
     }
