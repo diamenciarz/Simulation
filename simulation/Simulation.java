@@ -22,6 +22,7 @@ public class Simulation {
 	/**
 	 * @param args the command line arguments
 	 */
+
 	public static void main(String[] args) {
 		int machineCount = 3;
 		int timestampCount = 10;
