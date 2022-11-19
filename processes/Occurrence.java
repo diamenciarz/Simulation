@@ -1,6 +1,7 @@
 package processes;
 
 import simulation.Location;
+import simulation.Map;
 import simulation.Patients.Patient;
 
 /**
@@ -17,7 +18,10 @@ public class Occurrence {
         this.location = new Location();
         this.patient = Patient.createPatient();
         this.time = time;
+        this.region = location.getRegion();
+        Map.addOccurrence(this);
     }
+
     public Location getLocation() {
         return location;
     }
@@ -30,5 +34,9 @@ public class Occurrence {
     public int getRegion() {
         return region;
     }
+    public String toString() {
+        return "Patient of type "+patient.getType()+ " arrived at "+ time+ " in region "+ region;
+    }
+
     
 }

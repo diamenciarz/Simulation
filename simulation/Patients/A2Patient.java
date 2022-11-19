@@ -7,6 +7,10 @@ public class A2Patient implements Patient {
     public int getPriority() {
         return priority;
     }
-    
+    @Override
+    public String getType() {
+        return "A2";
+    }
+
     
 }
