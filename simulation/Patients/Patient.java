@@ -2,7 +2,8 @@ package simulation.Patients;
 
 public interface Patient {
     public int getPriority();
-
+    public String getType();
+    
     public static Patient createPatient(){
         double r = Math.random();
         

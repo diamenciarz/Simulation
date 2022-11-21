@@ -10,6 +10,8 @@ public class Location {
     public Location(){
         createLocation();
     }
+
+    /*TODO: set the region according to the hexagon */
     public void createLocation(){
         double x;
         double y;
@@ -19,6 +21,7 @@ public class Location {
         }while(!inside(x, y));
         this.x = x;
         this.y = y;
+        this.region = (int)(Math.random()*7);
     }
 
     //TODO: Write method to check whether the values x and y make a valid position
@@ -28,7 +31,7 @@ public class Location {
     public int getRegion() {
         return region;
     }
-    
+
     public double getX() {
         return x;
     }
