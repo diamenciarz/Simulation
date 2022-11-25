@@ -1,6 +1,6 @@
 package processes;
 
-import helpers.DebugLogger;
+import helpers.Printer;
 import helpers.RandGenerator;
 import simulation.IProductAcceptor;
 import simulation.Product;
@@ -80,7 +80,7 @@ public class Source implements IProcess {
 
 	@Override
 	public void execute(int type, double time) {
-		DebugLogger.printArrived(time);
+		Printer.printArrived(time);
 		Product p = new Product();
 		p.stamp(time, "Creation", name);
 		queue.receiveProduct(p);

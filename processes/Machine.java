@@ -1,6 +1,6 @@
 package processes;
 
-import helpers.DebugLogger;
+import helpers.Printer;
 import helpers.RandGenerator;
 import simulation.IProductAcceptor;
 import simulation.Product;
@@ -95,7 +95,7 @@ public class Machine implements IProcess, IProductAcceptor {
 	 * @param time The current time
 	 */
 	public void execute(int type, double time) {
-		DebugLogger.printFinished(time, name);
+		Printer.printFinished(time, name);
 		product.stamp(time, "Production complete", name);
 		sink.receiveProduct(product);
 		product = null;
@@ -137,7 +137,7 @@ public class Machine implements IProcess, IProductAcceptor {
 			double duration = RandGenerator.drawRandomExponential(meanProcTime);
 			double time = EventList.getTime();
 			status = 'b';
-			DebugLogger.printStartedProduction(EventList.getTime(), name);
+			Printer.printStartedProduction(EventList.getTime(), name);
 			EventList.addEvent(this, 0, time + duration);
 			return;
 		}
@@ -149,7 +149,7 @@ public class Machine implements IProcess, IProductAcceptor {
 
 		status = 'b';
 		EventList.addEvent(this, 0, EventList.getTime() + processingTimestamps[timestampCounter]);
-		DebugLogger.printStartedProduction(EventList.getTime(), name);
+		Printer.printStartedProduction(EventList.getTime(), name);
 		timestampCounter++;
 	}
 

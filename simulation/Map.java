@@ -6,7 +6,7 @@ import processes.Occurrence;
 
 public class Map {
 
-    /**Stores the occurrences in a region given the region*/
+    /**Stores the occurrences in a region given the region (Region_index, Patient_occurrence)*/
     public static HashMap<Integer, ArrayList<Occurrence>> occurrences = new HashMap<>();
 
     
