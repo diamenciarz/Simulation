@@ -194,7 +194,7 @@ public class InfLine2D {
      *         they are parallel
      */
     public Vector2 getCrossPointWithLine(InfLine2D line) {
-        return UtilityClass.findLineIntersection(firstPosition, secondPosition, line.firstPosition,
+        return UtilityClass.LineMethods.findLineIntersection(firstPosition, secondPosition, line.firstPosition,
                 line.secondPosition);
     }
 

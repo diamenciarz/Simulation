@@ -44,7 +44,7 @@ public class Simulation {
 	private static Machine[] generateMachines(int machineCount, int timestampCount, double[][] timestamps) {
 		Queue queue = new Queue();
 		Sink sink = new Sink("Sink 1");
-		//The source saves a pointer to itself in the queue as an event
+		// The source saves a pointer to itself in the queue as an event
 		Source source = new Source(queue, "Source 1", generateArrivalTimestamps(machineCount, timestampCount));
 		Machine[] machines = new Machine[machineCount];
 		for (int i = 0; i < machineCount; i++) {

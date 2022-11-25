@@ -1,5 +1,9 @@
 package helpers.meth;
 
+/**
+ * An object representing a 2D vector and a suite of common methods used for efficient computation
+ * @author Stan
+ */
 public class Vector2 {
     public double x;
     public double y;
@@ -217,5 +221,11 @@ public class Vector2 {
     public static double angleBetween(Vector2 vector1, Vector2 vector2) {
         double cos = dotProduct(vector1, vector2) / (vector1.length() * vector2.length());
         return Math.acos(cos);
+    }
+
+    public static Vector2 lerp(Vector2 startingVector, Vector2 targetVector, double percentage) {
+        percentage = UtilityClass.ValueMethods.clamp(percentage, -1, 1);
+        return new Vector2(UtilityClass.ValueMethods.lerp(startingVector.x, targetVector.x, percentage), 
+        UtilityClass.ValueMethods.lerp(startingVector.x, targetVector.x, percentage));
     }
 }
