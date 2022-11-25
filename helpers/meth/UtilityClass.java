@@ -2,11 +2,19 @@ package helpers.meth;
 
 import java.awt.*;
 
+/**
+ * A class with useful mathematical and geometrical methods for efficient
+ * calculation
+ * 
+ * @author Stan
+ */
 public class UtilityClass {
 
     private UtilityClass() {
         // Cannot instantiate this class - it's just static
     }
+
+    public final static double DEGREES_TO_RADIANS = (Math.PI * 2) / 360;
 
     public static class LineMethods {
         /**

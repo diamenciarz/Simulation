@@ -1,5 +1,9 @@
 package helpers;
 
+import java.util.ArrayList;
+
+import helpers.meth.Vector2;
+
 public class Printer {
     static boolean doDebugMessages = true;
 
@@ -30,11 +34,28 @@ public class Printer {
         }
     }
 
+    public static void print(double[] list) {
+        for (int i = 0; i < list.length; i++) {
+            System.out.print(list[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void print(ArrayList<Vector2> list) {
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i) + " ");
+        }
+    }
+
     public static void printSquare(double[] arr) {
         int modulus = (int) Math.sqrt(arr.length);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i % modulus]);
+            if (i % modulus == 0) {
+                System.out.println();
+            }
+            System.out.print(arr[i % modulus] + " ");
         }
+        System.out.println();
     }
 
     public static void printSquare(float[] arr) {

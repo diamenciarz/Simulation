@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * An object representing an infinitely long line in 2D given as y = ax + b or described by two points
+ * @author Stan
  */
 public class InfLine2D {
 
@@ -255,6 +256,11 @@ public class InfLine2D {
             return crossPoints;
         }
         return new ArrayList<Vector2>();
+    }
+
+    public boolean isPointAboveLine(Vector2 point){
+        Vector2 pointDroppedOnLine = getPointAtX(point.x);
+        return pointDroppedOnLine.y < point.y;
     }
 
     @Override
