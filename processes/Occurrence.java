@@ -12,13 +12,11 @@ public class Occurrence {
     private Patient patient;
     private Location location;
     private double time;
-    private int region;
 
     public Occurrence(double time){
         this.location = new Location();
         this.patient = Patient.createPatient();
         this.time = time;
-        this.region = location.getRegion();
         Map.addOccurrence(this);
     }
 
@@ -32,10 +30,10 @@ public class Occurrence {
         return time;
     }
     public int getRegion() {
-        return region;
+        return location.getRegion();
     }
     public String toString() {
-        return "Patient of type "+patient.getType()+ " arrived at "+ time+ " in region "+ region;
+        return "Patient of type "+patient.getType()+ " arrived at "+ time+ " in region "+ getRegion();
     }
 
     
