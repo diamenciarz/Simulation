@@ -7,54 +7,57 @@ public class Location {
 
     public static double hexagonSize;
 
-    public Location(){
+    public Location() {
         createLocation();
     }
 
-    public Location(double x, double y){
+    public Location(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    /*TODO: set the region according to the hexagon */
-    public void createLocation(){
+    /* TODO: set the region according to the hexagon */
+    public void createLocation() {
         double x;
         double y;
-        do{
+        do {
             x = Math.random() * hexagonSize;
             y = Math.random() * hexagonSize;
-        }while(!inside(x, y));
+        } while (!inside(x, y));
         this.x = x;
         this.y = y;
-        this.region = (int)(Math.random()*7);
+        this.region = (int) (Math.random() * 7);
     }
 
-    //TODO: Write method to check whether the values x and y make a valid position
-    public boolean inside(double x, double y){
+    public boolean inside(double x, double y) {
 
-        for (int i = 0; i < City.city.size(); i++) {
-            if(City.city.get(i).getPolygon().contains(x, y)){
+        for (int i = 0; i < City.getHexMap().size(); i++) {
+            if (City.getHexMap().get(i).getPolygon().contains(x, y)) {
                 return true;
             }
         }
         return false;
     }
-    public int getRegion() {
-        return region;
-    }
 
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
     }
+
     /**
      * returns the manhattan distance between two locations.
+     * 
      * @param other
      * @return
      */
-    public double manhattan(Location other){
+    public double manhattan(Location other) {
         return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
+    }
+
+    public double manhattan2Points(Location b, Location a) {
+        return Math.abs(a.getX() - b.getX()) + Math.abs(a.getY() - b.getY());
     }
 }

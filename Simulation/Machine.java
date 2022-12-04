@@ -155,7 +155,7 @@ public class Machine implements CProcess, ProductAcceptor {
 			double patientProcessingDuration = drawRandomExponential(1);
 			Location patientLocation = new Location();
 			double distanceToPatient = patientLocation.manhattan(location);
-			double distanceToHospital = patientLocation.manhattan(City.city.get(0).location);
+			double distanceToHospital = patientLocation.manhattan(City.getHexMap().get(0).location);
 			// Create a new event in the eventlist
 			double currentTime = eventlist.getTime();
 			double totalTime = patientProcessingDuration + distanceToPatient + distanceToHospital;
@@ -189,4 +189,6 @@ public class Machine implements CProcess, ProductAcceptor {
 		double res = -mean * Math.log(u);
 		return res;
 	}
+
+
 }
