@@ -2,7 +2,7 @@ package helpers;
 
 import java.util.ArrayList;
 
-import helpers.meth.Vector2;
+import helpers.math.Vector2;
 
 public class Printer {
     static boolean doDebugMessages = true;
