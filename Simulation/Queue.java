@@ -57,6 +57,7 @@ public class Queue implements ProductAcceptor
 	*/
 	public boolean giveProduct(Product p)
 	{
+
 		// Check if the machine accepts it
 		if(idleMachines.size()<1)
 		queue.add(p); // Otherwise store it

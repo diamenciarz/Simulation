@@ -83,7 +83,7 @@ public class Source implements CProcess {
 	@Override
 	public void execute(int type, double currentTime) {
 		// show arrival
-		Printer.printArrived(eventList.getTime());
+		Printer.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(currentTime, "Creation", name);

@@ -12,7 +12,7 @@ import Simulation.City.Hex;
 import java.util.ArrayList;
 
 public class Simulation {
-	public static int N_MACHINES = 3;
+	public static int N_MACHINES = 1;
 	public CEventList list;
 	public Queue queue;
 	public Source source;
@@ -27,9 +27,13 @@ public class Simulation {
 		// Create an eventlist
 		CEventList l = new CEventList();
 		Queue q = new Queue();
-		Source s = new Source(q, l, "Source 1");
-		Source s2 = new Source(q, l, "Source 2");
-		Source s3 = new Source(q, l, "Source 3");
+
+		Source s1 = new Source(q, l, "A1");
+
+		Source s2 = new Source(q, l, "A2");
+
+		Source s3 = new Source(q, l, "B");
+
 		Sink si = new Sink("Sink 1");
 
 
@@ -40,6 +44,7 @@ public class Simulation {
 
 		// start the eventlist
 		l.start(200); // 2000 is maximum time
+
 	}
 
 	public static ArrayList<Machine> createMachines(Queue queue, Sink sink, CEventList eventList, int hexIndex,
@@ -47,6 +52,7 @@ public class Simulation {
 
 		ArrayList<Machine> machines = new ArrayList<>();
 		for (int i = 1; i <= ambulanceCount; i++) {
+			System.out.println(i);
 			Machine ambulance = new Machine(queue, sink, eventList, "Machine_" + i + "_H_" + hexIndex);
 			machines.add(ambulance);
 			Hex hubPosition = City.getHexMap().get(hexIndex);

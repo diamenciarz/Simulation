@@ -118,6 +118,7 @@ public class Machine implements CProcess, ProductAcceptor {
 		product = null;
 		// set machine status to idle
 		status = 'i';
+		location = new Location(0, 0);
 		// Ask the queue for products
 		queue.askProduct(this);
 	}
@@ -208,6 +209,4 @@ public class Machine implements CProcess, ProductAcceptor {
 		double res = -mean * Math.log(u);
 		return res;
 	}
-
-
 }

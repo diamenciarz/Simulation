@@ -69,6 +69,7 @@ public class Hex {
 
         for (int i = 0; i < ambulances.size(); i++) {
             this.ambulances.get(i).setLocation(location);
+            this.ambulances.get(i).setHub(location);
         }
     }
 }
