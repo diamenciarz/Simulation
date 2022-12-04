@@ -1,9 +1,9 @@
 package Simulation.City;
 import java.awt.*;
+
+
 public class Hex {
     
-
-    //TO DO TRANSLATE MY COMENTS THAT ARE IN SPANISH
 
     private boolean hospital;
 
@@ -25,44 +25,6 @@ public class Hex {
         this.polygon = generatePoints();
 
     }
-
-    public static void up(){
-        ambulanceY -= 10;
-    }
-
-    public static void down(){
-        ambulanceY += 10;
-    }
-
-    public static void left(){
-        ambulanceX -= 10;
-    }
-
-    public static void right(){
-        ambulanceX += 10;
-    }
-
-
-
-    public void moveX(double x){
-
-        if(ambulanceX < x){
-            ambulanceX += vel;
-        }else {
-            ambulanceX -= vel;
-        }
-
-    }
-
-    public void moveY(double y){
-
-        if(ambulanceY < y){
-            ambulanceY += vel;
-        }else {
-            ambulanceY -= vel;
-        }
-    }
-
 
     /**
      * This method creates hexagons with a given center
