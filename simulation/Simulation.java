@@ -29,13 +29,14 @@ public class Simulation {
 		double[][] timestamps = generateTimestamps(machineCount, timestampCount);
 		Machine[] machines = generateMachines(machineCount, timestampCount, timestamps);
 
-		EventList.start(2000); // 2000 is maximum time
+		EventList.start(10); // 2000 is maximum time
 	}
 
 	private static double[][] generateTimestamps(int machineCount, int timestampCount) {
 		double[][] timestamps = new double[machineCount][];
 		for (int i = 0; i < machineCount; i++) {
 			timestamps[i] = RandGenerator.generateDelays(timestampCount, 3, 6);
+			System.out.println("Machine: " + i);
 			printArray("Service timestamps: ", timestamps[i]);
 		}
 

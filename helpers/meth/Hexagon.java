@@ -1,5 +1,6 @@
 package helpers.meth;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 import javax.swing.text.Position;
@@ -15,6 +16,18 @@ public class Hexagon {
         this.middlePoint = middlePoint;
         this.radius = radius;
         positions = calculatePositions();
+    }
+
+    public final double PUNTOS = 6;
+
+    public Polygon algoritmoHexagonal(double x, double y){
+
+
+        for (int i = 0; i < PUNTOS; i++) {
+
+        }
+
+        return null;
     }
 
     public boolean isPointInside(Vector2 position){

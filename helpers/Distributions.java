@@ -1,6 +1,6 @@
 package helpers;
 
-public class Erlang3 {
+public class Distributions {
 
 
     public static double Erlang3PDF(){
