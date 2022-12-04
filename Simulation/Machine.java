@@ -108,6 +108,7 @@ public class Machine implements CProcess,ProductAcceptor
 		sink.giveProduct(product);
 		product=null;
 		// set machine status to idle
+
 		status='i';
 		// Ask the queue for products
 		queue.askProduct(this);
@@ -149,10 +150,16 @@ public class Machine implements CProcess,ProductAcceptor
 		{
 			//double duration = drawRandomExponential(meanProcTime);
 			double duration = Distributions.Erlang3PDF();
-
+			Location patient_L = new Location();
+			double distance_P = patient_L.manhattan(this.location);
+			location = patient_L;
+			double distance_H = patient_L.manhattan2Points(this.location, new Location(0,0));
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
-			eventlist.add(this,0,tme+duration); //target,type,time
+
+			double totalTime = tme+duration + distance_P + distance_H;
+
+			eventlist.add(this,0,totalTime); //target,type,time
 			// set status to busy
 			status='b';
 		}

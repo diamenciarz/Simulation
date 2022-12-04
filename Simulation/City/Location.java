@@ -29,10 +29,6 @@ public class Location {
         this.region = (int)(Math.random()*7);
     }
 
-    public double manhattan(Location other){
-        return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
-    }
-
     public boolean inside(double x, double y){
 
         for (int i = 0; i < City.city.size(); i++) {
@@ -42,9 +38,6 @@ public class Location {
         }
         return false;
     }
-    public int getRegion() {
-        return region;
-    }
 
     public double getX() {
         return x;
@@ -52,6 +45,7 @@ public class Location {
     public double getY() {
         return y;
     }
+
     /**
      * returns the manhattan distance between two locations.
      * @param other
@@ -59,5 +53,9 @@ public class Location {
      */
     public double manhattan(Location other){
         return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
+    }
+
+    public double manhattan2Points(Location b, Location a){
+        return Math.abs(a.getX() - b.getX()) + Math.abs(a.getY() - b.getY());
     }
 }
