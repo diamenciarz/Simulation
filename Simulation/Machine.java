@@ -2,6 +2,7 @@ package Simulation;
 
 import Simulation.City.Location;
 import helpers.Distributions;
+import helpers.Printer;
 
 /**
  *	Machine in a factory
@@ -101,7 +102,7 @@ public class Machine implements CProcess,ProductAcceptor
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		System.out.println("Product finished at time = " + tme);
+		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
 		product.stamp(tme,"Production complete",name);
 		sink.giveProduct(product);

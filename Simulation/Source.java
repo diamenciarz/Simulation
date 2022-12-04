@@ -1,6 +1,7 @@
 package Simulation;
 
 import helpers.Distributions;
+import helpers.Printer;
 
 /**
  *	A source of products
@@ -12,7 +13,7 @@ import helpers.Distributions;
 public class Source implements CProcess
 {
 	/** Eventlist that will be requested to construct events */
-	private CEventList list;
+	private CEventList eventList;
 	/** Queue that buffers products for the machine */
 	private ProductAcceptor queue;
 	/** Name of the source */
@@ -33,12 +34,12 @@ public class Source implements CProcess
 	*/
 	public Source(ProductAcceptor q,CEventList l,String n)
 	{
-		list = l;
+		eventList = l;
 		queue = q;
 		name = n;
 		meanArrTime=33;
 		// put first event in list for initialization
-		list.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
+		eventList.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
 	}
 
 	/**
@@ -51,12 +52,12 @@ public class Source implements CProcess
 	*/
 	public Source(ProductAcceptor q,CEventList l,String n,double m)
 	{
-		list = l;
+		eventList = l;
 		queue = q;
 		name = n;
 		meanArrTime=m;
 		// put first event in list for initialization
-		list.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
+		eventList.add(this,0,drawRandomExponential(meanArrTime)); //target,type,time
 	}
 
 	/**
@@ -69,21 +70,21 @@ public class Source implements CProcess
 	*/
 	public Source(ProductAcceptor q,CEventList l,String n,double[] ia)
 	{
-		list = l;
+		eventList = l;
 		queue = q;
 		name = n;
 		meanArrTime=-1;
 		interarrivalTimes=ia;
 		interArrCnt=0;
 		// put first event in list for initialization
-		list.add(this,0,interarrivalTimes[0]); //target,type,time
+		eventList.add(this,0,interarrivalTimes[0]); //target,type,time
 	}
 	
 	@Override
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		System.out.println("Arrival at time = " + tme);
+		Printer.printArrived(eventList.getTime());
 		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(tme,"Creation",name);
@@ -93,18 +94,18 @@ public class Source implements CProcess
 		{
 			double duration = drawRandomExponential(tme);
 			// Create a new event in the eventlist
-			list.add(this,type,tme+duration); //target,type,time
+			eventList.add(this,type,tme+duration); //target,type,time
 		}
 		else
 		{
 			interArrCnt++;
 			if(interarrivalTimes.length>interArrCnt)
 			{
-				list.add(this,0,tme+interarrivalTimes[interArrCnt]); //target,type,time
+				eventList.add(this,0,tme+interarrivalTimes[interArrCnt]); //target,type,time
 			}
 			else
 			{
-				list.stop();
+				eventList.stop();
 			}
 		}
 	}
