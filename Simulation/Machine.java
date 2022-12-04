@@ -1,6 +1,7 @@
 package Simulation;
 
 import helpers.Distributions;
+import helpers.Printer;
 
 /**
  *	Machine in a factory
@@ -98,7 +99,7 @@ public class Machine implements CProcess,ProductAcceptor
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		System.out.println("Product finished at time = " + tme);
+		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
 		product.stamp(tme,"Production complete",name);
 		sink.giveProduct(product);
@@ -126,6 +127,7 @@ public class Machine implements CProcess,ProductAcceptor
 			product.stamp(eventlist.getTime(),"Production started",name);
 			// start production
 			startProduction();
+			Printer.printStartedProduction(eventlist.getTime(), name);
 			// Flag that the product has arrived
 			return true;
 		}
