@@ -52,4 +52,12 @@ public class Location {
     public double getY() {
         return y;
     }
+    /**
+     * returns the manhattan distance between two locations.
+     * @param other
+     * @return
+     */
+    public double manhattan(Location other){
+        return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
+    }
 }
