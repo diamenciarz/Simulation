@@ -6,6 +6,8 @@
 
 package Simulation;
 
+import Simulation.City.City;
+
 import java.util.ArrayList;
 
 public class Simulation {
@@ -26,21 +28,28 @@ public class Simulation {
 	Queue q = new Queue();
 	Source s = new Source(q,l,"Source 1");
 	Sink si = new Sink("Sink 1");
-	
-	createMachines(q, si, l);
+
+	City city = new City();
+
+	// We set ambulances for each hexagon
+	for (int i = 0; i < City.city.size(); i++) {
+		City.city.get(i).setAmbulances(createMachines(q, si, l, i));
+	}
+
 	// start the eventlist
 	l.start(2000); // 2000 is maximum time
     }
 
 
 
-	//TO-DO: DO THIS METHOD
-	public static ArrayList<Machine> createMachines(Queue q, Sink si, CEventList l){
+
+
+	public static ArrayList<Machine> createMachines(Queue q, Sink si, CEventList l, int H){
+
 		ArrayList<Machine> machines = new ArrayList<>();
 		for (int i = 1; i <= N_MACHINES; i++) {
-			machines.add(new Machine(q, si, l, "Machine " + i));
+			machines.add(new Machine(q, si, l, "Machine_" + i + "_H_" + H));
 		}
-
 		return machines;
 	}
     

@@ -1,7 +1,7 @@
 package Simulation;
 
+import Simulation.City.Location;
 import helpers.Distributions;
-import helpers.Printer;
 
 /**
  *	Machine in a factory
@@ -28,6 +28,8 @@ public class Machine implements CProcess,ProductAcceptor
 	private double[] processingTimes;
 	/** Processing time iterator */
 	private int procCnt;
+	/** Location of ambulance */
+	private Location location;
 	
 
 	/**
@@ -99,7 +101,7 @@ public class Machine implements CProcess,ProductAcceptor
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		Printer.printFinished(eventlist.getTime(), name);
+		System.out.println("Product finished at time = " + tme);
 		// Remove product from system
 		product.stamp(tme,"Production complete",name);
 		sink.giveProduct(product);
@@ -127,7 +129,6 @@ public class Machine implements CProcess,ProductAcceptor
 			product.stamp(eventlist.getTime(),"Production started",name);
 			// start production
 			startProduction();
-			Printer.printStartedProduction(eventlist.getTime(), name);
 			// Flag that the product has arrived
 			return true;
 		}
@@ -168,6 +169,14 @@ public class Machine implements CProcess,ProductAcceptor
 				eventlist.stop();
 			}
 		}
+	}
+
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
 	}
 
 	public static double drawRandomExponential(double mean)

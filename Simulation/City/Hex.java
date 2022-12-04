@@ -1,29 +1,26 @@
 package Simulation.City;
+import Simulation.Machine;
+import Simulation.Simulation;
+
 import java.awt.*;
+import java.util.ArrayList;
 
 
 public class Hex {
     
 
     private boolean hospital;
-
     private final double[] coordinates;
     private  final Polygon polygon;
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
-    public static final int CIRCLE_HOSPITAL = 10;
-    public static double ambulanceX;
-    public static double ambulanceY;
-    public double vel = 0.001;
+    private ArrayList<Machine> ambulances;
 
     public Hex(boolean hospital, double x, double y){
 
         coordinates = new double[] {x, y};
-        ambulanceX = x;
-        ambulanceY = y;
         this.hospital = hospital;
         this.polygon = generatePoints();
-
     }
 
     /**
@@ -51,5 +48,13 @@ public class Hex {
 
     public double[] getCoordinates() {return coordinates;}
 
+    public ArrayList<Machine> getAmbulances() {return ambulances;}
 
+    public void setAmbulances(ArrayList<Machine> ambulances) {
+        this.ambulances = ambulances;
+
+        for (int i = 0; i < ambulances.size(); i++) {
+            this.ambulances.get(i);
+        }
+    }
 }

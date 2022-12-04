@@ -79,7 +79,7 @@ public class Source implements CProcess
 		list.add(this,0,interarrivalTimes[0]); //target,type,time
 	}
 	
-        @Override
+	@Override
 	public void execute(int type, double tme)
 	{
 		// show arrival
@@ -91,9 +91,9 @@ public class Source implements CProcess
 		// generate duration
 		if(meanArrTime>0)
 		{
-			double duration = drawRandomExponential(meanArrTime);
+			double duration = drawRandomExponential(tme);
 			// Create a new event in the eventlist
-			list.add(this,0,tme+duration); //target,type,time
+			list.add(this,type,tme+duration); //target,type,time
 		}
 		else
 		{
@@ -113,10 +113,9 @@ public class Source implements CProcess
 	{
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
-		//
+
 		double lambda = Distributions.lambda(time);
-		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -lambda*Math.log(u);
-		return res;
+		// Convert it into a exponentially distributed random variate with lambda
+		return  -lambda*Math.log(u);
 	}
 }
