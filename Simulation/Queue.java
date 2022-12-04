@@ -55,20 +55,26 @@ public class Queue implements ProductAcceptor
 	*/
 	public boolean giveProduct(Product p)
 	{
+
 		// Check if the machine accepts it
-		if(requests.size()<1)
+		if(requests.size()<1) {
 			row.add(p); // Otherwise store it
-		else
+
+
+		}else
 		{
 			boolean delivered = false;
 			while(!delivered & (requests.size()>0))
 			{
+
 				delivered=requests.get(0).giveProduct(p);
 				// remove the request regardless of whether or not the product has been accepted
 				requests.remove(0);
 			}
 			if(!delivered)
+
 				row.add(p); // Otherwise store it
+
 		}
 		return true;
 	}

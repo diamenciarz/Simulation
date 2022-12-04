@@ -84,10 +84,11 @@ public class Source implements CProcess
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		Printer.printArrived(eventList.getTime());
+		Printer.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
 		Product p = new Product();
 		p.stamp(tme,"Creation",name);
+
 		queue.giveProduct(p);
 		// generate duration
 		if(meanArrTime>0)
