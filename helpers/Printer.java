@@ -9,19 +9,25 @@ public class Printer {
 
     public static void printArrived(double time) {
         if (doDebugMessages) {
-            System.out.println("Arrival at time: " + (float) time);
+            System.out.println("Patient appeared at time: " + (float) time);
         }
     }
 
     public static void printStartedProduction(double time, String machineName) {
         if (doDebugMessages) {
-            System.out.println("Production started at machine " + machineName + " at time: " + (float) time);
+            System.out.println("Patient picked up by ambulance " + machineName + " at time: " + (float) time);
         }
     }
 
     public static void printFinished(double time, String machineName) {
         if (doDebugMessages) {
-            System.out.println("Product finished at " + machineName + " at time: " + (float) time);
+            System.out.println("Patient dropped off by " + machineName + " at time: " + (float) time);
+        }
+    }
+
+    public static void printQueueState(int queueLength){
+        if (doDebugMessages) {
+            System.out.println("There are " + queueLength + " elements in the queue");
         }
     }
 

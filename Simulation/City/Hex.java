@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Hex {
 
-    private boolean hospital;
+    private boolean isHospital;
     public final Location location;
     private final Polygon polygon;
     public static final int POINTS = 6;
@@ -18,10 +18,16 @@ public class Hex {
     public Hex(boolean hospital, double x, double y) {
 
         location = new Location(x, y);
-        this.hospital = hospital;
+        this.isHospital = hospital;
         this.polygon = generatePoints();
     }
+    
+    public Hex(boolean hospital, Location hexLocation) {
 
+        location = new Location(hexLocation);
+        this.isHospital = hospital;
+        this.polygon = generatePoints();
+    }
     /**
      * This method creates hexagons with a given center
      * 
@@ -43,11 +49,11 @@ public class Hex {
     }
 
     public void setHospital(boolean hospital) {
-        this.hospital = hospital;
+        this.isHospital = hospital;
     }
 
     public boolean isHospital() {
-        return hospital;
+        return isHospital;
     }
 
     public Location getLocation() {

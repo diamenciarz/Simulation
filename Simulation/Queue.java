@@ -2,6 +2,8 @@ package Simulation;
 
 import java.util.ArrayList;
 
+import helpers.Printer;
+
 /**
  *	Queue that stores products until they can be handled on a machine machine
  *	@author Joel Karel
@@ -10,9 +12,9 @@ import java.util.ArrayList;
 public class Queue implements ProductAcceptor
 {
 	/** List in which the products are kept */
-	private ArrayList<Product> row;
+	private ArrayList<Product> queue;
 	/** Requests from machine that will be handling the products */
-	private ArrayList<Machine> requests;
+	private ArrayList<Machine> idleMachines;
 	
 	/**
 	*	Initializes the queue and introduces a dummy machine
@@ -20,8 +22,8 @@ public class Queue implements ProductAcceptor
 	*/
 	public Queue()
 	{
-		row = new ArrayList<>();
-		requests = new ArrayList<>();
+		queue = new ArrayList<>();
+		idleMachines = new ArrayList<>();
 	}
 	
 	/**
@@ -31,12 +33,12 @@ public class Queue implements ProductAcceptor
 	public boolean askProduct(Machine machine)
 	{
 		// This is only possible with a non-empty queue
-		if(row.size()>0)
+		if(queue.size()>0)
 		{
 			// If the machine accepts the product
-			if(machine.giveProduct(row.get(0)))
+			if(machine.giveProduct(queue.get(0)))
 			{
-				row.remove(0);// Remove it from the queue
+				queue.remove(0);// Remove it from the queue
 				return true;
 			}
 			else
@@ -44,7 +46,7 @@ public class Queue implements ProductAcceptor
 		}
 		else
 		{
-			requests.add(machine);
+			idleMachines.add(machine);
 			return false; // queue request
 		}
 	}
@@ -56,20 +58,21 @@ public class Queue implements ProductAcceptor
 	public boolean giveProduct(Product p)
 	{
 		// Check if the machine accepts it
-		if(requests.size()<1)
-			row.add(p); // Otherwise store it
+		if(idleMachines.size()<1)
+		queue.add(p); // Otherwise store it
 		else
 		{
 			boolean delivered = false;
-			while(!delivered & (requests.size()>0))
+			while(!delivered & (idleMachines.size()>0))
 			{
-				delivered=requests.get(0).giveProduct(p);
+				delivered=idleMachines.get(0).giveProduct(p);
 				// remove the request regardless of whether or not the product has been accepted
-				requests.remove(0);
+				idleMachines.remove(0);
 			}
 			if(!delivered)
-				row.add(p); // Otherwise store it
+			queue.add(p); // Otherwise store it
 		}
+		Printer.printQueueState(queue.size());
 		return true;
 	}
 }

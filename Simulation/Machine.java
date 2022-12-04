@@ -4,6 +4,7 @@ import Simulation.City.City;
 import Simulation.City.Location;
 import helpers.Distributions;
 import helpers.Printer;
+import helpers.math.Vector2;
 
 /**
  * Machine in a factory
@@ -32,8 +33,10 @@ public class Machine implements CProcess, ProductAcceptor {
 	private int procCnt;
 	/** Location of ambulance */
 	private Location location;
-
+	/**The location of the hub that the ambulance is coming back to after dropping off a patient */
 	private Location hubLocation;
+	/** The timestamp at which this ambulance last visited the hospital */
+	private double lastHospitalVisitTime;
 
 	/**
 	 * Constructor
@@ -110,7 +113,7 @@ public class Machine implements CProcess, ProductAcceptor {
 		// show arrival
 		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
-		product.stamp(tme, "Production complete", name);
+		product.stamp(tme, "Patient dropped off at the hospital", name);
 		sink.giveProduct(product);
 		product = null;
 		// set machine status to idle
@@ -132,7 +135,8 @@ public class Machine implements CProcess, ProductAcceptor {
 			// accept the product
 			product = p;
 			// mark starting time
-			product.stamp(eventlist.getTime(), "Production started", name);
+			Printer.printStartedProduction(eventlist.getTime(), name);
+			product.stamp(eventlist.getTime(), "Patient picked up", name);
 			// start production
 			startProduction();
 			// Flag that the product has arrived
@@ -152,7 +156,11 @@ public class Machine implements CProcess, ProductAcceptor {
 	private void startProduction() {
 		// generate duration
 		if (meanProcTime > 0) {
+			//Simulate the ambulance travelling in the meantime and calculate, where the ambulance is currently.
+			location = new Location(getCurrentPosition());
 			double patientProcessingDuration = drawRandomExponential(1);
+			//Generate random position for the patient
+			//TODO: generate it before assigning the position to the ambulance, so that we can schedule based on the distance
 			Location patientLocation = new Location();
 			double distanceToPatient = patientLocation.manhattan(location);
 			double distanceToHospital = patientLocation.manhattan(City.getHexMap().get(0).location);
@@ -180,6 +188,17 @@ public class Machine implements CProcess, ProductAcceptor {
 
 	public void setLocation(Location location) {
 		this.location = location;
+		
+	}
+
+	public Vector2 getCurrentPosition(){
+		Vector2 vectorFromHospitalToHub = new Vector2(hubLocation.getX(), hubLocation.getY());
+
+		double timeSinceHospitalVisit = eventlist.getTime() - lastHospitalVisitTime;
+		double travelTimeFromHospitalToHub = vectorFromHospitalToHub.length();
+		double fractionOfTheWayToHub = Math.min(timeSinceHospitalVisit / travelTimeFromHospitalToHub, 1);
+
+		return vectorFromHospitalToHub.scale(fractionOfTheWayToHub);
 	}
 
 	public static double drawRandomExponential(double mean) {

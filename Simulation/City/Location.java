@@ -1,5 +1,9 @@
 package Simulation.City;
 
+import java.util.Vector;
+
+import helpers.math.Vector2;
+
 public class Location {
     private double x;
     private double y;
@@ -15,7 +19,16 @@ public class Location {
         this.x = x;
         this.y = y;
     }
+    
+    public Location(Vector2 position) {
+        this.x = position.x;
+        this.y = position.y;
+    }
 
+    public Location(Location copyLocation) {
+        this.x = copyLocation.x;
+        this.y = copyLocation.y;
+    }
     /* TODO: set the region according to the hexagon */
     public void createLocation() {
         double x;

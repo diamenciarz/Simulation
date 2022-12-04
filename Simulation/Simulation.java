@@ -28,6 +28,8 @@ public class Simulation {
 		CEventList l = new CEventList();
 		Queue q = new Queue();
 		Source s = new Source(q, l, "Source 1");
+		Source s2 = new Source(q, l, "Source 2");
+		Source s3 = new Source(q, l, "Source 3");
 		Sink si = new Sink("Sink 1");
 
 
