@@ -15,6 +15,12 @@ public class Distributions {
                 factorial(n - 1);
     }
 
+
+    public static double lambda(double time){
+        return 3 - 2 * Math.sin((5 * (Math.PI + time) )/ 6 * Math.PI);
+    }
+
+
     public static double factorial(double n){
         if(n == 0){
             return 1;
@@ -75,13 +81,6 @@ public class Distributions {
         }
 
         return c;
+        
     }
-    public static void main(String[] args) {
-
-        double x = Erlang3CFD(10);
-
-        System.out.println(bisection(x));
-
-    }
-
 }

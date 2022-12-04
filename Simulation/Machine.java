@@ -143,8 +143,9 @@ public class Machine implements CProcess,ProductAcceptor
 		// generate duration
 		if(meanProcTime>0)
 		{
-			double duration = drawRandomExponential(meanProcTime);
-			//double duration = Distributions.Erlang3PDF();
+			//double duration = drawRandomExponential(meanProcTime);
+			double duration = Distributions.Erlang3PDF();
+
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
 			eventlist.add(this,0,tme+duration); //target,type,time

@@ -1,5 +1,7 @@
 package Simulation;
 
+import helpers.Distributions;
+
 /**
  *	A source of products
  *	This class implements CProcess so that it can execute events.
@@ -107,12 +109,14 @@ public class Source implements CProcess
 		}
 	}
 	
-	public static double drawRandomExponential(double mean)
+	public static double drawRandomExponential(double time)
 	{
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
+		//
+		double lambda = Distributions.lambda(time);
 		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -mean*Math.log(u);
+		double res = -lambda*Math.log(u);
 		return res;
 	}
 }
