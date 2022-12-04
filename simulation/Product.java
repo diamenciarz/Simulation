@@ -1,12 +1,12 @@
-package simulation;
+package Simulation;
 
 import java.util.ArrayList;
 /**
- *	Product that is sent through the system
+ *	Product that is send trough the system
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class Product
+class Product
 {
 	/** Stamps for the products */
 	private ArrayList<Double> times;
