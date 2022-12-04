@@ -43,7 +43,7 @@ public class Simulation {
 		}
 
 		// start the eventlist
-		l.start(200); // 2000 is maximum time
+		l.start(200000); // 2000 is maximum time
 
 	}
 
@@ -52,7 +52,6 @@ public class Simulation {
 
 		ArrayList<Machine> machines = new ArrayList<>();
 		for (int i = 1; i <= ambulanceCount; i++) {
-			System.out.println(i);
 			Machine ambulance = new Machine(queue, sink, eventList, "Machine_" + i + "_H_" + hexIndex);
 			machines.add(ambulance);
 			Hex hubPosition = City.getHexMap().get(hexIndex);

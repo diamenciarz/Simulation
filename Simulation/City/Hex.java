@@ -13,6 +13,7 @@ public class Hex {
     private final Polygon polygon;
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
+    public static double APHOTHEMA = Math.sqrt((Math.pow(RADIUS, 2) + Math.pow(RADIUS, 2) / 2));
     private ArrayList<Machine> ambulances;
 
     public Hex(boolean hospital, double x, double y) {

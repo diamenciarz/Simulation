@@ -7,7 +7,6 @@ import helpers.math.Vector2;
 public class Location {
     private double x;
     private double y;
-    private int region;
 
     public static double hexagonSize;
 
@@ -29,17 +28,16 @@ public class Location {
         this.x = copyLocation.x;
         this.y = copyLocation.y;
     }
-    /* TODO: set the region according to the hexagon */
+
     public void createLocation() {
         double x;
         double y;
         do {
-            x = Math.random() * hexagonSize;
-            y = Math.random() * hexagonSize;
+            x = Math.random() * 6 * Hex.RADIUS;
+            y = Math.random() * 6 * Hex.APHOTHEMA;
         } while (!inside(x, y));
         this.x = x;
         this.y = y;
-        this.region = (int) (Math.random() * 7);
     }
 
     public boolean inside(double x, double y) {

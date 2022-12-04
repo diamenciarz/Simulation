@@ -10,6 +10,7 @@ class Product
 {
 	/** Stamps for the products */
 	private ArrayList<Double> times;
+	private ArrayList<Double> kjb;
 	private ArrayList<String> events;
 	private ArrayList<String> stations;
 	
