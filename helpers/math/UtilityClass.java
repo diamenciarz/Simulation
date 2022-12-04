@@ -1,4 +1,4 @@
-package helpers.meth;
+package helpers.math;
 
 import java.awt.*;
 

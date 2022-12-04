@@ -1,4 +1,4 @@
-package helpers.meth;
+package helpers.math;
 
 /**
  * An object representing a 2D vector and a suite of common methods used for efficient computation
