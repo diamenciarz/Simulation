@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 
 public class City {
-    
-
+    /**
+     * city.get(0) is for the hex with the hospical
+     */
     public static ArrayList<Hex> city;
     public static int CENTER_X = 0;
     public static int CENTER_Y = 0;

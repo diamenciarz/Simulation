@@ -1,17 +1,18 @@
 package Simulation;
 
+import Simulation.City.City;
 import Simulation.City.Location;
 import helpers.Distributions;
 import helpers.Printer;
 
 /**
- *	Machine in a factory
- *	@author Joel Karel
- *	@version %I%, %G%
+ * Machine in a factory
+ * 
+ * @author Joel Karel
+ * @version %I%, %G%
  */
-public class Machine implements CProcess,ProductAcceptor
-{
-	/** Product that is being handled  */
+public class Machine implements CProcess, ProductAcceptor {
+	/** Product that is being handled */
 	private Product product;
 	/** Eventlist that will manage events */
 	private final CEventList eventlist;
@@ -31,142 +32,143 @@ public class Machine implements CProcess,ProductAcceptor
 	private int procCnt;
 	/** Location of ambulance */
 	private Location location;
-	
+
+	private Location hubLocation;
 
 	/**
-	*	Constructor
-	*        Service times are exponentially distributed with mean 30
-	*	@param q	Queue from which the machine has to take products
-	*	@param s	Where to send the completed products
-	*	@param e	Eventlist that will manage events
-	*	@param n	The name of the machine
-	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n)
-	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=30;
+	 * Constructor
+	 * Service times are exponentially distributed with mean 30
+	 * 
+	 * @param q Queue from which the machine has to take products
+	 * @param s Where to send the completed products
+	 * @param e Eventlist that will manage events
+	 * @param n The name of the machine
+	 */
+	public Machine(Queue q, ProductAcceptor s, CEventList e, String n) {
+		status = 'i';
+		queue = q;
+		sink = s;
+		eventlist = e;
+		name = n;
+		meanProcTime = 30;
 		queue.askProduct(this);
 	}
 
 	/**
-	*	Constructor
-	*        Service times are exponentially distributed with specified mean
-	*	@param q	Queue from which the machine has to take products
-	*	@param s	Where to send the completed products
-	*	@param e	Eventlist that will manage events
-	*	@param n	The name of the machine
-	*        @param m	Mean processing time
-	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double m)
-	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=m;
-		queue.askProduct(this);
-	}
-	
-	/**
-	*	Constructor
-	*        Service times are pre-specified
-	*	@param q	Queue from which the machine has to take products
-	*	@param s	Where to send the completed products
-	*	@param e	Eventlist that will manage events
-	*	@param n	The name of the machine
-	*        @param st	service times
-	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double[] st)
-	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=-1;
-		processingTimes=st;
-		procCnt=0;
+	 * Constructor
+	 * Service times are exponentially distributed with specified mean
+	 * 
+	 * @param q Queue from which the machine has to take products
+	 * @param s Where to send the completed products
+	 * @param e Eventlist that will manage events
+	 * @param n The name of the machine
+	 * @param m Mean processing time
+	 */
+	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double m) {
+		status = 'i';
+		queue = q;
+		sink = s;
+		eventlist = e;
+		name = n;
+		meanProcTime = m;
 		queue.askProduct(this);
 	}
 
 	/**
-	*	Method to have this object execute an event
-	*	@param type	The type of the event that has to be executed
-	*	@param tme	The current time
-	*/
-	public void execute(int type, double tme)
-	{
+	 * Constructor
+	 * Service times are pre-specified
+	 * 
+	 * @param q  Queue from which the machine has to take products
+	 * @param s  Where to send the completed products
+	 * @param e  Eventlist that will manage events
+	 * @param n  The name of the machine
+	 * @param st service times
+	 */
+	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double[] st) {
+		status = 'i';
+		queue = q;
+		sink = s;
+		eventlist = e;
+		name = n;
+		meanProcTime = -1;
+		processingTimes = st;
+		procCnt = 0;
+		queue.askProduct(this);
+	}
+
+	public void setHub(Location hubL){
+		hubLocation = hubL;
+	}
+
+	/**
+	 * Method to have this object execute an event
+	 * 
+	 * @param type The type of the event that has to be executed
+	 * @param tme  The current time
+	 */
+	public void execute(int type, double tme) {
 		// show arrival
 		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
-		product.stamp(tme,"Production complete",name);
+		product.stamp(tme, "Production complete", name);
 		sink.giveProduct(product);
-		product=null;
+		product = null;
 		// set machine status to idle
-		status='i';
+		status = 'i';
 		// Ask the queue for products
 		queue.askProduct(this);
 	}
-	
+
 	/**
-	*	Let the machine accept a product and let it start handling it
-	*	@param p	The product that is offered
-	*	@return	true if the product is accepted and started, false in all other cases
-	*/
-        @Override
-	public boolean giveProduct(Product p)
-	{
+	 * Let the machine accept a product and let it start handling it
+	 * 
+	 * @param p The product that is offered
+	 * @return true if the product is accepted and started, false in all other cases
+	 */
+	@Override
+	public boolean giveProduct(Product p) {
 		// Only accept something if the machine is idle
-		if(status=='i')
-		{
+		if (status == 'i') {
 			// accept the product
-			product=p;
+			product = p;
 			// mark starting time
-			product.stamp(eventlist.getTime(),"Production started",name);
+			product.stamp(eventlist.getTime(), "Production started", name);
 			// start production
 			startProduction();
 			// Flag that the product has arrived
 			return true;
 		}
 		// Flag that the product has been rejected
-		else return false;
-	}
-	
-	/**
-	*	Starting routine for the production
-	*	Start the handling of the current product with an exponentionally distributed processingtime with average 30
-	*	This time is placed in the eventlist
-	*/
-	private void startProduction()
-	{
-		// generate duration
-		if(meanProcTime>0)
-		{
-			//double duration = drawRandomExponential(meanProcTime);
-			double duration = Distributions.Erlang3PDF();
-
-			// Create a new event in the eventlist
-			double tme = eventlist.getTime();
-			eventlist.add(this,0,tme+duration); //target,type,time
-			// set status to busy
-			status='b';
-		}
 		else
-		{
-			if(processingTimes.length>procCnt)
-			{
-				eventlist.add(this,0,eventlist.getTime()+processingTimes[procCnt]); //target,type,time
+			return false;
+	}
+
+	/**
+	 * Starting routine for the production
+	 * Start the handling of the current product with an exponentionally distributed
+	 * processingtime with average 30
+	 * This time is placed in the eventlist
+	 */
+	private void startProduction() {
+		// generate duration
+		if (meanProcTime > 0) {
+			double patientProcessingDuration = drawRandomExponential(1);
+			Location patientLocation = new Location();
+			double distanceToPatient = patientLocation.manhattan(location);
+			double distanceToHospital = patientLocation.manhattan(City.city.get(0).location);
+			// Create a new event in the eventlist
+			double currentTime = eventlist.getTime();
+			double totalTime = patientProcessingDuration + distanceToPatient + distanceToHospital;
+			eventlist.add(this, 0, currentTime + totalTime); // target,type,time
+			// set status to busy
+			status = 'b';
+		} else {
+			if (processingTimes.length > procCnt) {
+				eventlist.add(this, 0, eventlist.getTime() + processingTimes[procCnt]); // target,type,time
 				// set status to busy
-				status='b';
+				status = 'b';
 				procCnt++;
-			}
-			else
-			{
+			} else {
 				eventlist.stop();
 			}
 		}
@@ -180,12 +182,11 @@ public class Machine implements CProcess,ProductAcceptor
 		this.location = location;
 	}
 
-	public static double drawRandomExponential(double mean)
-	{
+	public static double drawRandomExponential(double mean) {
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
 		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -mean*Math.log(u);
+		double res = -mean * Math.log(u);
 		return res;
 	}
 }

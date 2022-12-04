@@ -10,7 +10,7 @@ public class Hex {
     
 
     private boolean hospital;
-    private final double[] coordinates;
+    public final Location location;
     private  final Polygon polygon;
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
@@ -18,7 +18,7 @@ public class Hex {
 
     public Hex(boolean hospital, double x, double y){
 
-        coordinates = new double[] {x, y};
+        location = new Location(x,y);
         this.hospital = hospital;
         this.polygon = generatePoints();
     }
@@ -32,8 +32,8 @@ public class Hex {
         Polygon p = new Polygon();
         for (int i = 0; i < POINTS+1; i++) {
             p.addPoint(
-                    (int) (coordinates[0] + RADIUS * Math.cos(i * 2 * Math.PI / POINTS)),
-                    (int) (coordinates[1] + RADIUS * Math.sin(i * 2 * Math.PI / POINTS))
+                    (int) (location.getX() + RADIUS * Math.cos(i * 2 * Math.PI / POINTS)),
+                    (int) (location.getY() + RADIUS * Math.sin(i * 2 * Math.PI / POINTS))
             );
         }
         return p;
@@ -46,7 +46,7 @@ public class Hex {
 
     public boolean isHospital() {return hospital;}
 
-    public double[] getCoordinates() {return coordinates;}
+    public Location getLocation() {return location;}
 
     public ArrayList<Machine> getAmbulances() {return ambulances;}
 

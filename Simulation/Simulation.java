@@ -7,6 +7,7 @@
 package Simulation;
 
 import Simulation.City.City;
+import Simulation.City.Hex;
 
 import java.util.ArrayList;
 
@@ -45,7 +46,10 @@ public class Simulation {
 
 		ArrayList<Machine> machines = new ArrayList<>();
 		for (int i = 1; i <= ambulance_count; i++) {
-			machines.add(new Machine(queue, sink, eventList, "Machine_" + i + "_H_" + hex_index));
+			Machine ambulance = new Machine(queue, sink, eventList, "Machine_" + i + "_H_" + hex_index);
+			machines.add(ambulance);
+			Hex hubPosition =City.city.get(hex_index);
+			ambulance.setHub(hubPosition.location);
 		}
 		return machines;
 	}

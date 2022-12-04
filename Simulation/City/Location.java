@@ -11,6 +11,11 @@ public class Location {
         createLocation();
     }
 
+    public Location(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+
     /*TODO: set the region according to the hexagon */
     public void createLocation(){
         double x;
