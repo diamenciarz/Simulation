@@ -11,7 +11,12 @@ public class Location {
         createLocation();
     }
 
-    /*TODO: set the region according to the hexagon */
+    public Location(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+
     public void createLocation(){
         double x;
         double y;
@@ -24,7 +29,10 @@ public class Location {
         this.region = (int)(Math.random()*7);
     }
 
-    //TODO: Write method to check whether the values x and y make a valid position
+    public double manhattan(Location other){
+        return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
+    }
+
     public boolean inside(double x, double y){
 
         for (int i = 0; i < City.city.size(); i++) {

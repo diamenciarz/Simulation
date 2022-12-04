@@ -187,4 +187,6 @@ public class Machine implements CProcess,ProductAcceptor
 		double res = -mean*Math.log(u);
 		return res;
 	}
+
+
 }

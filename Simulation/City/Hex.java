@@ -15,10 +15,12 @@ public class Hex {
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
     private ArrayList<Machine> ambulances;
+    private Location location;
 
     public Hex(boolean hospital, double x, double y){
 
         coordinates = new double[] {x, y};
+        location = new Location((int) x, (int) y);
         this.hospital = hospital;
         this.polygon = generatePoints();
     }
@@ -54,7 +56,7 @@ public class Hex {
         this.ambulances = ambulances;
 
         for (int i = 0; i < ambulances.size(); i++) {
-            this.ambulances.get(i);
+            this.ambulances.get(i).setLocation(location);
         }
     }
 }
