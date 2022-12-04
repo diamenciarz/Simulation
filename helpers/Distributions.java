@@ -1,5 +1,7 @@
 package helpers;
 
+import Simulation.Simulation;
+
 public class Distributions {
 
 
@@ -7,7 +9,7 @@ public class Distributions {
 
         double x = Math.random();
         double lambda = 1;
-        double n = 3;
+        double n = Simulation.N_MACHINES;
         return (lambda * Math.pow((lambda * x), (n - 1)) * Math.pow(Math.E, (-lambda*x)))
                 /
                 factorial(n - 1);
