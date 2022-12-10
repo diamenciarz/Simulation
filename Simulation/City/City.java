@@ -24,7 +24,40 @@ public class City {
             hexMap = generateCity();
             alreadyGeneratedCity = true;
         }
-        return hexMap;
+        return copyHexMap();
+    }
+
+    private static ArrayList<Hex> copyHexMap() {
+        ArrayList<Hex> hexes = new ArrayList<>();
+        for (Hex hex : hexMap) {
+            hexes.add(new Hex(hex.isHospital(), hex.getPosition()));
+        }
+        return hexes;
+    }
+
+    public static ArrayList<Hex> getClosestHexesTo(Vector2 position) {
+        ArrayList<Hex> unsortedHexes = City.getHexMap();
+        ArrayList<Hex> sortedHexes = new ArrayList<>();
+
+        for (int index = unsortedHexes.size() - 1; index > 0; index--) {
+            Hex closestHex = findClosestHex(unsortedHexes, position);
+            sortedHexes.add(closestHex);
+            unsortedHexes.remove(closestHex);
+        }
+        return sortedHexes;
+    }
+
+    private static Hex findClosestHex(ArrayList<Hex> hexes, Vector2 position) {
+        Hex currentClosestHex = hexes.get(0);
+        double currencShortestDistance = currentClosestHex.position.distanceTo(position);
+        for (Hex hex : hexes) {
+            double newDistance = hex.position.distanceTo(position);
+            if (newDistance < currencShortestDistance) {
+                currentClosestHex = hex;
+                currencShortestDistance = newDistance;
+            }
+        }
+        return currentClosestHex;
     }
 
     private static ArrayList<Hex> generateCity() {
