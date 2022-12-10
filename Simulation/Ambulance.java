@@ -4,7 +4,6 @@ import helpers.Distributions;
 import helpers.Printer;
 import helpers.math.Vector2;
 import simulation.city.City;
-import simulation.city.Location;
 
 /**
  * Machine in a factory
@@ -32,9 +31,9 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	/** Processing time iterator */
 	private int procCnt;
 	/** Location of ambulance */
-	private Location location;
+	private Vector2 position;
 	/**The location of the hub that the ambulance is coming back to after dropping off a patient */
-	private Location hubLocation;
+	private Vector2 hubPosition;
 	/** The timestamp at which this ambulance last visited the hospital */
 	private double lastHospitalVisitTime;
 
@@ -99,8 +98,8 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		queue.askProduct(this);
 	}
 
-	public void setHub(Location hubL){
-		hubLocation = hubL;
+	public void setHub(Vector2 newPosition){
+		hubPosition = newPosition;
 	}
 
 	/**
@@ -118,7 +117,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		patient = null;
 		// set machine status to idle
 		status = 'i';
-		location = new Location(0, 0);
+		position = City.centerPosition;
 		// Ask the queue for products
 		queue.askProduct(this);
 	}
@@ -158,12 +157,12 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		// generate duration
 		if (meanProcTime > 0) {
 			//Simulate the ambulance travelling in the meantime and calculate, where the ambulance is currently.
-			location = new Location(getCurrentPosition());
+			position = getCurrentPosition();
 			double patientProcessingDuration = drawRandomExponential(1);
 			//Generate random position for the patient
 			//TODO: generate it before assigning the position to the ambulance, so that we can schedule based on the distance
-			double distanceToPatient = patient.getLocation().manhattanDistance(location);
-			double distanceToHospital = patient.getLocation().manhattanDistance(City.getHexMap().get(0).location);
+			double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
+			double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
 			// Create a new event in the eventlist
 			double currentTime = eventlist.getTime();
 			double totalTime = patientProcessingDuration + distanceToPatient + distanceToHospital;
@@ -182,13 +181,13 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		}
 	}
 
-	public void setLocation(Location location) {
-		this.location = location;
+	public void setPosition(Vector2 newPosition) {
+		this.position = newPosition;
 		
 	}
 
 	public Vector2 getCurrentPosition(){
-		Vector2 vectorFromHospitalToHub = new Vector2(hubLocation.getX(), hubLocation.getY());
+		Vector2 vectorFromHospitalToHub = new Vector2(hubPosition.x, hubPosition.y);
 
 		double timeSinceHospitalVisit = eventlist.getTime() - lastHospitalVisitTime;
 		double travelTimeFromHospitalToHub = vectorFromHospitalToHub.length();

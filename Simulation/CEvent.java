@@ -6,8 +6,6 @@
  */
 package simulation;
 
-import simulation.city.Location;
-
 public class CEvent {
 	/** The object involved with the event */
 	private CProcess target;
@@ -15,8 +13,6 @@ public class CEvent {
 	private int type;
 	/** The time on which the event will be executed */
 	private double executionTime;
-
-	private Location location;
 
 	/**
 	 * Constructor for objects
@@ -29,7 +25,6 @@ public class CEvent {
 		target = dl;
 		type = tp;
 		executionTime = tme;
-		location = new Location();
 
 	}
 
@@ -47,13 +42,5 @@ public class CEvent {
 	 */
 	public double getExecutionTime() {
 		return executionTime;
-	}
-
-	public Location getLocation() {
-		return location;
-	}
-
-	public void setLocation(Location location) {
-		this.location = location;
 	}
 }

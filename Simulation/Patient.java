@@ -2,8 +2,8 @@ package simulation;
 
 import java.util.ArrayList;
 
+import helpers.RandGenerator;
 import helpers.math.Vector2;
-import simulation.city.Location;
 
 /**
  *	Product that is send trough the system
@@ -13,11 +13,11 @@ import simulation.city.Location;
 class Patient
 {
 	/** Stamps for the products */
-	private ArrayList<Double> times;
-	private ArrayList<Double> kjb;
-	private ArrayList<String> events;
-	private ArrayList<String> stations;
-	private Location location;
+	public ArrayList<Double> times;
+	public ArrayList<Double> kjb;
+	public ArrayList<String> events;
+	public ArrayList<String> stations;
+	public Vector2 position;
 	
 	/** 
 	*	Constructor for the product
@@ -29,7 +29,7 @@ class Patient
 		times = new ArrayList<>();
 		events = new ArrayList<>();
 		stations = new ArrayList<>();
-		location = new Location();
+		position = RandGenerator.generateRandomPosition();
 	}
 	
 	
@@ -38,25 +38,6 @@ class Patient
 		times.add(time);
 		events.add(event);
 		stations.add(station);
-	}
-	
-	public ArrayList<Double> getTimes()
-	{
-		return times;
-	}
-
-	public ArrayList<String> getEvents()
-	{
-		return events;
-	}
-
-	public Location getLocation(){
-		return location;
-	}
-
-	public ArrayList<String> getStations()
-	{
-		return stations;
 	}
 	
 	public double[] getTimesAsArray()

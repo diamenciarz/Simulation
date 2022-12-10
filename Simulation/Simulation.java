@@ -55,7 +55,7 @@ public class Simulation {
 			Ambulance ambulance = new Ambulance(queue, sink, eventList, "Machine_" + i + "_H_" + hexIndex);
 			machines.add(ambulance);
 			Hex hubPosition = City.getHexMap().get(hexIndex);
-			ambulance.setHub(hubPosition.location);
+			ambulance.setHub(hubPosition.position);
 		}
 		return machines;
 	}

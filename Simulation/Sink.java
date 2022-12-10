@@ -40,9 +40,9 @@ public class Sink implements ProductAcceptor
 		number++;
 		products.add(p);
 		// store stamps
-		ArrayList<Double> t = p.getTimes();
-		ArrayList<String> e = p.getEvents();
-		ArrayList<String> s = p.getStations();
+		ArrayList<Double> t = p.times;
+		ArrayList<String> e = p.events;
+		ArrayList<String> s = p.stations;
 
 		for(int i=0;i<t.size();i++)
 		{

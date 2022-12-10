@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import helpers.Printer;
 import helpers.math.Vector2;
-import simulation.city.Location;
 
 /**
  * Queue that stores products until they can be handled on a machine machine
@@ -73,7 +72,7 @@ public class Queue implements ProductAcceptor {
 	}
 
 	private Ambulance findClosestAmbulance(Patient patient) {
-		Vector2 patientPosition = patient.getLocation().getPosition();
+		Vector2 patientPosition = patient.position;
 		Ambulance currentClosestAmbulance = idleMachines.get(0);
 		double currentClosestDistance = currentClosestAmbulance.getCurrentPosition()
 				.manhattanDistanceTo(patientPosition);

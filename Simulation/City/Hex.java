@@ -3,32 +3,27 @@ package simulation.city;
 import java.awt.*;
 import java.util.ArrayList;
 
+import helpers.math.Vector2;
 import simulation.Ambulance;
 import simulation.Simulation;
 
 public class Hex {
 
     private boolean isHospital;
-    public final Location location;
+    public final Vector2 position;
     private final Polygon polygon;
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
     public static double APHOTHEMA = Math.sqrt((Math.pow(RADIUS, 2) + Math.pow(RADIUS, 2) / 2));
     private ArrayList<Ambulance> ambulances;
 
-    public Hex(boolean hospital, double x, double y) {
+    public Hex(boolean hospital, Vector2 newPosition) {
 
-        location = new Location(x, y);
+        position = newPosition.copy();
         this.isHospital = hospital;
         this.polygon = generatePoints();
     }
-    
-    public Hex(boolean hospital, Location hexLocation) {
 
-        location = new Location(hexLocation);
-        this.isHospital = hospital;
-        this.polygon = generatePoints();
-    }
     /**
      * This method creates hexagons with a given center
      * 
@@ -39,8 +34,8 @@ public class Hex {
         Polygon p = new Polygon();
         for (int i = 0; i < POINTS + 1; i++) {
             p.addPoint(
-                    (int) (location.getX() + RADIUS * Math.cos(i * 2 * Math.PI / POINTS)),
-                    (int) (location.getY() + RADIUS * Math.sin(i * 2 * Math.PI / POINTS)));
+                    (int) (position.x + RADIUS * Math.cos(i * 2 * Math.PI / POINTS)),
+                    (int) (position.y + RADIUS * Math.sin(i * 2 * Math.PI / POINTS)));
         }
         return p;
     }
@@ -57,8 +52,8 @@ public class Hex {
         return isHospital;
     }
 
-    public Location getLocation() {
-        return location;
+    public Vector2 getPosition() {
+        return position;
     }
 
     public ArrayList<Ambulance> getAmbulances() {
@@ -69,8 +64,8 @@ public class Hex {
         this.ambulances = ambulances;
 
         for (int i = 0; i < ambulances.size(); i++) {
-            this.ambulances.get(i).setLocation(location);
-            this.ambulances.get(i).setHub(location);
+            this.ambulances.get(i).setPosition(position);
+            this.ambulances.get(i).setHub(position);
         }
     }
 }

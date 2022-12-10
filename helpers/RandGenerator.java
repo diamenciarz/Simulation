@@ -1,5 +1,9 @@
 package helpers;
 
+import helpers.math.Vector2;
+import simulation.city.City;
+import simulation.city.Hex;
+
 public class RandGenerator {
 
     public static void main(String[] args) {
@@ -31,6 +35,15 @@ public class RandGenerator {
     private static double generateDelay(double min, double max) {
         double rand = Math.random() * (max - min) + min;
         return (double) (Math.round(rand * 10)) / 10;
+    }
+
+    public static Vector2 generateRandomPosition(){
+        Vector2 randomPosition = Vector2.zeroVector();
+        do {
+            randomPosition.x = Math.random() * 6 * Hex.RADIUS;
+            randomPosition.y = Math.random() * 6 * Hex.APHOTHEMA;
+        } while (!City.isPositionOnMap(randomPosition));
+        return randomPosition;
     }
 
 }
