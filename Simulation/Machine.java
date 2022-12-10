@@ -1,10 +1,10 @@
-package Simulation;
+package simulation;
 
-import Simulation.City.City;
-import Simulation.City.Location;
 import helpers.Distributions;
 import helpers.Printer;
 import helpers.math.Vector2;
+import simulation.city.City;
+import simulation.city.Location;
 
 /**
  * Machine in a factory
@@ -14,7 +14,7 @@ import helpers.math.Vector2;
  */
 public class Machine implements CProcess, ProductAcceptor {
 	/** Product that is being handled */
-	private Product product;
+	private Patient patient;
 	/** Eventlist that will manage events */
 	private final CEventList eventlist;
 	/** Queue from which the machine has to take products */
@@ -113,9 +113,9 @@ public class Machine implements CProcess, ProductAcceptor {
 		// show arrival
 		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
-		product.stamp(tme, "Patient dropped off at the hospital", name);
-		sink.giveProduct(product);
-		product = null;
+		patient.stamp(tme, "Patient dropped off at the hospital", name);
+		sink.givePatient(patient);
+		patient = null;
 		// set machine status to idle
 		status = 'i';
 		location = new Location(0, 0);
@@ -130,16 +130,16 @@ public class Machine implements CProcess, ProductAcceptor {
 	 * @return true if the product is accepted and started, false in all other cases
 	 */
 	@Override
-	public boolean giveProduct(Product p) {
+	public boolean givePatient(Patient p) {
 		// Only accept something if the machine is idle
 		if (status == 'i') {
 			// accept the product
-			product = p;
+			patient = p;
 			// mark starting time
 			Printer.printStartedProduction(eventlist.getTime(), name);
-			product.stamp(eventlist.getTime(), "Patient picked up", name);
+			patient.stamp(eventlist.getTime(), "Patient picked up", name);
 			// start production
-			startProduction();
+			handlePatient();
 			// Flag that the product has arrived
 			return true;
 		}
@@ -154,7 +154,7 @@ public class Machine implements CProcess, ProductAcceptor {
 	 * processingtime with average 30
 	 * This time is placed in the eventlist
 	 */
-	private void startProduction() {
+	private void handlePatient() {
 		// generate duration
 		if (meanProcTime > 0) {
 			//Simulate the ambulance travelling in the meantime and calculate, where the ambulance is currently.
@@ -162,9 +162,8 @@ public class Machine implements CProcess, ProductAcceptor {
 			double patientProcessingDuration = drawRandomExponential(1);
 			//Generate random position for the patient
 			//TODO: generate it before assigning the position to the ambulance, so that we can schedule based on the distance
-			Location patientLocation = new Location();
-			double distanceToPatient = patientLocation.manhattan(location);
-			double distanceToHospital = patientLocation.manhattan(City.getHexMap().get(0).location);
+			double distanceToPatient = patient.getLocation().manhattanDistance(location);
+			double distanceToHospital = patient.getLocation().manhattanDistance(City.getHexMap().get(0).location);
 			// Create a new event in the eventlist
 			double currentTime = eventlist.getTime();
 			double totalTime = patientProcessingDuration + distanceToPatient + distanceToHospital;
@@ -181,10 +180,6 @@ public class Machine implements CProcess, ProductAcceptor {
 				eventlist.stop();
 			}
 		}
-	}
-
-	public Location getLocation() {
-		return location;
 	}
 
 	public void setLocation(Location location) {

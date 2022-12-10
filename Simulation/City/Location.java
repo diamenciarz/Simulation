@@ -1,6 +1,4 @@
-package Simulation.City;
-
-import java.util.Vector;
+package simulation.city;
 
 import helpers.math.Vector2;
 
@@ -11,7 +9,7 @@ public class Location {
     public static double hexagonSize;
 
     public Location() {
-        createLocation();
+        createLocationInBoundaries();
     }
 
     public Location(double x, double y) {
@@ -29,7 +27,7 @@ public class Location {
         this.y = copyLocation.y;
     }
 
-    public void createLocation() {
+    private void createLocationInBoundaries() {
         double x;
         double y;
         do {
@@ -58,13 +56,17 @@ public class Location {
         return y;
     }
 
+    public Vector2 getPosition(){
+		return new Vector2(x, y);
+	}
+
     /**
      * returns the manhattan distance between two locations.
      * 
      * @param other
      * @return
      */
-    public double manhattan(Location other) {
+    public double manhattanDistance(Location other) {
         return Math.abs(this.x - other.getX()) + Math.abs(this.y - other.getY());
     }
 
