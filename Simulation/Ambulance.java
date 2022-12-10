@@ -1,5 +1,7 @@
 package simulation;
 
+import javax.swing.ToolTipManager;
+
 import helpers.Distributions;
 import helpers.Printer;
 import helpers.math.Vector2;
@@ -32,7 +34,10 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	private int procCnt;
 	/** Location of ambulance */
 	private Vector2 position;
-	/**The location of the hub that the ambulance is coming back to after dropping off a patient */
+	/**
+	 * The location of the hub that the ambulance is coming back to after dropping
+	 * off a patient
+	 */
 	private Vector2 hubPosition;
 	/** The timestamp at which this ambulance last visited the hospital */
 	private double lastHospitalVisitTime;
@@ -98,7 +103,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		queue.askProduct(this);
 	}
 
-	public void setHub(Vector2 newPosition){
+	public void setHub(Vector2 newPosition) {
 		hubPosition = newPosition;
 	}
 
@@ -156,17 +161,14 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	private void handlePatient() {
 		// generate duration
 		if (meanProcTime > 0) {
-			//Simulate the ambulance travelling in the meantime and calculate, where the ambulance is currently.
-			position = getCurrentPosition();
+			// Simulate the ambulance travelling in the meantime and calculate, where the
+			// ambulance is currently.
 			double patientProcessingDuration = drawRandomExponential(1);
-			//Generate random position for the patient
-			//TODO: generate it before assigning the position to the ambulance, so that we can schedule based on the distance
-			double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
-			double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
-			// Create a new event in the eventlist
+			double travelTime = calculateTravelTime();
 			double currentTime = eventlist.getTime();
-			double totalTime = patientProcessingDuration + distanceToPatient + distanceToHospital;
-			eventlist.add(this, 0, currentTime + totalTime); // target,type,time
+			double totalTime = currentTime + travelTime + patientProcessingDuration;
+
+			eventlist.add(this, 0, totalTime); // target,type,time
 			// set status to busy
 			status = 'b';
 		} else {
@@ -181,12 +183,30 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		}
 	}
 
-	public void setPosition(Vector2 newPosition) {
-		this.position = newPosition;
-		
+	private double drawRandomExponential(double mean) {
+		// draw a [0,1] uniform distributed number
+		double u = Math.random();
+		// Convert it into a exponentially distributed random variate with mean 33
+		double res = -mean * Math.log(u);
+		return res;
 	}
 
-	public Vector2 getCurrentPosition(){
+	private double calculateTravelTime() {
+		position = getCurrentPosition();
+		double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
+		double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
+		// Create a new event in the eventlist
+		double travelTimeInMinutes = distanceToPatient + distanceToHospital;
+		double travelTimeInHours = travelTimeInMinutes / 60;
+		return travelTimeInHours;
+	}
+
+	public void setPosition(Vector2 newPosition) {
+		this.position = newPosition;
+
+	}
+
+	public Vector2 getCurrentPosition() {
 		Vector2 vectorFromHospitalToHub = new Vector2(hubPosition.x, hubPosition.y);
 
 		double timeSinceHospitalVisit = eventlist.getTime() - lastHospitalVisitTime;
@@ -196,11 +216,4 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		return vectorFromHospitalToHub.scale(fractionOfTheWayToHub);
 	}
 
-	public static double drawRandomExponential(double mean) {
-		// draw a [0,1] uniform distributed number
-		double u = Math.random();
-		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -mean * Math.log(u);
-		return res;
-	}
 }

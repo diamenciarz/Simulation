@@ -181,81 +181,12 @@ public class InfLine2D {
     }
 
     /**
-     * @param length
-     * @return an unit vector pointing in the direction of the line, such that the x
-     *         coordinate is positive.
-     *         If the line is vertical, the returned vector will be (0, length)
-     */
-    public Vector2 getDirectionVector(double length) {
-        return getDirectionVector().scale(length);
-    }
-
-    /**
      * @return the position at which this line crosses another one. Returns null if
      *         they are parallel
      */
     public Vector2 getCrossPointWithLine(InfLine2D line) {
         return UtilityClass.LineMethods.findLineIntersection(firstPosition, secondPosition, line.firstPosition,
                 line.secondPosition);
-    }
-
-    /**
-     * Finds the cross points between this line and a defined circle
-     * 
-     * @param originPosition
-     * @param radius
-     * @return Two positions of cross points or an empty list, if there were no
-     *         collisions
-     */
-    public ArrayList<Vector2> getCrossPointsWithCircle(Vector2 originPosition, double radius) {
-        if (Double.isInfinite(slope)) {
-            return countVerticalCrossPoints(originPosition, radius);
-        }
-
-        double yValue = getPointAtX(0).y;
-
-        double a = 1 + slope * slope;
-        double b = 2 * (slope * (yValue - originPosition.y) - originPosition.x);
-        double c = originPosition.x * originPosition.x + (yValue - originPosition.y) * (yValue - originPosition.y)
-                - radius * radius;
-
-        double discriminant = b * b - 4 * a * c;
-
-        ArrayList<Vector2> crossPoints = new ArrayList<>(2);
-
-        if (discriminant == 0) {
-            double x = ((-b + Math.sqrt(discriminant)) / (2 * a));
-            Vector2 crossPoint = getPointAtX(x);
-            crossPoints.add(crossPoint);
-            crossPoints.add(crossPoint);
-            return crossPoints;
-        }
-        if (discriminant > 0) {
-            double x1 = ((-b + Math.sqrt(discriminant)) / (2 * a));
-            double x2 = ((-b - Math.sqrt(discriminant)) / (2 * a));
-            Vector2 crossPoint1 = getPointAtX(x1);
-            Vector2 crossPoint2 = getPointAtX(x2);
-            crossPoints.add(crossPoint1);
-            crossPoints.add(crossPoint2);
-            return crossPoints;
-        }
-        return new ArrayList<Vector2>();
-    }
-
-    private ArrayList<Vector2> countVerticalCrossPoints(Vector2 originPosition, double radius) {
-        boolean touchesCircle = radius * radius >= (firstPosition.x - originPosition.x)
-                * (firstPosition.x - originPosition.x);
-        if (touchesCircle) {
-            ArrayList<Vector2> crossPoints = new ArrayList<>(2);
-
-            double root = Math.sqrt(
-                    (radius * radius) - (firstPosition.x - originPosition.x) * (firstPosition.x - originPosition.x));
-
-            crossPoints.add(new Vector2(firstPosition.x, root + originPosition.y));
-            crossPoints.add(new Vector2(firstPosition.x, -root + originPosition.y));
-            return crossPoints;
-        }
-        return new ArrayList<Vector2>();
     }
 
     public boolean isPointAboveLine(Vector2 point){

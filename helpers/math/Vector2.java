@@ -156,71 +156,11 @@ public class Vector2 {
     }
 
     /**
-     * Picture included
-     * https://math.stackexchange.com/questions/13261/how-to-get-a-reflection-vector
-     * @param normal
-     * @return returns a copy of this vector after it is reflected by a normal
-     */
-    public Vector2 reflected(Vector2 normal) {
-        Vector2 vector = copy();
-        double dotProduct = dotProduct(vector, normal.getPerpendicularVector().normalized());
-        // vector - 2 * (dotProduct) * normal;
-        Vector2 reflection = vector.translate(normal.getPerpendicularVector().normalized().scale(2 * dotProduct).reversed());
-        return reflection;
-    }
-
-    /**
-     * Picture included
-     * https://math.stackexchange.com/questions/13261/how-to-get-a-reflection-vector
-     * @param normal The normal vector to reflect with respect to
-     * @return reflects this vector by a normal and returns the result
-     */
-    public Vector2 reflect(Vector2 normal) {
-        double dotProduct = dotProduct(this, normal.normalized());
-        // vector - 2 * (dotProduct) * normal;
-        return translate(normal.normalized().scale(2 * dotProduct).reversed());
-    }
-
-    /**
-     * The perpendicular vector will always have a positive x coordinate
-     */
-    public Vector2 getPerpendicularVector(){
-        InfLine2D line = new InfLine2D(this, Vector2.zeroVector());
-        InfLine2D perpendicularLine = line.getPerpendicularLineAtPoint(Vector2.zeroVector());
-        return perpendicularLine.secondPosition;
-    }
-
-    /**
      *
      * @return a new vector with the same values as the original
      */
     public Vector2 copy() {
         return new Vector2(x, y);
-    }
-
-    @Override
-    public String toString() {
-        return "(" + x + ", " + y + ")";
-    }
-
-    public static double dotProduct(Vector2 vector1, Vector2 vector2) {
-        return vector1.x * vector2.x + vector1.y * vector2.y;
-    }
-
-    public static double crossProductValue(Vector2 vector1, Vector2 vector2){
-        double angleBetweenVectors = angleBetween(vector1, vector2);
-        return vector1.length() * vector2.length() * Math.sin(angleBetweenVectors);
-    }
-
-    /**
-     *
-     * @param vector1
-     * @param vector2
-     * @return angle in range (0; Pi)
-     */
-    public static double angleBetween(Vector2 vector1, Vector2 vector2) {
-        double cos = dotProduct(vector1, vector2) / (vector1.length() * vector2.length());
-        return Math.acos(cos);
     }
 
     public static Vector2 lerp(Vector2 startingVector, Vector2 targetVector, double percentage) {
