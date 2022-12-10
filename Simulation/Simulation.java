@@ -83,8 +83,8 @@ public class Simulation {
 		for (int i = 1; i <= ambulanceCount; i++) {
 			Ambulance ambulance = new Ambulance(queue, sink, eventList, "Machine " + i + " H " + hexIndex);
 			machines.add(ambulance);
-			Hex hubPosition = City.getHexMap().get(hexIndex);
-			ambulance.setHub(hubPosition.position);
+			Hex hub = City.getHexMap().get(hexIndex);
+			ambulance.setHub(hub);
 		}
 		return machines;
 	}

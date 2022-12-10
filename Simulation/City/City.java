@@ -24,10 +24,10 @@ public class City {
             hexMap = generateCity();
             alreadyGeneratedCity = true;
         }
-        return copyHexMap();
+        return hexMap;
     }
 
-    private static ArrayList<Hex> copyHexMap() {
+    public static ArrayList<Hex> copyHexMap() {
         ArrayList<Hex> hexes = new ArrayList<>();
         for (Hex hex : hexMap) {
             hexes.add(new Hex(hex.isHospital(), hex.getPosition()));
@@ -39,7 +39,7 @@ public class City {
         ArrayList<Hex> unsortedHexes = City.getHexMap();
         ArrayList<Hex> sortedHexes = new ArrayList<>();
 
-        for (int index = unsortedHexes.size() - 1; index > 0; index--) {
+        for (int i = 0; i < unsortedHexes.size(); i++) {
             Hex closestHex = findClosestHex(unsortedHexes, position);
             sortedHexes.add(closestHex);
             unsortedHexes.remove(closestHex);

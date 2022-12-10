@@ -5,6 +5,7 @@ import helpers.Printer;
 import helpers.math.TimeConverter;
 import helpers.math.Vector2;
 import simulation.city.City;
+import simulation.city.Hex;
 
 /**
  * Machine in a factory
@@ -35,7 +36,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 * The location of the hub that the ambulance is coming back to after dropping
 	 * off a patient
 	 */
-	private Vector2 hubPosition;
+	private Hex hub;
 	/** The timestamp at which this ambulance last visited the hospital */
 	private double lastHospitalVisitTime = -10000;
 
@@ -100,8 +101,12 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		queue.askProduct(this);
 	}
 
-	public void setHub(Vector2 newPosition) {
-		hubPosition = newPosition;
+	public void setHub(Hex newHub) {
+		hub = newHub;
+	}
+
+	public void endShift(){
+		hub.getAmbulances().remove(this);
 	}
 
 	/**
@@ -230,7 +235,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 * @return
 	 */
 	public Vector2 getCurrentPosition() {
-		Vector2 vectorFromHospitalToHub = new Vector2(hubPosition.x, hubPosition.y);
+		Vector2 vectorFromHospitalToHub = new Vector2(hub.position.x, hub.position.y);
 
 		double timeSinceHospitalVisit = eventlist.getTime() - lastHospitalVisitTime;
 		double travelTimeFromHospitalToHub = vectorFromHospitalToHub.length();
