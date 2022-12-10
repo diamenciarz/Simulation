@@ -1,7 +1,8 @@
 package helpers;
 
 import java.util.ArrayList;
-
+import simulation.Ambulance;
+import simulation.Patient;
 import helpers.math.Vector2;
 
 public class Printer {
@@ -16,9 +17,9 @@ public class Printer {
         }
     }
 
-    public static void printStartedProduction(double time, String machineName) {
+    public static void printStartedProduction(double time, Ambulance ambulance, Patient patient) {
         if (doDebugMessages) {
-            System.out.println("Patient picked up by ambulance " + machineName + " at time: " + (float) time);
+            System.out.println("Patient picked up by ambulance " + ambulance.name + " at time: " + (float) time);
         }
     }
 

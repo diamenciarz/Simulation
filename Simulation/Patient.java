@@ -10,7 +10,7 @@ import helpers.math.Vector2;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-class Patient
+public class Patient
 {
 	/** Stamps for the products */
 	public ArrayList<Double> times;

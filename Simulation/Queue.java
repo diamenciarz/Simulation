@@ -60,9 +60,10 @@ public class Queue implements ProductAcceptor {
 			boolean delivered = false;
 			while (!delivered & (idleMachines.size() > 0)) {
 
-				delivered = findClosestAmbulance(patient).givePatient(patient);
+				Ambulance closestAmbulance = findClosestAmbulance(patient);
+				delivered = closestAmbulance.givePatient(patient);
 				// remove the request regardless of whether or not the product has been accepted
-				idleMachines.remove(0);
+				idleMachines.remove(closestAmbulance);
 			}
 			if (!delivered)
 				queue.add(patient); // Otherwise store it

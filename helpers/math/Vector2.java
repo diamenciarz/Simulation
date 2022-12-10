@@ -172,4 +172,8 @@ public class Vector2 {
     public double manhattanDistanceTo(Vector2 position){
         return Math.abs(x - position.x) + Math.abs(y - position.y);
     }
+    @Override
+    public String toString(){
+        return "(" + x + ", " + y + ")";
+    }
 }

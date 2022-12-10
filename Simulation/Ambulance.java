@@ -1,7 +1,5 @@
 package simulation;
 
-import javax.swing.ToolTipManager;
-
 import helpers.Distributions;
 import helpers.Printer;
 import helpers.math.TimeConverter;
@@ -26,22 +24,20 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	/** Status of the machine (b=busy, i=idle) */
 	private char status;
 	/** Machine name */
-	private final String name;
+	public final String name;
 	/** Mean processing time */
 	private double meanProcTime;
 	/** Processing times (in case pre-specified) */
 	private double[] processingTimes;
 	/** Processing time iterator */
 	private int procCnt;
-	/** Location of ambulance */
-	private Vector2 position;
 	/**
 	 * The location of the hub that the ambulance is coming back to after dropping
 	 * off a patient
 	 */
 	private Vector2 hubPosition;
 	/** The timestamp at which this ambulance last visited the hospital */
-	private double lastHospitalVisitTime;
+	private double lastHospitalVisitTime = -100;
 
 	/**
 	 * Constructor
@@ -123,7 +119,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		patient = null;
 		// set machine status to idle
 		status = 'i';
-		position = City.centerPosition;
+		lastHospitalVisitTime = eventlist.getTime();
 		// Ask the queue for products
 		queue.askProduct(this);
 	}
@@ -141,7 +137,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 			// accept the product
 			patient = p;
 			// mark starting time
-			Printer.printStartedProduction(eventlist.getTime(), name);
+			Printer.printStartedProduction(eventlist.getTime(), this, patient);
 			patient.stamp(eventlist.getTime(), "Patient picked up", name);
 			// start production
 			handlePatient();
@@ -200,17 +196,11 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 * @return
 	 */
 	private double calculateTravelTime() {
-		position = getCurrentPosition();
 		double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
 		double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
 		// Create a new event in the eventlist
 		double travelTimeInHours = TimeConverter.getTravelTime(distanceToPatient + distanceToHospital);
 		return travelTimeInHours;
-	}
-
-	public void setPosition(Vector2 newPosition) {
-		this.position = newPosition;
-
 	}
 
 	/**

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import helpers.math.Vector2;
 import simulation.Ambulance;
-import simulation.Simulation;
 
 public class Hex {
 
@@ -13,7 +12,7 @@ public class Hex {
     public final Vector2 position;
     private final Polygon polygon;
     public static final int POINTS = 6;
-    public static final double RADIUS = 10;
+    public static final double RADIUS = 5;
     public static double APHOTHEMA = Math.sqrt((Math.pow(RADIUS, 2) + Math.pow(RADIUS, 2) / 2));
     private ArrayList<Ambulance> ambulances;
 
@@ -64,7 +63,7 @@ public class Hex {
         this.ambulances = ambulances;
 
         for (int i = 0; i < ambulances.size(); i++) {
-            this.ambulances.get(i).setPosition(position);
+            // this.ambulances.get(i).setPosition(position);
             this.ambulances.get(i).setHub(position);
         }
     }
