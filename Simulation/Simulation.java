@@ -12,7 +12,7 @@ import simulation.city.City;
 import simulation.city.Hex;
 
 public class Simulation {
-	public static int N_MACHINES = 1;
+	public static int N_MACHINES = 3;
 	public CEventList list;
 	public Queue queue;
 	public Source source;
@@ -36,10 +36,12 @@ public class Simulation {
 
 		Sink si = new Sink("Sink 1");
 
-
 		// We set ambulances for each hexagon
 		for (int i = 0; i < City.getHexMap().size(); i++) {
 			City.getHexMap().get(i).setAmbulances(createMachines(q, si, l, i, N_MACHINES));
+		}
+		for (Hex hex : City.getHexMap()) {
+			System.out.println("Number of ambulances: " + hex.getAmbulances().size());
 		}
 
 		// start the eventlist

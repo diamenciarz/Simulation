@@ -57,18 +57,6 @@ public class UtilityClass {
         }
 
         /**
-         * @return the cross point of these two lines
-         */
-        public static Vector2 findLineIntersection(InfLine2D firstLine, InfLine2D secondLine) {
-            if (firstLine == null || secondLine == null) {
-                return null;
-            }
-
-            return findLineIntersection(firstLine.getFirstPosition(), firstLine.getSecondPosition(),
-                    secondLine.getFirstPosition(), secondLine.getSecondPosition());
-        }
-
-        /**
          *
          * @param p1 first point of the first line
          * @param p2 second point of the first line

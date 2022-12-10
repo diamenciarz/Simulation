@@ -4,6 +4,7 @@ import javax.swing.ToolTipManager;
 
 import helpers.Distributions;
 import helpers.Printer;
+import helpers.math.TimeConverter;
 import helpers.math.Vector2;
 import simulation.city.City;
 
@@ -161,14 +162,8 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	private void handlePatient() {
 		// generate duration
 		if (meanProcTime > 0) {
-			// Simulate the ambulance travelling in the meantime and calculate, where the
-			// ambulance is currently.
-			double patientProcessingDuration = drawRandomExponential(1);
-			double travelTime = calculateTravelTime();
-			double currentTime = eventlist.getTime();
-			double totalTime = currentTime + travelTime + patientProcessingDuration;
 
-			eventlist.add(this, 0, totalTime); // target,type,time
+			eventlist.add(this, 0, calculateTimeUntilHospitalArrival()); // target,type,time
 			// set status to busy
 			status = 'b';
 		} else {
@@ -183,6 +178,13 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		}
 	}
 
+	private double calculateTimeUntilHospitalArrival() {
+		double patientProcessingDuration = drawRandomExponential(1);
+		double travelTime = calculateTravelTime();
+		double currentTime = eventlist.getTime();
+		return currentTime + travelTime + patientProcessingDuration;
+	}
+
 	private double drawRandomExponential(double mean) {
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
@@ -191,13 +193,18 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		return res;
 	}
 
+	/**
+	 * Calculate the duration of travel from the ambulance's current position to
+	 * patient and from patient to hospital
+	 * 
+	 * @return
+	 */
 	private double calculateTravelTime() {
 		position = getCurrentPosition();
 		double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
 		double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
 		// Create a new event in the eventlist
-		double travelTimeInMinutes = distanceToPatient + distanceToHospital;
-		double travelTimeInHours = travelTimeInMinutes / 60;
+		double travelTimeInHours = TimeConverter.getTravelTime(distanceToPatient + distanceToHospital);
 		return travelTimeInHours;
 	}
 
@@ -206,6 +213,12 @@ public class Ambulance implements CProcess, ProductAcceptor {
 
 	}
 
+	/**
+	 * Simulate the ambulance travelling in the meantime and calculate, where the
+	 * ambulance is currently.
+	 * 
+	 * @return
+	 */
 	public Vector2 getCurrentPosition() {
 		Vector2 vectorFromHospitalToHub = new Vector2(hubPosition.x, hubPosition.y);
 
