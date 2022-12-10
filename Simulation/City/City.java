@@ -1,4 +1,4 @@
-package Simulation.City;
+package simulation.city;
 
 import java.util.ArrayList;
 

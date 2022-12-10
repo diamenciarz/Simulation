@@ -1,4 +1,4 @@
-package Simulation;
+package simulation;
 
 import java.util.ArrayList;
 /**
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Sink implements ProductAcceptor
 {
 	/** All products are kept */
-	private ArrayList<Product> products;
+	private ArrayList<Patient> products;
 	/** All properties of products are kept */
 	private ArrayList<Integer> numbers;
 	private ArrayList<Double> times;
@@ -35,7 +35,7 @@ public class Sink implements ProductAcceptor
 	}
 	
         @Override
-	public boolean giveProduct(Product p)
+	public boolean givePatient(Patient p)
 	{
 		number++;
 		products.add(p);

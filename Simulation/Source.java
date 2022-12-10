@@ -1,4 +1,4 @@
-package Simulation;
+package simulation;
 
 import helpers.Distributions;
 import helpers.Printer;
@@ -77,7 +77,7 @@ public class Source implements CProcess {
 		interarrivalTimes = ia;
 		interArrCnt = 0;
 		// put first event in list for initialization
-		eventList.add(this, 0, interarrivalTimes[0]); // target,type,time
+		eventList.add(this, 0, interarrivalTimes[0]);
 	}
 
 	@Override
@@ -85,18 +85,18 @@ public class Source implements CProcess {
 		// show arrival
 		Printer.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
-		Product p = new Product();
+		Patient p = new Patient();
 		p.stamp(currentTime, "Creation", name);
-		queue.giveProduct(p);
+		queue.givePatient(p);
 		// generate duration
 		if (meanArrTime > 0) {
 			double duration = drawRandomExponential(currentTime);
 			// Create a new event in the eventlist
-			eventList.add(this, type, currentTime + duration); // target,type,time
+			eventList.add(this, type, currentTime + duration);
 		} else {
 			interArrCnt++;
 			if (interarrivalTimes.length > interArrCnt) {
-				eventList.add(this, 0, currentTime + interarrivalTimes[interArrCnt]); // target,type,time
+				eventList.add(this, 0, currentTime + interarrivalTimes[interArrCnt]);
 			} else {
 				eventList.stop();
 			}

@@ -228,4 +228,8 @@ public class Vector2 {
         return new Vector2(UtilityClass.ValueMethods.lerp(startingVector.x, targetVector.x, percentage), 
         UtilityClass.ValueMethods.lerp(startingVector.x, targetVector.x, percentage));
     }
+
+    public double manhattanDistanceTo(Vector2 position){
+        return Math.abs(x - position.x) + Math.abs(y - position.y);
+    }
 }

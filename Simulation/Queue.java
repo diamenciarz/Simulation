@@ -16,7 +16,7 @@ public class Queue implements ProductAcceptor {
 	/** List in which the products are kept */
 	private ArrayList<Patient> queue;
 	/** Requests from machine that will be handling the products */
-	private ArrayList<Machine> idleMachines;
+	private ArrayList<Ambulance> idleMachines;
 
 	/**
 	 * Initializes the queue and introduces a dummy machine
@@ -32,7 +32,7 @@ public class Queue implements ProductAcceptor {
 	 * True is returned if a product could be delivered; false if the request is
 	 * queued
 	 */
-	public boolean askProduct(Machine machine) {
+	public boolean askProduct(Ambulance machine) {
 		// This is only possible with a non-empty queue
 		if (queue.size() > 0) {
 			// If the machine accepts the product
@@ -72,13 +72,13 @@ public class Queue implements ProductAcceptor {
 		return true;
 	}
 
-	private Machine findClosestAmbulance(Patient patient) {
+	private Ambulance findClosestAmbulance(Patient patient) {
 		Vector2 patientPosition = patient.getLocation().getPosition();
-		Machine currentClosestAmbulance = idleMachines.get(0);
+		Ambulance currentClosestAmbulance = idleMachines.get(0);
 		double currentClosestDistance = currentClosestAmbulance.getCurrentPosition()
 				.manhattanDistanceTo(patientPosition);
 
-		for (Machine ambulance : idleMachines) {
+		for (Ambulance ambulance : idleMachines) {
 			double newDistance = ambulance.getCurrentPosition().manhattanDistanceTo(patientPosition);
 			if (newDistance < currentClosestDistance) {
 				currentClosestAmbulance = ambulance;

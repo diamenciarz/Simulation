@@ -4,12 +4,12 @@
  *	@version %I%, %G%
  */
 
-package Simulation;
-
-import Simulation.City.City;
-import Simulation.City.Hex;
+package simulation;
 
 import java.util.ArrayList;
+
+import simulation.city.City;
+import simulation.city.Hex;
 
 public class Simulation {
 	public static int N_MACHINES = 1;
@@ -17,7 +17,7 @@ public class Simulation {
 	public Queue queue;
 	public Source source;
 	public Sink sink;
-	public Machine mach;
+	public Ambulance mach;
 
 	/**
 	 * @param args the command line arguments
@@ -43,16 +43,16 @@ public class Simulation {
 		}
 
 		// start the eventlist
-		l.start(200000); // 2000 is maximum time
+		l.start(2000); // 2000 is maximum time
 
 	}
 
-	public static ArrayList<Machine> createMachines(Queue queue, Sink sink, CEventList eventList, int hexIndex,
+	public static ArrayList<Ambulance> createMachines(Queue queue, Sink sink, CEventList eventList, int hexIndex,
 			int ambulanceCount) {
 
-		ArrayList<Machine> machines = new ArrayList<>();
+		ArrayList<Ambulance> machines = new ArrayList<>();
 		for (int i = 1; i <= ambulanceCount; i++) {
-			Machine ambulance = new Machine(queue, sink, eventList, "Machine_" + i + "_H_" + hexIndex);
+			Ambulance ambulance = new Ambulance(queue, sink, eventList, "Machine_" + i + "_H_" + hexIndex);
 			machines.add(ambulance);
 			Hex hubPosition = City.getHexMap().get(hexIndex);
 			ambulance.setHub(hubPosition.location);

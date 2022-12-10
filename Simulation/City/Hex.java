@@ -1,10 +1,10 @@
-package Simulation.City;
-
-import Simulation.Machine;
-import Simulation.Simulation;
+package simulation.city;
 
 import java.awt.*;
 import java.util.ArrayList;
+
+import simulation.Ambulance;
+import simulation.Simulation;
 
 public class Hex {
 
@@ -14,7 +14,7 @@ public class Hex {
     public static final int POINTS = 6;
     public static final double RADIUS = 10;
     public static double APHOTHEMA = Math.sqrt((Math.pow(RADIUS, 2) + Math.pow(RADIUS, 2) / 2));
-    private ArrayList<Machine> ambulances;
+    private ArrayList<Ambulance> ambulances;
 
     public Hex(boolean hospital, double x, double y) {
 
@@ -61,11 +61,11 @@ public class Hex {
         return location;
     }
 
-    public ArrayList<Machine> getAmbulances() {
+    public ArrayList<Ambulance> getAmbulances() {
         return ambulances;
     }
 
-    public void setAmbulances(ArrayList<Machine> ambulances) {
+    public void setAmbulances(ArrayList<Ambulance> ambulances) {
         this.ambulances = ambulances;
 
         for (int i = 0; i < ambulances.size(); i++) {

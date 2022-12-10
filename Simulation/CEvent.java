@@ -4,9 +4,9 @@
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-package Simulation;
+package simulation;
 
-import Simulation.City.Location;
+import simulation.city.Location;
 
 public class CEvent {
 	/** The object involved with the event */

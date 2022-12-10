@@ -1,6 +1,6 @@
 package helpers;
 
-import Simulation.Simulation;
+import simulation.Simulation;
 
 public class Distributions {
 

@@ -12,7 +12,7 @@ import simulation.city.Location;
  * @author Joel Karel
  * @version %I%, %G%
  */
-public class Machine implements CProcess, ProductAcceptor {
+public class Ambulance implements CProcess, ProductAcceptor {
 	/** Product that is being handled */
 	private Patient patient;
 	/** Eventlist that will manage events */
@@ -47,7 +47,7 @@ public class Machine implements CProcess, ProductAcceptor {
 	 * @param e Eventlist that will manage events
 	 * @param n The name of the machine
 	 */
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n) {
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -67,7 +67,7 @@ public class Machine implements CProcess, ProductAcceptor {
 	 * @param n The name of the machine
 	 * @param m Mean processing time
 	 */
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double m) {
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double m) {
 		status = 'i';
 		queue = q;
 		sink = s;
@@ -87,7 +87,7 @@ public class Machine implements CProcess, ProductAcceptor {
 	 * @param n  The name of the machine
 	 * @param st service times
 	 */
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double[] st) {
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double[] st) {
 		status = 'i';
 		queue = q;
 		sink = s;
