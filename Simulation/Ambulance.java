@@ -37,7 +37,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 */
 	private Vector2 hubPosition;
 	/** The timestamp at which this ambulance last visited the hospital */
-	private double lastHospitalVisitTime = -100;
+	private double lastHospitalVisitTime = -10000;
 
 	/**
 	 * Constructor
@@ -114,7 +114,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		// show arrival
 		Printer.printFinished(eventlist.getTime(), name);
 		// Remove product from system
-		patient.stamp(tme, "Patient dropped off at the hospital", name);
+		patient.stampEvent(tme, "Patient dropped off at the hospital", name);
 		sink.givePatient(patient);
 		patient = null;
 		// set machine status to idle
@@ -138,7 +138,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 			patient = p;
 			// mark starting time
 			Printer.printStartedProduction(eventlist.getTime(), this, patient);
-			patient.stamp(eventlist.getTime(), "Patient picked up", name);
+			patient.stampEvent(eventlist.getTime(), "Ambulance dispatched", name);
 			// start production
 			handlePatient();
 			// Flag that the product has arrived
@@ -158,7 +158,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	private void handlePatient() {
 		// generate duration
 		if (meanProcTime > 0) {
-
+			stampPatientPickup();
 			eventlist.add(this, 0, calculateTimeUntilHospitalArrival()); // target,type,time
 			// set status to busy
 			status = 'b';
@@ -172,6 +172,13 @@ public class Ambulance implements CProcess, ProductAcceptor {
 				eventlist.stop();
 			}
 		}
+	}
+
+	private void stampPatientPickup() {
+		double pickupTime = eventlist.getTime() + calculateTravelTimeToPatient();
+		double waitTime = pickupTime - patient.creationTime;
+		patient.stampWaitTime(waitTime);
+
 	}
 
 	private double calculateTimeUntilHospitalArrival() {
@@ -189,17 +196,30 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		return res;
 	}
 
+	private double calculateTravelTime() {
+		return calculateTravelTimeToPatient() + calculateTravelTimeToHospital();
+	}
+
 	/**
-	 * Calculate the duration of travel from the ambulance's current position to
-	 * patient and from patient to hospital
+	 * Calculate the duration of travel from the current position to the patient
 	 * 
 	 * @return
 	 */
-	private double calculateTravelTime() {
+	private double calculateTravelTimeToPatient() {
 		double distanceToPatient = patient.position.manhattanDistanceTo(getCurrentPosition());
+		double travelTimeInHours = TimeConverter.getTravelTime(distanceToPatient);
+		return travelTimeInHours;
+	}
+
+	/**
+	 * Calculate the duration of travel from the patient to hospital
+	 * 
+	 * @return
+	 */
+	private double calculateTravelTimeToHospital() {
 		double distanceToHospital = patient.position.manhattanDistanceTo(City.centerPosition);
 		// Create a new event in the eventlist
-		double travelTimeInHours = TimeConverter.getTravelTime(distanceToPatient + distanceToHospital);
+		double travelTimeInHours = TimeConverter.getTravelTime(distanceToHospital);
 		return travelTimeInHours;
 	}
 

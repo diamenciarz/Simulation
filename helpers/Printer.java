@@ -10,6 +10,7 @@ public class Printer {
 
     static int i = 0;
     static int j = 0;
+
     public static void printArrived(double time, String name) {
         i++;
         if (doDebugMessages) {
@@ -30,7 +31,7 @@ public class Printer {
         }
     }
 
-    public static void printQueueState(int queueLength){
+    public static void printQueueState(int queueLength) {
         if (doDebugMessages) {
             System.out.println("There are " + queueLength + " elements in the queue");
         }

@@ -86,7 +86,8 @@ public class Source implements CProcess {
 		Printer.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
 		Patient p = new Patient();
-		p.stamp(currentTime, "Creation", name);
+		p.creationTime = eventList.getTime();
+		p.stampEvent(currentTime, "Creation", name);
 		queue.givePatient(p);
 		// generate duration
 		if (meanArrTime > 0) {

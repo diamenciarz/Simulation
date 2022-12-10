@@ -14,10 +14,11 @@ public class Patient
 {
 	/** Stamps for the products */
 	public ArrayList<Double> times;
-	public ArrayList<Double> kjb;
-	public ArrayList<String> events;
-	public ArrayList<String> stations;
+	public ArrayList<String> eventName;
+	public ArrayList<String> ambulanceName;
 	public Vector2 position;
+	public double creationTime;
+	public double waitingTime;
 	
 	/** 
 	*	Constructor for the product
@@ -27,17 +28,22 @@ public class Patient
 	public Patient()
 	{
 		times = new ArrayList<>();
-		events = new ArrayList<>();
-		stations = new ArrayList<>();
+		eventName = new ArrayList<>();
+		ambulanceName = new ArrayList<>();
 		position = RandGenerator.generateRandomPosition();
 	}
 	
 	
-	public void stamp(double time,String event,String station)
+	public void stampEvent(double time,String event,String station)
 	{
 		times.add(time);
-		events.add(event);
-		stations.add(station);
+		eventName.add(event);
+		ambulanceName.add(station);
+	}
+
+	public void stampWaitTime(double waitingTime){
+		System.out.println("Wait time: " + waitingTime);
+		this.waitingTime = waitingTime;
 	}
 	
 	public double[] getTimesAsArray()
@@ -53,15 +59,15 @@ public class Patient
 
 	public String[] getEventsAsArray()
 	{
-		String[] tmp = new String[events.size()];
-		tmp = events.toArray(tmp);
+		String[] tmp = new String[eventName.size()];
+		tmp = eventName.toArray(tmp);
 		return tmp;
 	}
 
 	public String[] getStationsAsArray()
 	{
-		String[] tmp = new String[stations.size()];
-		tmp = stations.toArray(tmp);
+		String[] tmp = new String[ambulanceName.size()];
+		tmp = ambulanceName.toArray(tmp);
 		return tmp;
 	}
 }

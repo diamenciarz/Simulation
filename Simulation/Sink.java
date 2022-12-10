@@ -1,90 +1,77 @@
 package simulation;
 
 import java.util.ArrayList;
+
 /**
- *	A sink
- *	@author Joel Karel
- *	@version %I%, %G%
+ * A sink
+ * 
+ * @author Joel Karel
+ * @version %I%, %G%
  */
-public class Sink implements ProductAcceptor
-{
+public class Sink implements ProductAcceptor {
 	/** All products are kept */
-	private ArrayList<Patient> products;
+	private ArrayList<Patient> products = new ArrayList<>();
 	/** All properties of products are kept */
-	private ArrayList<Integer> numbers;
-	private ArrayList<Double> times;
-	private ArrayList<String> events;
-	private ArrayList<String> stations;
+	private ArrayList<Integer> numbers = new ArrayList<>();
+	private ArrayList<Double> timestamps = new ArrayList<>();
+	private ArrayList<String> events = new ArrayList<>();
+	private ArrayList<String> stations = new ArrayList<>();
+	private ArrayList<Double> queueWaitingTimes = new ArrayList<>();
 	/** Counter to number products */
-	private int number;
+	private int number = 0;
 	/** Name of the sink */
 	private String name;
-	
-	/**
-	*	Constructor, creates objects
-	*/
-	public Sink(String n)
-	{
-		name = n;
-		products = new ArrayList<>();
-		numbers = new ArrayList<>();
-		times = new ArrayList<>();
-		events = new ArrayList<>();
-		stations = new ArrayList<>();
-		number = 0;
-	}
-	
-        @Override
-	public boolean givePatient(Patient p)
-	{
-		number++;
-		products.add(p);
-		// store stamps
-		ArrayList<Double> t = p.times;
-		ArrayList<String> e = p.events;
-		ArrayList<String> s = p.stations;
 
-		for(int i=0;i<t.size();i++)
-		{
-			numbers.add(number);
-			times.add(t.get(i));
-			events.add(e.get(i));
-			stations.add(s.get(i));
-		}
+	/**
+	 * Constructor, creates objects
+	 */
+	public Sink(String n) {
+		name = n;
+	}
+
+	@Override
+	public boolean givePatient(Patient patient) {
+		number++;
+		products.add(patient);
+		// store stamps
+		ArrayList<Double> t = patient.times;
+		ArrayList<String> e = patient.eventName;
+		ArrayList<String> s = patient.ambulanceName;
+
+		numbers.add(number);
+		timestamps.addAll(t);
+		events.addAll(e);
+		stations.addAll(s);
+
+		queueWaitingTimes.add(patient.waitingTime);
 		return true;
 	}
-	
-	public int[] getNumbers()
-	{
+
+	public int[] getNumbers() {
 		numbers.trimToSize();
 		int[] tmp = new int[numbers.size()];
-		for (int i=0; i < numbers.size(); i++)
-		{
+		for (int i = 0; i < numbers.size(); i++) {
 			tmp[i] = (numbers.get(i)).intValue();
 		}
 		return tmp;
 	}
 
-	public double[] getTimes()
-	{
-		times.trimToSize();
-		double[] tmp = new double[times.size()];
-		for (int i=0; i < times.size(); i++)
-		{
-			tmp[i] = (times.get(i)).doubleValue();
+	public double[] getTimestamps() {
+		timestamps.trimToSize();
+		double[] tmp = new double[timestamps.size()];
+		for (int i = 0; i < timestamps.size(); i++) {
+			tmp[i] = (timestamps.get(i)).doubleValue();
 		}
 		return tmp;
 	}
 
-	public String[] getEvents()
-	{
+	public String[] getEvents() {
 		String[] tmp = new String[events.size()];
 		tmp = events.toArray(tmp);
 		return tmp;
 	}
 
-	public String[] getStations()
-	{
+	public String[] getStations() {
 		String[] tmp = new String[stations.size()];
 		tmp = stations.toArray(tmp);
 		return tmp;
