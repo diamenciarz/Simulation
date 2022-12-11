@@ -18,6 +18,7 @@ public class Sink implements ProductAcceptor {
 	private ArrayList<String> events = new ArrayList<>();
 	private ArrayList<String> stations = new ArrayList<>();
 	private ArrayList<Double> queueWaitingTimes = new ArrayList<>();
+	private ArrayList<Double> processingTimes = new ArrayList<>();
 	/** Counter to number products */
 	private int number = 0;
 	/** Name of the sink */
@@ -46,6 +47,7 @@ public class Sink implements ProductAcceptor {
 
 		queueWaitingTimes.add(patient.waitingTime);
 		travelTimes.add(patient.travelTime);
+		processingTimes.add(patient.processingTime);
 		return true;
 	}
 
@@ -57,7 +59,7 @@ public class Sink implements ProductAcceptor {
 		}
 		return tmp;
 	}
-	
+
 	public double[] getQueueWaitingTimes() {
 		queueWaitingTimes.trimToSize();
 		double[] tmp = new double[queueWaitingTimes.size()];
@@ -66,7 +68,16 @@ public class Sink implements ProductAcceptor {
 		}
 		return tmp;
 	}
-	
+
+	public double[] getProcessingTimes() {
+		processingTimes.trimToSize();
+		double[] tmp = new double[processingTimes.size()];
+		for (int i = 0; i < processingTimes.size(); i++) {
+			tmp[i] = (processingTimes.get(i)).doubleValue();
+		}
+		return tmp;
+	}
+
 	public double[] getTravelTimes() {
 		travelTimes.trimToSize();
 		double[] tmp = new double[travelTimes.size()];

@@ -184,11 +184,12 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		double waitTime = pickupTime - patient.creationTime;
 		patient.stampWaitTime(waitTime);
 		patient.stampTravelTime(calculateTravelTime());
-
+		
 	}
-
+	
 	private double calculateTimeUntilHospitalArrival() {
 		double patientProcessingDuration = drawRandomExponential(1);
+		patient.stampProcessingTime(patientProcessingDuration);
 		double travelTime = calculateTravelTime();
 		double currentTime = eventlist.getTime();
 		return currentTime + travelTime + patientProcessingDuration;

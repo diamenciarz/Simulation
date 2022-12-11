@@ -20,6 +20,7 @@ public class Patient
 	public double creationTime;
 	public double waitingTime;
 	public double travelTime;
+	public double processingTime;
 	
 	/** 
 	*	Constructor for the product
@@ -50,6 +51,11 @@ public class Patient
 	public void stampTravelTime(double travelTime){
 		System.out.println("Travel time: " + travelTime);
 		this.travelTime = travelTime;
+	}
+	
+	public void stampProcessingTime(double processingTime){
+		System.out.println("Processing time: " + processingTime);
+		this.processingTime = processingTime;
 	}
 
 	public double[] getTimesAsArray()

@@ -13,6 +13,7 @@ public class WriteToCSV {
         double[] timestamps = sink.getTimestamps();
         double[] queueWaitingTimes = sink.getQueueWaitingTimes();
         double[] travelTimes = sink.getTravelTimes();
+        double[] processingTimes = sink.getProcessingTimes();
         String[] events = sink.getEvents();
 
         if ((names.length == numbers.length) && (timestamps.length == events.length)) {
@@ -29,6 +30,7 @@ public class WriteToCSV {
         }
 
         writeCSV_Double(timestamps, "simulation/matlab/timestamps.csv");
+        writeCSV_Double(processingTimes, "simulation/matlab/processingTimes.csv");
         writeCSV_Double(queueWaitingTimes, "simulation/matlab/queueWaitTimes.csv");
         writeCSV_Double(travelTimes, "simulation/matlab/travelTimes.csv");
         writeCSV_String(names, "simulation/matlab/names.csv");
