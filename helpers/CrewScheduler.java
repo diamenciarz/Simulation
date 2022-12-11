@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import helpers.math.Vector2;
 import simulation.*;
 import simulation.Ambulance;
-import simulation.city.City;
-import simulation.city.Hex;
+import simulation.City.City;
+import simulation.City.Hex;
 
 public class CrewScheduler {
     public static CEventList eventList;

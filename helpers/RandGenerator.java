@@ -1,8 +1,8 @@
 package helpers;
 
 import helpers.math.Vector2;
-import simulation.city.City;
-import simulation.city.Hex;
+import simulation.City.City;
+import simulation.City.Hex;
 
 public class RandGenerator {
 
