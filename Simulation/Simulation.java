@@ -25,34 +25,37 @@ public class Simulation {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
-		City city = new City();
-		// Create an eventlist
-		CEventList eventList = new CEventList();
-		Queue queue = new Queue();
-
-		Source s1 = new Source(queue, eventList, "A1");
-
-		Source s2 = new Source(queue, eventList, "A2");
-
-		Source s3 = new Source(queue, eventList, "B");
-
-		Sink sink = new Sink("Sink 1");
-
-		CrewScheduler.eventList = eventList;
-		CrewScheduler.queue = queue;
-		CrewScheduler.sink = sink;
-
-		// We set ambulances for each hexagon
-		for (int i = 0; i < City.getHexMap().size(); i++) {
-			City.getHexMap().get(i).setAmbulances(createAmbulances(queue, sink, eventList, i, N_MACHINES));
-		}
-		// start the eventlist
-		eventList.start(2000); // 2000 is maximum time
-
-		try {
-			WriteToCSV.dumpDataToCSV(sink);
-		} catch (Exception e) {
-			System.err.println("List lengths do not match");
+		for (int j = 0; j < 10; j++) {
+			
+			City city = new City();
+			// Create an eventlist
+			CEventList eventList = new CEventList();
+			Queue queue = new Queue();
+	
+			Source s1 = new Source(queue, eventList, "A1");
+	
+			Source s2 = new Source(queue, eventList, "A2");
+	
+			Source s3 = new Source(queue, eventList, "B");
+	
+			Sink sink = new Sink("Sink 1");
+	
+			CrewScheduler.eventList = eventList;
+			CrewScheduler.queue = queue;
+			CrewScheduler.sink = sink;
+	
+			// We set ambulances for each hexagon
+			for (int i = 0; i < City.getHexMap().size(); i++) {
+				City.getHexMap().get(i).setAmbulances(createAmbulances(queue, sink, eventList, i, N_MACHINES));
+			}
+			// start the eventlist
+			eventList.start(2000); // 2000 is maximum time
+	
+			try {
+				WriteToCSV.dumpDataToCSV(sink);
+			} catch (Exception e) {
+				System.err.println("List lengths do not match");
+			}
 		}
 	}
 

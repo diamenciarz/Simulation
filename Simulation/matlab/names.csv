@@ -1,153 +1,30 @@
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 5 H 0
-Machine 5 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 5 H 0
-Machine 5 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 5 H 0
-Machine 5 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
-Machine 5 H 0
-Machine 5 H 0
-A1
-Machine 5 H 0
-Machine 5 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
-A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -157,16 +34,22 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -175,36 +58,60 @@ Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
@@ -214,22 +121,49 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -239,9 +173,6 @@ B
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -254,176 +185,38 @@ B
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
@@ -434,12 +227,132 @@ A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 B
@@ -449,228 +362,66 @@ B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 4 H 0
 Machine 4 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 5 H 0
-Machine 5 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 5 H 0
-Machine 5 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 5 H 0
 Machine 5 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 5 H 0
+Machine 5 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 4 H 0
+Machine 4 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 5 H 0
+Machine 5 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -679,39 +430,30 @@ Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 5 H 0
+Machine 5 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
@@ -719,17 +461,20 @@ A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 4 H 0
+Machine 4 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
@@ -739,244 +484,109 @@ Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 4 H 0
 Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
 Machine 1 H 0
-B
 Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 3 H 0
 Machine 3 H 0
 A2
@@ -985,58 +595,34 @@ Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A1
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -1046,12 +632,6 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -1061,83 +641,74 @@ A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
@@ -1145,44 +716,71 @@ A1
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
@@ -1192,76 +790,106 @@ Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -1270,253 +898,166 @@ Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-A2
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -1535,44 +1076,50 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
@@ -1580,47 +1127,38 @@ B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
@@ -1628,85 +1166,61 @@ A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
+B
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
+A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
@@ -1718,6 +1232,12 @@ B
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -1727,12 +1247,21 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -1741,12 +1270,12 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -1756,54 +1285,114 @@ Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
@@ -1814,101 +1403,104 @@ B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
@@ -1924,234 +1516,264 @@ Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
+Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-B
+A1
+Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
@@ -2162,129 +1784,132 @@ A2
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+A1
 Machine 4 H 0
 Machine 4 H 0
-A2
+B
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
+A1
 Machine 4 H 0
 Machine 4 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 4 H 0
+Machine 4 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -2293,33 +1918,36 @@ Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
+Machine 1 H 0
 Machine 1 H 0
+B
+Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -2329,49 +1957,55 @@ Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 4 H 0
 Machine 4 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
 Machine 4 H 0
 Machine 4 H 0
 A1
@@ -2383,90 +2017,126 @@ Machine 3 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
@@ -2476,31 +2146,40 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -2509,137 +2188,215 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 3 H 0
 Machine 3 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
@@ -2647,43 +2404,73 @@ Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -2693,50 +2480,29 @@ A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
@@ -2747,6 +2513,9 @@ A1
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 B
@@ -2755,58 +2524,70 @@ Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 3 H 0
 Machine 3 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -2815,22 +2596,19 @@ Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A1
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -2839,103 +2617,142 @@ Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -2944,112 +2761,169 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
+B
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -3058,73 +2932,73 @@ Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
+A2
+Machine 5 H 0
+Machine 5 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -3136,43 +3010,70 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -3181,265 +3082,214 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 4 H 0
+Machine 4 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -3449,45 +3299,45 @@ A1
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 4 H 0
+Machine 4 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-A2
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 4 H 0
+Machine 4 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
 B
@@ -3497,27 +3347,69 @@ B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 4 H 0
+Machine 4 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
-B
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -3526,12 +3418,12 @@ Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -3541,132 +3433,129 @@ Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
+A2
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
+A2
+Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -3674,98 +3563,62 @@ A1
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 3 H 0
 Machine 3 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 4 H 0
 Machine 4 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 4 H 0
 Machine 4 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-A1
 Machine 4 H 0
 Machine 4 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 4 H 0
 Machine 4 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
@@ -3775,12 +3628,15 @@ Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
+Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
@@ -3790,88 +3646,70 @@ Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -3881,62 +3719,83 @@ B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
+Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -3946,9 +3805,6 @@ Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
@@ -3956,9 +3812,6 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -3967,66 +3820,42 @@ Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
@@ -4036,19 +3865,19 @@ Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
 Machine 3 H 0
+B
+Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -4057,51 +3886,60 @@ Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
@@ -4111,241 +3949,229 @@ Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-B
+A1
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 3 H 0
 Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A1
+B
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -4358,63 +4184,57 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -4423,129 +4243,93 @@ Machine 1 H 0
 A2
 Machine 4 H 0
 Machine 4 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
@@ -4553,12 +4337,12 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -4567,25 +4351,16 @@ Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -4594,130 +4369,67 @@ Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -4727,200 +4439,173 @@ A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+Machine 1 H 0
 Machine 1 H 0
+B
+Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 4 H 0
 Machine 4 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 4 H 0
 Machine 4 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 4 H 0
-Machine 4 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
+A2
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
+Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
@@ -4928,18 +4613,39 @@ A1
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -4948,115 +4654,142 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
+Machine 4 H 0
+Machine 4 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 4 H 0
 Machine 4 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
 A1
-Machine 2 H 0
-Machine 2 H 0
-B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -5065,70 +4798,46 @@ Machine 2 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-B
+A1
 Machine 3 H 0
 Machine 3 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -5137,109 +4846,130 @@ Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -5248,70 +4978,166 @@ Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 4 H 0
+Machine 4 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A1
+Machine 4 H 0
+Machine 4 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 4 H 0
+Machine 4 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -5320,37 +5146,37 @@ Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 3 H 0
 Machine 3 H 0
 B
 Machine 3 H 0
 Machine 3 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -5359,19 +5185,10 @@ Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -5381,27 +5198,27 @@ A2
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A2
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -5410,118 +5227,169 @@ Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 4 H 0
+Machine 4 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 3 H 0
 Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
 Machine 4 H 0
 Machine 4 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A2
 Machine 3 H 0
 Machine 3 H 0
-A1
+B
 Machine 3 H 0
 Machine 3 H 0
-A2
+A1
+Machine 1 H 0
+Machine 1 H 0
+B
 Machine 3 H 0
 Machine 3 H 0
 A2
 Machine 4 H 0
 Machine 4 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A2
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 1 H 0
+Machine 1 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
 A2
@@ -5530,87 +5398,81 @@ Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 B
+Machine 3 H 0
+Machine 3 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
+Machine 3 H 0
+Machine 3 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
+Machine 3 H 0
+Machine 3 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
@@ -5620,55 +5482,49 @@ Machine 1 H 0
 A2
 Machine 3 H 0
 Machine 3 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 4 H 0
+Machine 4 H 0
 B
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 3 H 0
 Machine 3 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
-A2
 Machine 4 H 0
 Machine 4 H 0
-A2
+B
 Machine 1 H 0
 Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 4 H 0
 Machine 4 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 3 H 0
 Machine 3 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 4 H 0
-Machine 4 H 0
-B
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A1
 Machine 1 H 0
 Machine 1 H 0
 B
@@ -5681,84 +5537,60 @@ A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 A1
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 4 H 0
-Machine 4 H 0
-A2
-Machine 2 H 0
-Machine 2 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 1 H 0
+Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 4 H 0
-Machine 4 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
-Machine 4 H 0
-Machine 4 H 0
+Machine 1 H 0
+Machine 1 H 0
+B
+Machine 1 H 0
+Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
-Machine 4 H 0
-Machine 4 H 0
-B
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
-A1
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -5767,55 +5599,61 @@ Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 2 H 0
 Machine 2 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
-A2
-Machine 1 H 0
-Machine 1 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
+Machine 2 H 0
+Machine 2 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A2
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
-Machine 1 H 0
-A1
 Machine 2 H 0
 Machine 2 H 0
 A1
@@ -5825,15 +5663,12 @@ A2
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -5845,40 +5680,31 @@ Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 1 H 0
 Machine 1 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 1 H 0
-Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-B
+A1
+Machine 1 H 0
+Machine 1 H 0
+A1
 Machine 2 H 0
 Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-B
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-A1
-Machine 1 H 0
-Machine 1 H 0
-B
+A2
 Machine 2 H 0
 Machine 2 H 0
 B
@@ -5887,13 +5713,7 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 2 H 0
-Machine 2 H 0
 A2
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
 A1
@@ -5903,12 +5723,12 @@ A2
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 1 H 0
 Machine 1 H 0
 A1
+Machine 2 H 0
+Machine 2 H 0
+B
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -5921,60 +5741,57 @@ B
 Machine 2 H 0
 Machine 2 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 2 H 0
-Machine 2 H 0
-A2
 Machine 1 H 0
 Machine 1 H 0
-A1
+B
 Machine 2 H 0
 Machine 2 H 0
 B
 Machine 1 H 0
 Machine 1 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A1
-Machine 1 H 0
-Machine 1 H 0
-B
 Machine 2 H 0
 Machine 2 H 0
-B
+A2
 Machine 1 H 0
 Machine 1 H 0
-A2
-Machine 3 H 0
-Machine 3 H 0
 A1
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A1
 Machine 1 H 0
 Machine 1 H 0
 B
-Machine 3 H 0
-Machine 3 H 0
+Machine 2 H 0
+Machine 2 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
 B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 2 H 0
+Machine 2 H 0
+A2
 Machine 1 H 0
 Machine 1 H 0
-A1
-Machine 3 H 0
-Machine 3 H 0
-A1
+A2
 Machine 2 H 0
 Machine 2 H 0
 A2
@@ -5983,21 +5800,48 @@ Machine 2 H 0
 A2
 Machine 1 H 0
 Machine 1 H 0
+A1
+Machine 2 H 0
+Machine 2 H 0
 A1
 Machine 1 H 0
 Machine 1 H 0
 A2
-Machine 3 H 0
-Machine 3 H 0
+Machine 1 H 0
+Machine 1 H 0
+A2
+Machine 1 H 0
+Machine 1 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0
-A2
+A1
 Machine 1 H 0
 Machine 1 H 0
-B
+A1
 Machine 1 H 0
 Machine 1 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+A2
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+A1
+Machine 3 H 0
+Machine 3 H 0
+B
+Machine 2 H 0
+Machine 2 H 0
+B
+Machine 3 H 0
+Machine 3 H 0
 A2
 Machine 2 H 0
 Machine 2 H 0

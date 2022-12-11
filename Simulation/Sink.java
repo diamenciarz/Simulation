@@ -34,7 +34,7 @@ public class Sink implements ProductAcceptor {
 	}
 
 	@Override
-	public boolean givePatient(Patient patient) {
+	public void givePatient(Patient patient) {
 		number++;
 		products.add(patient);
 		// store stamps
@@ -52,7 +52,6 @@ public class Sink implements ProductAcceptor {
 			travelTimes.add(patient.travelTime);
 			processingTimes.add(patient.processingTime);
 		}
-		return true;
 	}
 
 	public int[] getNumbers() {

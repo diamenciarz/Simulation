@@ -32,18 +32,12 @@ public class Queue implements ProductAcceptor {
 	 * True is returned if a product could be delivered; false if the request is
 	 * queued
 	 */
-	public boolean askProduct(Ambulance machine) {
+	public void askProduct(Ambulance machine) {
 		// This is only possible with a non-empty queue
 		if (queue.size() > 0) {
-			// If the machine accepts the product
-			if (machine.givePatient(queue.get(0))) {
-				queue.remove(0);// Remove it from the queue
-				return true;
-			} else
-				return false; // Machine rejected; don't queue request
+			machine.givePatient(queue.get(0));
 		} else {
 			idleMachines.add(machine);
-			return false; // queue request
 		}
 	}
 
@@ -52,33 +46,29 @@ public class Queue implements ProductAcceptor {
 	 * It is investigated whether a machine wants the product, otherwise it is
 	 * stored
 	 */
-	public boolean givePatient(Patient patient) {
+	public void givePatient(Patient patient) {
 
-		// Check if the machine accepts it
-		if (idleMachines.size() < 0)
+		Ambulance closestAmbulance = findClosestAmbulance(patient.position);
+		if (closestAmbulance == null) {
 			queue.add(patient); // Otherwise store it
-		else {
-			boolean delivered = false;
-			while (!delivered) {
-
-				Ambulance closestAmbulance = findClosestAmbulance(patient);
-				delivered = closestAmbulance.givePatient(patient);
-				// remove the request regardless of whether or not the product has been accepted
-				idleMachines.remove(closestAmbulance);
-			}
-			if (!delivered)
-				queue.add(patient); // Otherwise store it
+		} else {
+			dispatchAmbulance(closestAmbulance, patient);
+			DebugLogger.printQueueState(queue.size());
 		}
-		DebugLogger.printQueueState(queue.size());
-		return true;
 	}
 
-	private Ambulance findClosestAmbulance(Patient patient) {
+	private void dispatchAmbulance(Ambulance closestAmbulance, Patient patient) {
+		closestAmbulance.givePatient(patient);
+		// remove the request regardless of whether or not the product has been accepted
+		idleMachines.remove(closestAmbulance);
+
+	}
+
+	private Ambulance findClosestAmbulance(Vector2 patientPosition) {
 		if (idleMachines.size() == 0) {
-			return CrewScheduler.addCrew(patient.position);
+			return CrewScheduler.addCrew(patientPosition);
 		}
-		
-		Vector2 patientPosition = patient.position;
+
 		Ambulance currentClosestAmbulance = idleMachines.get(0);
 		double currentClosestDistance = currentClosestAmbulance.getCurrentPosition()
 				.manhattanDistanceTo(patientPosition);

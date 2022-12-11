@@ -106,7 +106,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		hub = newHub;
 	}
 
-	public void endShift(){
+	public void endShift() {
 		hub.getAmbulances().remove(this);
 	}
 
@@ -125,12 +125,12 @@ public class Ambulance implements CProcess, ProductAcceptor {
 
 		if (isShiftEnded) {
 			endShift();
-		}else{
+		} else {
 			readyAmbulanceForNextPickup();
 		}
 	}
-	
-	private void readyAmbulanceForNextPickup(){
+
+	private void readyAmbulanceForNextPickup() {
 		patient = null;
 		// set machine status to idle
 		status = 'i';
@@ -146,24 +146,15 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 * @return true if the product is accepted and started, false in all other cases
 	 */
 	@Override
-	public boolean givePatient(Patient p) {
-		// Only accept something if the machine is idle
-		if (status == 'i') {
-			// accept the product
-			patient = p;
-			// mark starting time
-			DebugLogger.printStartedProduction(eventlist.getTime(), this, patient);
-			patient.stampEvent(eventlist.getTime(), "Ambulance dispatched", name);
-			// start production
-			handlePatient();
-			// Flag that the product has arrived
-			return true;
-		}
-		// Flag that the product has been rejected
-		else{
-			System.out.println("Patient rejected");
-			return false;
-		}
+	public void givePatient(Patient p) {
+		// accept the product
+		patient = p;
+		// mark starting time
+		DebugLogger.printStartedProduction(eventlist.getTime(), this, patient);
+		patient.stampEvent(eventlist.getTime(), "Ambulance dispatched", name);
+		// start production
+		handlePatient();
+
 	}
 
 	/**
@@ -196,9 +187,9 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		double waitTime = pickupTime - patient.creationTime;
 		patient.stampWaitTime(waitTime);
 		patient.stampTravelTime(calculateTravelTime());
-		
+
 	}
-	
+
 	private double calculateTimeUntilHospitalArrival() {
 		double patientProcessingDuration = drawRandomExponential(1);
 		patient.stampProcessingTime(patientProcessingDuration);
