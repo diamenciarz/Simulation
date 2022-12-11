@@ -6,11 +6,9 @@
 
 package simulation;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import helpers.WriteToCSV;
 import simulation.city.City;
 import simulation.city.Hex;
 
@@ -49,31 +47,7 @@ public class Simulation {
 
 		// start the eventlist
 		l.start(20); // 2000 is maximum time
-		dumpDataToCSV(sink);
-	}
-	
-	private static void dumpDataToCSV(Sink sink){
-		String[] stations = sink.getStations();
-		int[] numbers = sink.getNumbers();
-		double[] times = sink.getTimestamps();
-		String[] events = sink.getEvents();
-	
-		if((stations.length == numbers.length) && (times.length == events.length)){
-			System.out.println("Same lengths");
-		}
-		for (int i = 0; i < stations.length ; i++) {
-			System.out.println("\n"+
-					"Event:" + events[i] + "\n" +
-					"at Time " + times[i] + "\n" +
-					"Stations " + stations[i] + "\n" +
-					"Numbers " + numbers[i] + "\n"
-			);
-		}
-	
-		writeCSV_Double(times, "matlab/times.csv");
-		writeCSV_String(stations, "matlab/stations.csv");
-		writeCSV_String(events, "matlab/events.csv");
-		writeCSV_int(numbers, "matlab/numbers.csv");
+		WriteToCSV.dumpDataToCSV(sink);
 	}
 
 	public static ArrayList<Ambulance> createAmbulances(Queue queue, Sink sink, CEventList eventList, int hexIndex,
@@ -87,71 +61,6 @@ public class Simulation {
 			ambulance.setHub(hub);
 		}
 		return machines;
-	}
-
-
-
-	public static void writeCSV_Double(double[] data, String file) {
-
-		try (PrintWriter writer = new PrintWriter(new File(file))) {
-
-			StringBuilder sb = new StringBuilder();
-
-			for(int i = 0; i < data.length; i++){
-
-				sb.append(data[i]);
-				sb.append('\n');
-
-			}
-			writer.write(sb.toString());
-		}
-
-		catch (FileNotFoundException e) {
-
-			System.out.println(e.getMessage());
-		}
-	}
-
-	public static void writeCSV_String(String[] data, String file) {
-
-		try (PrintWriter writer = new PrintWriter(new File(file))) {
-
-			StringBuilder sb = new StringBuilder();
-
-			for(int i = 0; i < data.length; i++){
-
-				sb.append(data[i]);
-				sb.append('\n');
-
-			}
-			writer.write(sb.toString());
-		}
-
-		catch (FileNotFoundException e) {
-
-			System.out.println(e.getMessage());
-		}
-	}
-
-	public static void writeCSV_int(int[] data, String file) {
-
-		try (PrintWriter writer = new PrintWriter(new File(file))) {
-
-			StringBuilder sb = new StringBuilder();
-
-			for(int i = 0; i < data.length; i++){
-
-				sb.append(data[i]);
-				sb.append('\n');
-
-			}
-			writer.write(sb.toString());
-		}
-
-		catch (FileNotFoundException e) {
-
-			System.out.println(e.getMessage());
-		}
 	}
 
 }

@@ -55,6 +55,15 @@ public class Sink implements ProductAcceptor {
 		}
 		return tmp;
 	}
+	
+	public double[] getQueueWaitingTimes() {
+		queueWaitingTimes.trimToSize();
+		double[] tmp = new double[queueWaitingTimes.size()];
+		for (int i = 0; i < queueWaitingTimes.size(); i++) {
+			tmp[i] = (queueWaitingTimes.get(i)).doubleValue();
+		}
+		return tmp;
+	}
 
 	public double[] getTimestamps() {
 		timestamps.trimToSize();
