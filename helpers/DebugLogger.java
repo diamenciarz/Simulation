@@ -5,8 +5,9 @@ import simulation.Ambulance;
 import simulation.Patient;
 import helpers.math.Vector2;
 
-public class Printer {
-    static boolean doDebugMessages = true;
+public class DebugLogger {
+    static boolean doDebugMessages = false;
+    static boolean doConsoleOutputs = false;
 
     static int i = 0;
     static int j = 0;
@@ -20,7 +21,7 @@ public class Printer {
 
     public static void printStartedProduction(double time, Ambulance ambulance, Patient patient) {
         if (doDebugMessages) {
-            System.out.println("Patient picked up by ambulance " + ambulance.name + " at time: " + (float) time);
+            System.out.println("Ambulance dispatched " + ambulance.name + " at time: " + (float) time);
         }
     }
 
@@ -34,6 +35,17 @@ public class Printer {
     public static void printQueueState(int queueLength) {
         if (doDebugMessages) {
             System.out.println("There are " + queueLength + " elements in the queue");
+        }
+    }
+
+    public static void printResponsePercentage(int count, int overTime) {
+        double percentage = ((double) (count - overTime) / (double) count) * 100;
+        System.out.println("Percentage of patients picked up within 15 minutes: " + percentage + "%");
+    }
+
+    public static void printShiftEnded(double time) {
+        if (doDebugMessages) {
+            System.out.println("Shift ended at time " + time);
         }
     }
 

@@ -14,7 +14,7 @@ import simulation.city.City;
 import simulation.city.Hex;
 
 public class Simulation {
-	public static int N_MACHINES = 1;
+	public static int N_MACHINES = 0;
 	public CEventList list;
 	public Queue queue;
 	public Source source;
@@ -46,13 +46,14 @@ public class Simulation {
 		for (int i = 0; i < City.getHexMap().size(); i++) {
 			City.getHexMap().get(i).setAmbulances(createAmbulances(queue, sink, eventList, i, N_MACHINES));
 		}
-		for (Hex hex : City.getHexMap()) {
-			System.out.println("Number of ambulances: " + hex.getAmbulances().size());
-		}
-
 		// start the eventlist
-		eventList.start(20); // 2000 is maximum time
-		WriteToCSV.dumpDataToCSV(sink);
+		eventList.start(2000); // 2000 is maximum time
+
+		try {
+			WriteToCSV.dumpDataToCSV(sink);
+		} catch (Exception e) {
+			System.err.println("List lengths do not match");
+		}
 	}
 
 	public static ArrayList<Ambulance> createAmbulances(Queue queue, Sink sink, CEventList eventList, int hexIndex,
@@ -62,7 +63,7 @@ public class Simulation {
 		for (int i = 1; i <= ambulanceCount; i++) {
 			Ambulance ambulance = new Ambulance(queue, sink, eventList, "Machine " + i + " H " + hexIndex);
 			machines.add(ambulance);
-			Hex hub = City.getHexMap().get(hexIndex);
+			Hex hub = new Hex(City.getHexMap().get(hexIndex));
 			ambulance.setHub(hub);
 		}
 		return machines;

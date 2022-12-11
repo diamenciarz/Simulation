@@ -1,7 +1,7 @@
 package simulation;
 
 import helpers.Distributions;
-import helpers.Printer;
+import helpers.DebugLogger;
 import helpers.math.TimeConverter;
 import helpers.math.Vector2;
 import simulation.city.City;
@@ -32,6 +32,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	private double[] processingTimes;
 	/** Processing time iterator */
 	private int procCnt;
+	public boolean isShiftEnded = false;
 	/**
 	 * The location of the hub that the ambulance is coming back to after dropping
 	 * off a patient
@@ -117,10 +118,19 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 */
 	public void execute(int type, double tme) {
 		// show arrival
-		Printer.printFinished(eventlist.getTime(), name);
+		DebugLogger.printFinished(eventlist.getTime(), name);
 		// Remove product from system
 		patient.stampEvent(tme, "Patient dropped off at the hospital", name);
 		sink.givePatient(patient);
+
+		if (isShiftEnded) {
+			endShift();
+		}else{
+			readyAmbulanceForNextPickup();
+		}
+	}
+	
+	private void readyAmbulanceForNextPickup(){
 		patient = null;
 		// set machine status to idle
 		status = 'i';
@@ -142,7 +152,7 @@ public class Ambulance implements CProcess, ProductAcceptor {
 			// accept the product
 			patient = p;
 			// mark starting time
-			Printer.printStartedProduction(eventlist.getTime(), this, patient);
+			DebugLogger.printStartedProduction(eventlist.getTime(), this, patient);
 			patient.stampEvent(eventlist.getTime(), "Ambulance dispatched", name);
 			// start production
 			handlePatient();
@@ -150,8 +160,10 @@ public class Ambulance implements CProcess, ProductAcceptor {
 			return true;
 		}
 		// Flag that the product has been rejected
-		else
+		else{
+			System.out.println("Patient rejected");
 			return false;
+		}
 	}
 
 	/**

@@ -1,5 +1,7 @@
 package simulation;
 
+import helpers.DebugLogger;
+
 public class ShiftEnd implements CProcess {
 
     public Ambulance ambulance;
@@ -11,10 +13,10 @@ public class ShiftEnd implements CProcess {
     }
 
     @Override
-    public void execute(int type, double tme) {
-        ambulance.endShift();
+    public void execute(int type, double endTime) {
+        ambulance.isShiftEnded = true;
         //TODO: Update ambulance time series data
-        System.out.println("Shift ended");
+        DebugLogger.printShiftEnded(endTime);
     }
     
 }

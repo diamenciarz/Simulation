@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import simulation.Sink;
 
 public class WriteToCSV {
-    public static void dumpDataToCSV(Sink sink) {
+    public static void dumpDataToCSV(Sink sink) throws Exception {
         String[] names = sink.getStations();
         int[] numbers = sink.getNumbers();
         double[] timestamps = sink.getTimestamps();
@@ -16,17 +16,19 @@ public class WriteToCSV {
         double[] processingTimes = sink.getProcessingTimes();
         String[] events = sink.getEvents();
 
-        if ((names.length == numbers.length) && (timestamps.length == events.length)) {
-            System.out.println("Same lengths");
+        if (!((names.length == numbers.length) && (timestamps.length == events.length))) {
+            throw new Exception("File lengths do not match");
         }
-        for (int i = 0; i < names.length; i++) {
-            System.out.println("\n" +
-                    "Event:" + events[i] + "\n" +
-                    "at Time " + timestamps[i] + "\n" +
-                    "Stations " + names[i] + "\n" +
-                    " travelled for " + travelTimes[i/3] + "\n" +
-                    " waited for " + queueWaitingTimes[i / 3] + "\n" +
-                    "Numbers " + numbers[i / 3] + "\n");
+        if(DebugLogger.doConsoleOutputs){
+            for (int i = 0; i < names.length; i++) {
+                System.out.println("\n" +
+                        "Event:" + events[i] + "\n" +
+                        "at Time " + timestamps[i] + "\n" +
+                        "Stations " + names[i] + "\n" +
+                        " travelled for " + travelTimes[i/3] + "\n" +
+                        " waited for " + queueWaitingTimes[i / 3] + "\n" +
+                        "Numbers " + numbers[i / 3] + "\n");
+            }
         }
 
         writeCSV_Double(timestamps, "simulation/matlab/timestamps.csv");

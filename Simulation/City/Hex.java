@@ -16,6 +16,12 @@ public class Hex {
     public static double APHOTHEMA = Math.sqrt((Math.pow(RADIUS, 2) + Math.pow(RADIUS, 2) / 2));
     private ArrayList<Ambulance> ambulances;
 
+    public Hex(Hex copyHex){
+        position = copyHex.position.copy();
+        isHospital = copyHex.isHospital;
+        this.polygon = copyHex.polygon;
+    }
+
     public Hex(boolean hospital, Vector2 newPosition) {
 
         position = newPosition.copy();

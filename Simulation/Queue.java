@@ -3,7 +3,7 @@ package simulation;
 import java.util.ArrayList;
 
 import helpers.CrewScheduler;
-import helpers.Printer;
+import helpers.DebugLogger;
 import helpers.math.Vector2;
 
 /**
@@ -55,11 +55,11 @@ public class Queue implements ProductAcceptor {
 	public boolean givePatient(Patient patient) {
 
 		// Check if the machine accepts it
-		if (idleMachines.size() < 1)
+		if (idleMachines.size() < 0)
 			queue.add(patient); // Otherwise store it
 		else {
 			boolean delivered = false;
-			while (!delivered & (idleMachines.size() > 0)) {
+			while (!delivered) {
 
 				Ambulance closestAmbulance = findClosestAmbulance(patient);
 				delivered = closestAmbulance.givePatient(patient);
@@ -69,7 +69,7 @@ public class Queue implements ProductAcceptor {
 			if (!delivered)
 				queue.add(patient); // Otherwise store it
 		}
-		Printer.printQueueState(queue.size());
+		DebugLogger.printQueueState(queue.size());
 		return true;
 	}
 

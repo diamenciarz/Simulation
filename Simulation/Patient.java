@@ -44,17 +44,14 @@ public class Patient
 	}
 
 	public void stampWaitTime(double waitingTime){
-		System.out.println("Wait time: " + waitingTime);
 		this.waitingTime = waitingTime;
 	}
 	
 	public void stampTravelTime(double travelTime){
-		System.out.println("Travel time: " + travelTime);
 		this.travelTime = travelTime;
 	}
 	
 	public void stampProcessingTime(double processingTime){
-		System.out.println("Processing time: " + processingTime);
 		this.processingTime = processingTime;
 	}
 

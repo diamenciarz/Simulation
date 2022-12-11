@@ -1,7 +1,7 @@
 package simulation;
 
 import helpers.Distributions;
-import helpers.Printer;
+import helpers.DebugLogger;
 
 /**
  * A source of products
@@ -24,6 +24,8 @@ public class Source implements CProcess {
 	private double[] interarrivalTimes;
 	/** Interarrival time iterator */
 	private int interArrCnt;
+
+	private double lastTime;
 
 	/**
 	 * Constructor, creates objects
@@ -83,7 +85,10 @@ public class Source implements CProcess {
 	@Override
 	public void execute(int type, double currentTime) {
 		// show arrival
-		Printer.printArrived(eventList.getTime(), name);
+		if (currentTime == lastTime) {
+			System.out.println("Here");
+		}
+		DebugLogger.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
 		Patient p = new Patient();
 		p.creationTime = eventList.getTime();
@@ -102,6 +107,7 @@ public class Source implements CProcess {
 				eventList.stop();
 			}
 		}
+		lastTime = currentTime;
 	}
 
 	public static double drawRandomExponential(double currentTime) {

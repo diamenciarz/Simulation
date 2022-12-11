@@ -29,19 +29,28 @@ public class CrewScheduler {
         }
         if (closestNonfullHex == null) {
             System.out.println("All hexes are full - no new ambulance can be added");
+            return null;
         }
-        return addAmbulanceToHex(closestNonfullHex, hexIndex);
+
+        Ambulance newAmbulance = instantiateAmbulance(closestNonfullHex, hexIndex);
+        addAmbulanceToHex(closestNonfullHex, newAmbulance);
+        return newAmbulance;
     }
 
-    private static Ambulance addAmbulanceToHex(Hex hex, int hexIndex) {
+    private static void addAmbulanceToHex(Hex hex, Ambulance newAmbulance) {
         // TODO: Choose shift length to be 4 or 8. Beware of scheduling limits.
         final double SHIFT_DURATION = 8;
+        hex.getAmbulances().add(newAmbulance);
+        double timestamp = eventList.getTime() + SHIFT_DURATION;
+
+        eventList.add(new ShiftEnd(newAmbulance, timestamp), MAXIMUM_AMBULANCE_COUNT_PER_HEX, timestamp);
+    }
+
+    private static Ambulance instantiateAmbulance(Hex hex, int hexIndex) {
         int ambulanceID = hex.getAmbulances().size() + 1;
         String ambulanceName = "Machine " + ambulanceID + " H " + hexIndex;
         Ambulance newAmbulance = new Ambulance(queue, sink, eventList, ambulanceName);
-        hex.getAmbulances().add(newAmbulance);
-        
-        eventList.add(new ShiftEnd(newAmbulance, eventList.getTime()), MAXIMUM_AMBULANCE_COUNT_PER_HEX, SHIFT_DURATION);
+        newAmbulance.setHub(hex);
         return newAmbulance;
     }
 }

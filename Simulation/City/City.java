@@ -30,16 +30,17 @@ public class City {
     public static ArrayList<Hex> copyHexMap() {
         ArrayList<Hex> hexes = new ArrayList<>();
         for (Hex hex : hexMap) {
-            hexes.add(new Hex(hex.isHospital(), hex.getPosition()));
+            hexes.add(hex);
         }
         return hexes;
     }
 
     public static ArrayList<Hex> getClosestHexesTo(Vector2 position) {
-        ArrayList<Hex> unsortedHexes = City.getHexMap();
+        ArrayList<Hex> unsortedHexes = City.copyHexMap();
         ArrayList<Hex> sortedHexes = new ArrayList<>();
+        int repetitions = unsortedHexes.size();
 
-        for (int i = 0; i < unsortedHexes.size(); i++) {
+        for (int i = 0; i < repetitions; i++) {
             Hex closestHex = findClosestHex(unsortedHexes, position);
             sortedHexes.add(closestHex);
             unsortedHexes.remove(closestHex);
