@@ -2,6 +2,7 @@ package simulation;
 
 import java.util.ArrayList;
 
+import helpers.CrewScheduler;
 import helpers.Printer;
 import helpers.math.Vector2;
 
@@ -73,6 +74,10 @@ public class Queue implements ProductAcceptor {
 	}
 
 	private Ambulance findClosestAmbulance(Patient patient) {
+		if (idleMachines.size() == 0) {
+			return CrewScheduler.addCrew(patient.position);
+		}
+		
 		Vector2 patientPosition = patient.position;
 		Ambulance currentClosestAmbulance = idleMachines.get(0);
 		double currentClosestDistance = currentClosestAmbulance.getCurrentPosition()

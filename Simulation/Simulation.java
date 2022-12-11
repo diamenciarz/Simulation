@@ -8,6 +8,7 @@ package simulation;
 
 import java.util.ArrayList;
 
+import helpers.CrewScheduler;
 import helpers.WriteToCSV;
 import simulation.city.City;
 import simulation.city.Hex;
@@ -26,27 +27,31 @@ public class Simulation {
 	public static void main(String[] args) {
 		City city = new City();
 		// Create an eventlist
-		CEventList l = new CEventList();
-		Queue q = new Queue();
+		CEventList eventList = new CEventList();
+		Queue queue = new Queue();
 
-		Source s1 = new Source(q, l, "A1");
+		Source s1 = new Source(queue, eventList, "A1");
 
-		Source s2 = new Source(q, l, "A2");
+		Source s2 = new Source(queue, eventList, "A2");
 
-		Source s3 = new Source(q, l, "B");
+		Source s3 = new Source(queue, eventList, "B");
 
 		Sink sink = new Sink("Sink 1");
 
+		CrewScheduler.eventList = eventList;
+		CrewScheduler.queue = queue;
+		CrewScheduler.sink = sink;
+
 		// We set ambulances for each hexagon
 		for (int i = 0; i < City.getHexMap().size(); i++) {
-			City.getHexMap().get(i).setAmbulances(createAmbulances(q, sink, l, i, N_MACHINES));
+			City.getHexMap().get(i).setAmbulances(createAmbulances(queue, sink, eventList, i, N_MACHINES));
 		}
 		for (Hex hex : City.getHexMap()) {
 			System.out.println("Number of ambulances: " + hex.getAmbulances().size());
 		}
 
 		// start the eventlist
-		l.start(20); // 2000 is maximum time
+		eventList.start(20); // 2000 is maximum time
 		WriteToCSV.dumpDataToCSV(sink);
 	}
 

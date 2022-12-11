@@ -15,7 +15,7 @@ public class CrewScheduler {
 
     private static final int MAXIMUM_AMBULANCE_COUNT_PER_HEX = 5;
 
-    public static void addCrew(Vector2 targetPosition) {
+    public static Ambulance addCrew(Vector2 targetPosition) {
         ArrayList<Hex> sortedHexes = City.getClosestHexesTo(targetPosition);
         Hex closestNonfullHex = null;
         int hexIndex = 0;
@@ -30,17 +30,18 @@ public class CrewScheduler {
         if (closestNonfullHex == null) {
             System.out.println("All hexes are full - no new ambulance can be added");
         }
-        addAmbulanceToHex(closestNonfullHex, hexIndex);
+        return addAmbulanceToHex(closestNonfullHex, hexIndex);
     }
 
-    private static void addAmbulanceToHex(Hex hex, int hexIndex) {
+    private static Ambulance addAmbulanceToHex(Hex hex, int hexIndex) {
         // TODO: Choose shift length to be 4 or 8. Beware of scheduling limits.
-        double shiftDuration = 8;
+        final double SHIFT_DURATION = 8;
         int ambulanceID = hex.getAmbulances().size() + 1;
         String ambulanceName = "Machine " + ambulanceID + " H " + hexIndex;
         Ambulance newAmbulance = new Ambulance(queue, sink, eventList, ambulanceName);
-        eventList.add(new ShiftEnd(newAmbulance, eventList.getTime()), MAXIMUM_AMBULANCE_COUNT_PER_HEX, shiftDuration);
-
         hex.getAmbulances().add(newAmbulance);
+        
+        eventList.add(new ShiftEnd(newAmbulance, eventList.getTime()), MAXIMUM_AMBULANCE_COUNT_PER_HEX, SHIFT_DURATION);
+        return newAmbulance;
     }
 }
