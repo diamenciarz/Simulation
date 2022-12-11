@@ -50,9 +50,10 @@ public class Ambulance implements CProcess, ProductAcceptor {
 	 * @param e Eventlist that will manage events
 	 * @param n The name of the machine
 	 */
-	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n) {
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, Hex hex) {
 		status = 'i';
 		queue = q;
+		hub = hex;
 		sink = s;
 		eventlist = e;
 		name = n;
@@ -167,13 +168,11 @@ public class Ambulance implements CProcess, ProductAcceptor {
 		// generate duration
 		if (meanProcTime > 0) {
 			stampPatientPickup();
-			eventlist.add(this, 0, calculateTimeUntilHospitalArrival()); // target,type,time
-			// set status to busy
+			eventlist.add(this, 0, calculateTimeUntilHospitalArrival());
 			status = 'b';
 		} else {
 			if (processingTimes.length > procCnt) {
-				eventlist.add(this, 0, eventlist.getTime() + processingTimes[procCnt]); // target,type,time
-				// set status to busy
+				eventlist.add(this, 0, eventlist.getTime() + processingTimes[procCnt]);
 				status = 'b';
 				procCnt++;
 			} else {

@@ -2,12 +2,12 @@ package simulation;
 
 import helpers.DebugLogger;
 
-public class ShiftEnd implements CProcess {
+public class EndShift implements CProcess {
 
     public Ambulance ambulance;
     public double timestamp;
 
-    public ShiftEnd(Ambulance newAmbulance, double newTimestamp){
+    public EndShift(Ambulance newAmbulance, double newTimestamp){
         this.ambulance = newAmbulance;
         this.timestamp = newTimestamp;
     }

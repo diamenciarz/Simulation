@@ -48,6 +48,12 @@ public class DebugLogger {
             System.out.println("Shift ended at time " + time);
         }
     }
+    
+    public static void printAddedShift(double time){
+        if (doDebugMessages) {
+            System.out.println("!!!!Shift started at " + time);
+        }
+    }
 
     public static void print(double[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {

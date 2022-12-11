@@ -66,7 +66,7 @@ public class Queue implements ProductAcceptor {
 
 	private Ambulance findClosestAmbulance(Vector2 patientPosition) {
 		if (idleMachines.size() == 0) {
-			return CrewScheduler.addCrew(patientPosition);
+			return CrewScheduler.askForCrew(patientPosition);
 		}
 
 		Ambulance currentClosestAmbulance = idleMachines.get(0);
