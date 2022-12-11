@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 import helpers.CrewScheduler;
 import helpers.WriteToCSV;
-import helpers.math.Vector2;
 import simulation.city.City;
 import simulation.city.Hex;
 

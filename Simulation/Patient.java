@@ -21,6 +21,7 @@ public class Patient
 	public double waitingTime;
 	public double travelTime;
 	public double processingTime;
+	public String name;
 	
 	/** 
 	*	Constructor for the product

@@ -35,10 +35,27 @@ public class Queue implements ProductAcceptor {
 	public void askProduct(Ambulance machine) {
 		// This is only possible with a non-empty queue
 		if (queue.size() > 0) {
-			machine.givePatient(queue.get(0));
+			machine.givePatient(findMostImportantPatient());
 		} else {
 			idleMachines.add(machine);
 		}
+	}
+
+	private Patient findMostImportantPatient() {
+		for (Patient patient : queue) {
+			if (patient.name == "A1") {
+				return patient;
+			}
+		}
+		for (Patient patient : queue) {
+			if (patient.name == "B") {
+				return patient;
+			}
+		}
+		for (Patient patient : queue) {
+			return patient;
+		}
+		return null;
 	}
 
 	/**

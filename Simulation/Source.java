@@ -91,6 +91,7 @@ public class Source implements CProcess {
 		DebugLogger.printArrived(eventList.getTime(), name);
 		// give arrived product to queue
 		Patient p = new Patient();
+		p.name = name;
 		p.creationTime = eventList.getTime();
 		p.stampEvent(currentTime, "Patient called in", name);
 		queue.givePatient(p);
