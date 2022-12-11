@@ -19,6 +19,7 @@ public class Patient
 	public Vector2 position;
 	public double creationTime;
 	public double waitingTime;
+	public double travelTime;
 	
 	/** 
 	*	Constructor for the product
@@ -46,6 +47,11 @@ public class Patient
 		this.waitingTime = waitingTime;
 	}
 	
+	public void stampTravelTime(double travelTime){
+		System.out.println("Travel time: " + travelTime);
+		this.travelTime = travelTime;
+	}
+
 	public double[] getTimesAsArray()
 	{
 		times.trimToSize();

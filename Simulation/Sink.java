@@ -13,6 +13,7 @@ public class Sink implements ProductAcceptor {
 	private ArrayList<Patient> products = new ArrayList<>();
 	/** All properties of products are kept */
 	private ArrayList<Integer> numbers = new ArrayList<>();
+	public ArrayList<Double> travelTimes = new ArrayList<>();
 	private ArrayList<Double> timestamps = new ArrayList<>();
 	private ArrayList<String> events = new ArrayList<>();
 	private ArrayList<String> stations = new ArrayList<>();
@@ -44,6 +45,7 @@ public class Sink implements ProductAcceptor {
 		stations.addAll(s);
 
 		queueWaitingTimes.add(patient.waitingTime);
+		travelTimes.add(patient.travelTime);
 		return true;
 	}
 
@@ -61,6 +63,15 @@ public class Sink implements ProductAcceptor {
 		double[] tmp = new double[queueWaitingTimes.size()];
 		for (int i = 0; i < queueWaitingTimes.size(); i++) {
 			tmp[i] = (queueWaitingTimes.get(i)).doubleValue();
+		}
+		return tmp;
+	}
+	
+	public double[] getTravelTimes() {
+		travelTimes.trimToSize();
+		double[] tmp = new double[travelTimes.size()];
+		for (int i = 0; i < travelTimes.size(); i++) {
+			tmp[i] = (travelTimes.get(i)).doubleValue();
 		}
 		return tmp;
 	}
